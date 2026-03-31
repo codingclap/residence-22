@@ -15,10 +15,27 @@
   z-index: 0;
 }
 
-@media (max-width:768px) { 
+@media (max-width:768px) {
   .section-1::before {
     height: 90%;
   }
 }
 
 /****************** Home Page Section- 1 **********************/
+
+/****************** Home Page Section- 5 **********************/
+.section-5 .city-walking-route {
+  min-height: 550px;
+}
+
+@media (max-width:1600px) {
+  .section-5 .city-walking-route {
+    min-height: 450px;
+  }
+}
+@media (max-width:768px) {
+  .section-5 .city-walking-route {
+    min-height: 200px;
+  }
+}
+/****************** Home Page Section- 5 **********************/
