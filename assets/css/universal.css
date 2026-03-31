@@ -4,10 +4,10 @@
    box-sizing: border-box; 
 }
 
-body {
-   margin: 0;
-   padding: 0;
-   background-color: #d5cab8d3; 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 .mx-1920 {
@@ -593,7 +593,9 @@ body {
 .text-16 {
    font-size: 16px
 }
-
+.text-17 {
+   font-size: 17px
+}
 .text-18,
 .text-20,
 .text-22 {
