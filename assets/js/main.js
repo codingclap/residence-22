@@ -1,94 +1,88 @@
- // Infinite Logo Scroll (Horizontal)
 
-        document.addEventListener("DOMContentLoaded", () => {
-
-            const track = document.getElementById('logo-marqueeInner');
-
-            if (!track) return; // safety check
-
-            let x = 0;
-            const speed = 0.7;
-
-            // Clone logos for seamless loop
-            const children = [...track.children];
-            children.forEach(child => {
-                track.appendChild(child.cloneNode(true));
-            });
-
-            function animate() {
-                const halfWidth = track.scrollWidth / 2;
-
-                x -= speed;
-
-                if (Math.abs(x) >= halfWidth) {
-                    x = 0;
-                }
-
-                track.style.transform = `translateX(${x}px)`;
-
-                requestAnimationFrame(animate);
-            }
-
-            animate();
-
-        });
- // Infinite Logo Scroll (Horizontal)
-
-
-
+// Custom Navbar Toggle 
+  const hamburger   = document.getElementById('hamburger');
+  const mobileMenu  = document.getElementById('mobileMenu');
+  const navEl       = document.querySelector('nav');
+  const body       = document.querySelector('body');
  
-// Home page Infinite Scroll
-
-const tracks = [
-  { el: document.getElementById('col1'), speed: 0.5, y: 0 },   // scrolls UP
-  { el: document.getElementById('col2'), speed: -0.4, y: 0 },   // scrolls DOWN
-];
-
-// Clone each track's children for infinite loop
-tracks.forEach(({ el }) => {
-  const children = [...el.children];
-  children.forEach(child => el.appendChild(child.cloneNode(true)));
-});
-
-function animate() {
-  tracks.forEach(track => {
-    const halfHeight = track.el.scrollHeight / 2;
-
-    track.y -= track.speed;  // move up (negative = up)
-
-    // Reset seamlessly when first copy is fully scrolled
-    if (Math.abs(track.y) >= halfHeight) track.y = 0;
-    if (track.y > 0) track.y = -halfHeight;         // for downward scroll
-
-    track.el.style.transform = `translateY(${track.y}px)`;
+  // ── Toggle mobile menu ──
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    const opening = !mobileMenu.classList.contains('open');
+    navEl.classList.toggle('menu-open', opening);
+    if(navEl.classList.contains('absolute')){
+       navEl.classList.add('fixed');
+       navEl.classList.remove('absolute');
+       body.classList.add('overflow-hidden');
+    }else{
+      navEl.classList.add('absolute');
+      navEl.classList.remove('fixed');
+       body.classList.remove('overflow-hidden');
+    }
+    
+    if (!opening) {
+      mobileMenu.style.transform = 'translateX(100%)';
+      setTimeout(() => mobileMenu.classList.remove('open'), 350);
+    } else {
+      mobileMenu.classList.add('open');
+      requestAnimationFrame(() => mobileMenu.style.transform = 'translateX(0)');
+    }
   });
+ 
+  // ── Desktop dropdowns ──
+  // function setupDesktopDrop(btnId, menuId) {
+  //   const btn  = document.getElementById(btnId);
+  //   const menu = document.getElementById(menuId);
+  //   if (!btn || !menu || !btn.parentElement) return;
+  //   let timer;
+ 
+  //   const open  = () => { btn.classList.add('open'); menu.classList.add('open'); btn.setAttribute('aria-expanded','true'); };
+  //   const close = () => { btn.classList.remove('open'); menu.classList.remove('open'); btn.setAttribute('aria-expanded','false'); };
+ 
+  //   btn.parentElement.addEventListener('mouseenter', () => { clearTimeout(timer); open(); });
+  //   btn.parentElement.addEventListener('mouseleave', () => { timer = setTimeout(close, 150); });
+  //   btn.addEventListener('click', () => menu.classList.contains('open') ? close() : open());
+  // }
+  // setupDesktopDrop('dropProducts',  'menuProducts');
+  // setupDesktopDrop('dropSolutions', 'menuSolutions');
+  // setupDesktopDrop('dropResources', 'menuResources');
+ 
+  // // Close desktop drops on outside click
+  // document.addEventListener('click', e => {
+  //   document.querySelectorAll('.drop-btn').forEach(btn => {
+  //     if (!btn.parentElement.contains(e.target)) {
+  //       btn.classList.remove('open');
+  //       document.getElementById(btn.id.replace('drop','menu')).classList.remove('open');
+  //       btn.setAttribute('aria-expanded','false');
+  //     }
+  //   });
+  // });
+ 
+  // // ── Mobile dropdowns ──
+  // function setupMobileDrop(btnId, menuId) {
+  //   const btn  = document.getElementById(btnId);
+  //   const menu = document.getElementById(menuId);
+  //   const chev = btn.querySelector('.chevron');
+ 
+  //   btn.addEventListener('click', () => {
+  //     const isOpen = menu.classList.contains('open');
+  //     // Close all
+  //     document.querySelectorAll('.mobile-dropdown.open').forEach(m => m.classList.remove('open'));
+  //     document.querySelectorAll('#mobileMenu .mobile-link .chevron').forEach(c => c.style.transform = '');
+  //     if (!isOpen) {
+  //       menu.classList.add('open');
+  //       chev.style.transform = 'rotate(180deg)';
+  //     }
+  //   });
+  // }
+  // setupMobileDrop('mobileDropProducts',  'mobileMenuProducts');
+  // setupMobileDrop('mobileDropSolutions', 'mobileMenuSolutions');
+  // setupMobileDrop('mobileDropResources', 'mobileMenuResources');
+ 
+  // ── Scroll: fixed → absolute after 40px ──
+  // window.addEventListener('scroll', () => {
+  //   navEl.classList.toggle('scrolled', window.scrollY > 100);
+  // }, { passive: true });
+// Custom Navbar Toggle
 
-  requestAnimationFrame(animate);
-}
 
-animate();
-
-
-
-// Home page - Tab Script 
-
-function filterTab(tab) {
-  // Hide all grids
-  document.querySelectorAll('.tab-grid').forEach(grid => {
-    grid.classList.add('hidden');
-  });
-
-  // Reset all buttons
-  document.querySelectorAll('.tab-btn').forEach(btn => {
-    btn.classList.remove('bg-maroon', 'text-white');
-    // btn.classList.add('border', 'border-gray-400', 'text-gray-700');
-  });
-
-  // Show selected grid
-  document.getElementById('grid-' + tab).classList.remove('hidden');
-
-  // Activate selected button
-  const activeBtn = document.getElementById('tab-' + tab);
-  activeBtn.classList.add('bg-maroon', 'bg-opacity-100', 'text-white');
-  activeBtn.classList.remove('text-brown');
-}
