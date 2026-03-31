@@ -33,9 +33,49 @@
     min-height: 450px;
   }
 }
+
 @media (max-width:768px) {
   .section-5 .city-walking-route {
     min-height: 200px;
   }
 }
+
 /****************** Home Page Section- 5 **********************/
+
+/****************** Home Page Section- 6 **********************/
+.section-6 .swiper-slide img {
+  height: 550px;
+}
+
+@media (max-width:1500px) {
+  .section-6 .swiper-slide img {
+    height: 450px;
+  }
+}
+
+@media (max-width:768px) {
+  .section-6 .swiper-slide img {
+    height: 350px;
+  }
+}
+@media (max-width:700px) {
+  .section-6 .swiper-slide img {
+    height: 300px;
+  }
+}
+@media (max-width:530px) {
+  .section-6 .swiper-slide img {
+    height: 280px;
+  }
+}
+@media (max-width:425px) {
+  .section-6 .swiper-slide img {
+    height: 250px;
+  }
+}
+@media (max-width:375px) {
+  .section-6 .swiper-slide img {
+    height: 200px;
+  }
+}
+/****************** Home Page Section- 6 **********************/
