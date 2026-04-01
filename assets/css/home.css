@@ -44,15 +44,25 @@
 
 /****************** Home Page Section- 6 **********************/
 .section-6 .swiper-slide img {
-  height: 550px;
+  height: 600px;
+  border-radius: 15px;
 }
 
 @media (max-width:1500px) {
   .section-6 .swiper-slide img {
-    height: 450px;
+    height: 460px;
   }
 }
-
+@media (max-width:991px) {
+  .section-6 .swiper-slide img {
+    height: 400px;
+  }
+}
+@media (max-width:850px) {
+  .section-6 .swiper-slide img {
+    height: 380px;
+  }
+}
 @media (max-width:768px) {
   .section-6 .swiper-slide img {
     height: 350px;
