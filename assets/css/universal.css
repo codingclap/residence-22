@@ -108,6 +108,14 @@ body {
 }
 
 @font-face {
+   font-family: Quicksand-Variable;
+   src: url("../fonts/quicksand/Quicksand-Variable.ttf") format("woff2");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
    font-family: Montserrat-SemiBold;
    src: url("../fonts/montserrat/Montserrat-SemiBold.ttf") format("woff2");
    font-weight: 400;
@@ -131,13 +139,7 @@ body {
    font-display: swap;
 }
 
-@font-face {
-   font-family: brunson;
-   src: url("../fonts/brunson/brunson.ttf") format("woff2");
-   font-weight: 400;
-   font-style: normal;
-   font-display: swap;
-}
+
 
 .font-parisienne {
    font-family: parisienne, sans-serif;
@@ -169,6 +171,10 @@ body {
 
 .font-Quicksand-SemiBold {
    font-family: Quicksand-SemiBold;
+}
+
+.font-Quicksand-Variable {
+   font-family: Quicksand-Variable;
 }
 
 .font-Montserrat-Medium {
@@ -298,6 +304,14 @@ body {
 
 .bg-cream.bg-opacity-100 {
    background-color: rgba(213, 202, 184, 1.00);
+}
+
+.bg-darkcream.bg-opacity-10 {
+   background-color: rgba(194, 167, 148, 0.10);
+}
+
+.bg-darkcream.bg-opacity-100 {
+   background-color: rgba(194, 167, 148, 1.00);
 }
 
 /* ── Blue ── */
@@ -6238,6 +6252,26 @@ body {
       padding-bottom: 6rem
    }
 
+   .sm\:py-28 {
+      padding-top: 7rem;
+      padding-bottom: 7rem
+   }
+
+   .sm\:py-32 {
+      padding-top: 8rem;
+      padding-bottom: 8rem
+   }
+
+   .sm\:py-36 {
+      padding-top: 9rem;
+      padding-bottom: 9rem
+   }
+
+   .sm\:py-40 {
+      padding-top: 10rem;
+      padding-bottom: 10rem
+   }
+
    .sm\:pt-0 {
       padding-top: 0
    }
@@ -6931,6 +6965,26 @@ body {
    .md\:py-24 {
       padding-top: 6rem;
       padding-bottom: 6rem
+   }
+
+   .md\:py-28 {
+      padding-top: 7rem;
+      padding-bottom: 7rem
+   }
+
+   .md\:py-32 {
+      padding-top: 8rem;
+      padding-bottom: 8rem
+   }
+
+   .md\:py-36 {
+      padding-top: 9rem;
+      padding-bottom: 9rem
+   }
+
+   .md\:py-40 {
+      padding-top: 10rem;
+      padding-bottom: 10rem
    }
 
    .md\:pt-0 {
@@ -7632,6 +7686,26 @@ body {
       padding-bottom: 6rem
    }
 
+   .lg\:py-28 {
+      padding-top: 7rem;
+      padding-bottom: 7rem
+   }
+
+   .lg\:py-32 {
+      padding-top: 8rem;
+      padding-bottom: 8rem
+   }
+
+   .lg\:py-36 {
+      padding-top: 9rem;
+      padding-bottom: 9rem
+   }
+
+   .lg\:py-40 {
+      padding-top: 10rem;
+      padding-bottom: 10rem
+   }
+
    .lg\:pt-0 {
       padding-top: 0
    }
@@ -8328,6 +8402,26 @@ body {
       padding-bottom: 6rem
    }
 
+   .xl\:py-28 {
+      padding-top: 7rem;
+      padding-bottom: 7rem
+   }
+
+   .xl\:py-32 {
+      padding-top: 8rem;
+      padding-bottom: 8rem
+   }
+
+   .xl\:py-36 {
+      padding-top: 9rem;
+      padding-bottom: 9rem
+   }
+
+   .xl\:py-40 {
+      padding-top: 10rem;
+      padding-bottom: 10rem
+   }
+
    .xl\:pt-0 {
       padding-top: 0
    }
@@ -9016,6 +9110,31 @@ body {
    .\32xl\:py-20 {
       padding-top: 5rem;
       padding-bottom: 5rem
+   }
+
+   .\32xl\:py-24 {
+      padding-top: 6rem;
+      padding-bottom: 6rem
+   }
+
+   .\32xl\:py-28 {
+      padding-top: 7rem;
+      padding-bottom: 7rem
+   }
+
+   .\32xl\:py-32 {
+      padding-top: 8rem;
+      padding-bottom: 8rem
+   }
+
+   .\32xl\:py-36 {
+      padding-top: 9rem;
+      padding-bottom: 9rem
+   }
+
+   .\32xl\:py-40 {
+      padding-top: 10rem;
+      padding-bottom: 10rem
    }
 
    .\32xl\:pt-0 {

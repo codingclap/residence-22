@@ -53,39 +53,78 @@
     height: 460px;
   }
 }
+
 @media (max-width:991px) {
   .section-6 .swiper-slide img {
     height: 400px;
   }
 }
+
 @media (max-width:850px) {
   .section-6 .swiper-slide img {
     height: 380px;
   }
 }
+
 @media (max-width:768px) {
   .section-6 .swiper-slide img {
     height: 350px;
   }
 }
+
 @media (max-width:700px) {
   .section-6 .swiper-slide img {
     height: 300px;
   }
 }
+
 @media (max-width:530px) {
   .section-6 .swiper-slide img {
     height: 280px;
   }
 }
+
 @media (max-width:425px) {
   .section-6 .swiper-slide img {
     height: 250px;
   }
 }
+
 @media (max-width:375px) {
   .section-6 .swiper-slide img {
     height: 200px;
   }
 }
+
 /****************** Home Page Section- 6 **********************/
+
+/****************** Home Page Section- 7**********************/
+.section-7 label {
+  font-family: CormorantGaramond-Bold;
+  color: #2B2C40;
+}
+
+.section-7 input[type="submit"] {
+  color: #2B2C40;
+  font-family: Quicksand-Variable;
+  font-weight: bold;
+}
+
+/****************** Home Page Section- 7 **********************/
+
+
+/****************** Footer **********************/
+.footer .footer-logo img {
+  width: 180px;
+  height: auto;
+}
+.footer .footer-logo-instagram img {
+  width: 40px;
+  height: auto;
+}
+@media (max-width:768px) {
+  .footer .footer-logo img {
+    width: 120px;
+  }
+}
+/****************** Footer **********************/
