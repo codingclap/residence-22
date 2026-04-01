@@ -1,0 +1,25 @@
+.section-22 .project-header{
+   height: 900px;
+   object-fit: cover; 
+}
+
+@media (max-width: 1550px) {
+   .section-22 .project-header{
+      height: 750px;
+   }
+}
+@media (max-width: 1440px) {
+   .section-22 .project-header{
+      height: 700px;
+   }
+}
+@media (max-width: 1100px) {
+   .section-22 .project-header{
+      height: 600px;
+   }
+}
+@media (max-width: 768px) {
+   .section-22 .project-header{
+      height: 500px;
+   }
+}
