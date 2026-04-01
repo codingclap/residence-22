@@ -33,6 +33,9 @@ body {
 .letter-1 {
    letter-spacing: 1px;
 }
+.letter-10 {
+   letter-spacing: 0.2em;
+}
 
 /*#################  Custom Fonts # ##################*/
 @font-face {

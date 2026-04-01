@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Residence-22</title>
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/flowbite.min.css" />
+    <link rel="stylesheet" href="assets/css/universal.css" />
+    <link rel="stylesheet" href="assets/css/about.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- ═══════════════════════════════ Header Section ═══════════════════════════════════════════ -->
+    <style>
+        .nav-links a,
+        .nav-links button.drop-btn {
+            color: #C2A794;
+        }
+
+        .nav-links a:hover,
+        .nav-links button.drop-btn:hover,
+        .nav-links li.active>a,
+        .nav-links li.active>button {
+            color: #142434;
+        }
+    </style>
+    <nav class="navbar-menu mx-1920 mx-auto w-full px-5 absolute sm:px-5 md:px-6 lg:px-15 xl:px-20 py-10 ">
+        <a href="#" class="header-logo" data-aos="fade-up" data-aos-duration="2000">
+            <img src="assets/images/residence-black-logo.svg" alt="">
+        </a>
+
+        <!-- Desktop Links -->
+        <ul class="nav-links gap-3 sm:gap-3 md:gap-4 lg:gap-10 xl:gap-14 pt-4" id="desktopMenu" data-aos="fade-up"
+            data-aos-duration="2000">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">PROJECT DETAILS</a></li>
+            <li><a href="#">GET IN TOUCH</a></li>
+            <!-- Resources Dropdown -->
+            <!-- <li>
+                <button class="drop-btn" id="dropResources" aria-expanded="false">
+                    Resources
+                    <svg class="chevron" viewBox="0 0 24 24">
+                        <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                </button>
+                <div class="dropdown" id="menuResources">
+                    <a href="#"><span class="icon"></span> Docs</a>
+                    <a href="#"><span class="icon"></span> Blog</a>
+                    <a href="#"><span class="icon"></span> Podcast</a>
+                    <div class="divider"></div>
+                    <a href="#"><span class="icon"></span> Support</a>
+                </div>
+            </li> -->
+
+        </ul>
+
+        <button class="hamburger " id="hamburger" aria-label="Toggle menu" data-aos="fade-up" data-aos-duration="2000">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- ═══ MOBILE MENU ═══ -->
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="#" class="mobile-link">HOME</a>
+        <div class="mobile-divider"></div>
+        <a href="#" class="mobile-link">ABOUT US</a>
+        <div class="mobile-divider"></div>
+        <a href="#" class="mobile-link">PROJECT DETAILS</a>
+        <div class="mobile-divider"></div>
+        <a href="#" class="mobile-link">GET IN TOUCH</a>
+        <!-- Products -->
+        <!-- <button class="mobile-link" id="mobileDropProducts">
+            Products
+            <svg class="chevron" viewBox="0 0 24 24"
+                style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s">
+                <polyline points="6 9 12 15 18 9" />
+            </svg>
+        </button>
+        <div class="mobile-dropdown" id="mobileMenuProducts">
+            <a href="#" class="mobile-sub-link"><span class="icon"></span> Analytics</a>
+            <a href="#" class="mobile-sub-link"><span class="icon"></span> Security</a>
+            <a href="#" class="mobile-sub-link"><span class="icon"></span> Automations</a>
+            <a href="#" class="mobile-sub-link"><span class="icon"></span> Roadmap</a>
+        </div> -->
+
+        <!-- Solutions -->
+        <!-- <button class="mobile-link" id="mobileDropSolutions">
+            Solutions
+            <svg class="chevron" viewBox="0 0 24 24"
+                style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s">
+                <polyline points="6 9 12 15 18 9" />
+            </svg>
+        </button>
+        <div class="mobile-dropdown" id="mobileMenuSolutions">
+            <a href="#" class="mobile-sub-link"><span class="icon"></span> Enterprise</a>
+            <a href="#" class="mobile-sub-link"><span class="icon"></span> Startups</a>
+            <a href="#" class="mobile-sub-link"><span class="icon"></span> Developers</a>
+            <a href="#" class="mobile-sub-link"><span class="icon"></span> Case Studies</a>
+        </div> -->
+
+        <!-- Resources -->
+        <!-- <button class="mobile-link" id="mobileDropResources">
+            Resources
+            <svg class="chevron" viewBox="0 0 24 24"
+                style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s">
+                <polyline points="6 9 12 15 18 9" />
+            </svg>
+        </button>
+        <div class="mobile-dropdown" id="mobileMenuResources">
+            <a href="#" class="mobile-sub-link"><span class="icon"></span> Docs</a>
+            <a href="#" class="mobile-sub-link"><span class="icon"></span> Blog</a>
+            <a href="#" class="mobile-sub-link"><span class="icon"></span> Podcast</a>
+            <a href="#" class="mobile-sub-link"><span class="icon"></span> Support</a>
+        </div> -->
+
+    </div>
+
+
+    <!-- ═══════════════════════════════ Header Section ═══════════════════════════════════════════ -->
+
+
+    <!-- ═══════════════════════════════ Section - 11 ═══════════════════════════════════════════ -->
+
+    <section
+        class="section-11 page-content relative flex flex-col mx-1920 items-center justify-center mx-auto w-full px-5 sm:px-5 lg:px-14">
+
+        <div class="z-20 w-full pt-10 sm:pt-12 md:pt-20 lg:pt-24 lg:pt-24 pb-5 sm:pb-5 md:pb-5 lg:pb-5">
+
+            <div
+                class="flex flex-col md:flex-row justify-between item-start md:items-end lg:items-end w-full text-center">
+                <h2 class="font-Cormorant-Bold text-blue leading-tight mb-0 font-normal text-48 sm:text-56 md:text-60 lg:text-72 xl:text-80 2xl:text-88"
+                    data-aos="fade-up" data-aos-duration="2000">ABOUT US</h2>
+                <p class="font-Quicksand-SemiBold text-blue text-uppercase leading-tight mb-5 sm:mb-4 md:mb-3 lg:mb-3 letter-10 font-normal text-15 sm:text-20 md:text-24 lg:text-28 xl:text-36 2xl:text-36"
+                    data-aos="fade-up" data-aos-duration="2000">Signature Developers</p>
+
+            </div>
+
+            <div class="about-top-banner" data-aos="fade-up" data-aos-duration="2000">
+                <img src="assets/images/about/about-us-banner.webp" alt="">
+            </div>
+
+        </div>
+
+        <div
+            class="flex flex-col md:flex-row w-full items-start justify-between gap-5 sm:gap-5 lg:gap-5 xl:gap-8 pt-5 sm:pt-5 md:pt-5 lg:pt-10 xl:pt-10 pb-5 sm:pb-5 md:pb-5 lg:pb-10 xl:pb-10">
+            <!----Left Box -->
+            <div class="flex flex-col w-full md:w-full lg:w-60 xl:w-66 justify-center items-start">
+
+                <p class="font-Quicksand-Medium text-blue leading-loose text-17 text-justify lg:text-18"
+                    data-aos="fade-up" data-aos-duration="2000"><span class="font-Quicksand-Bold">Signature Developers
+                        is a pioneering Dubai-based development company established and founded by the Regal Group and
+                        Lals Group.</span> Combining their experience leading world-class organizations in retail,
+                    development, and technology, our founders have turned their focus to creating and achieving new
+                    benchmarks within the upper spectrum of the Dubai residential marketplace, focusing on a philosophy
+                    of constant innovation and exceptional quality.</p>
+
+                <img class="w-100 about-center-banner py-4" data-aos="fade-up" data-aos-duration="2000"
+                    src="assets/images/about/about-us-relax.webp" alt="about-us-relax">
+
+                <p class="font-Quicksand-Medium text-blue leading-loose text-17 text-justify lg:text-18"
+                    data-aos="fade-up" data-aos-duration="2000"> Our properties showcase the timeless values with which
+                    we lead and create, with the successful launches of 118 Downtown in 2013 and Taj Residences in 2015,
+                    and upcoming projects Signature Mansions and W Residences Dubai – Jumeirah Lakes Towers.</p>
+            </div>
+            <!----Right Box -->
+            <div class="flex w-full md:w-full lg:w-40 xl:w-33 justify-center items-center" data-aos="fade-up"
+                data-aos-duration="2000">
+                <img class="w-100 about-right-banner" data-aos="fade-up" data-aos-duration="2000"
+                    src="assets/images/about/about-us-building.webp" alt="about-us-building">
+            </div>
+
+        </div>
+        <div
+            class="flex flex-col w-full items-start justify-center gap-5 sm:gap-5 lg:gap-5 xl:gap-8 pb-12 sm:pb-12 md:pb-16 lg:pb-16 xl:pb-16">
+            <p class="font-Quicksand-Bold text-blue leading-loose text-17 text-justify lg:text-18" data-aos="fade-up"
+                data-aos-duration="2000">At Signature Developers, we are committed to going the extra mile, guided by
+                trusted family values and a global perspective. We believe in quality over quantity and never settle for
+                anything less than extraordinary. Our dedication to excellence drives us to deliver luxurious,
+                exquisitely crafted living spaces that elevate the extraordinary. We aim not only to set but to raise
+                the standard in transformational living, creating homes that inspire, relationships that last, and a
+                legacy of excellence.
+            </p>
+            <p class="font-Cormorant-Bold text-blue text-uppercase leading-loose text-17 text-justify lg:text-18"
+                data-aos="fade-up" data-aos-duration="2000">We see a canvas for the future in every home we deliver. We
+                curate homes the
+                Signature Way – Exquisite living spaces, exceptional quality, impeccable service, and a promise of
+                distinction.
+            </p>
+            <img class="w-100 about-bottom-banner" data-aos="fade-up" data-aos-duration="2000"
+                src="assets/images/about/about-us-pool.webp" alt="about-us-pool">
+        </div>
+    </section>
+    <!-- ═══════════════════════════════ Section - 11 ═══════════════════════════════════════════ -->
+    
+    <!-- ═══════════════════════════════ Footer ═══════════════════════════════════════════ -->
+    <footer
+        class="footer mx-1920 flex flex-col items-center justify-center w-full bg-blue bg-opacity-100 px-6 sm:px-8 lg:px-14 py-20 sm:py-20 md:py-28 lg:py-32">
+
+        <div class="flex flex-col md:flex-row w-full md:w-full lg:w-100 xl:w-80 gap-10 sm:gap-10 md:gap-5 lg:gap-5 xl:gap-5"
+            data-aos="fade-up" data-aos-duration="2000">
+
+            <div class="flex flex-col w-full md:w-full lg:w-100 xl:w-60 gap-4 sm:gap-5 md:gap-5 xl:gap-10">
+                <div class="flex flex-col items-start">
+                    <a href="#" class="footer-logo" data-aos="fade-up" data-aos-duration="2000">
+                        <img src="assets/images/residence-white-logo.svg" class="w-100" alt="">
+                    </a>
+                    <h3 class="font-Cormorant-Bold text-white text-uppercase leading-snug text-center pt-4 text-28 sm:text-32 md:text-36 lg:text-36 xl:text-40 2xl:text-40"
+                        data-aos="fade-up" data-aos-duration="2000">
+                        Penthouse living</h3>
+                </div>
+                <div class="flex flex-col items-start">
+                    <span
+                        class="font-Cormorant-Bold text-white text-uppercase leading-snug text-center pt-4 text-18 sm:text-20 md:text-20 lg:text-24 xl:text-24 2xl:text-28"
+                        data-aos="fade-up" data-aos-duration="2000">
+                        RESIDENCE 22 </span>
+                    <span
+                        class="font-Cormorant-Bold text-white text-uppercase leading-snug text-center text-18 sm:text-20 md:text-20 lg:text-24 xl:text-24 2xl:text-28"
+                        data-aos="fade-up" data-aos-duration="2000">
+                        MARASI DRIVE, BUSINESS BAY</span>
+                </div>
+            </div>
+
+            <div class="flex flex-col w-full md:w-full lg:w-100 xl:w-45 justify-between">
+                <div class="flex flex-col items-start">
+                    <p class="font-Cormorant-Bold text-white text-uppercase leading-snug text-center pt-4 text-20 sm:text-20 md:text-20 lg:text-24 xl:text-24 2xl:text-24"
+                        data-aos="fade-up" data-aos-duration="2000">
+                        follow us</p>
+                    <a href="#" class="footer-logo-instagram pt-3" data-aos="fade-up" data-aos-duration="2000">
+                        <img src="assets/images/home/instagram.webp" class="w-100" alt="instagram">
+                    </a>
+                </div>
+                <div class="flex flex-col items-start pt-8 sm:pt-8 lg:pt-0 xl:pt-0">
+                    <p class="font-Cormorant-Bold text-white text-uppercase leading-snug text-center pt-4 text-20 sm:text-20 md:text-20 lg:text-24 xl:text-24 2xl:text-24"
+                        data-aos="fade-up" data-aos-duration="2000">
+                        Contact us</p>
+                    <a class="text-white text-uppercase font-Quicksand-Variable pt-3 text-16 sm:text-16 md:text-18 lg:text-18 xl:text-18 2xl:text-18"
+                        data-aos="fade-up" data-aos-duration="2000" href="tel:+971564093335">T: +971 56 409 3335</a>
+                    <a class="text-white text-uppercase font-Quicksand-Variable pt-2 text-16 sm:text-16 md:text-18 lg:text-18 xl:text-18 2xl:text-18"
+                        data-aos="fade-up" data-aos-duration="2000" href="mailto:sales@signaturedevelopers.ae">E:
+                        sales@signaturedevelopers.ae</a>
+                </div>
+            </div>
+        </div> 
+    </footer>
+    <!-- ═══════════════════════════════ Footer ═══════════════════════════════════════════ -->
+    <script>
+        function updateNavbarHeight() {
+            const navbar = document.querySelector('.navbar-menu');
+            const pageContent = document.querySelector('.page-content');
+
+            let navbarHeight = navbar.offsetHeight;
+
+            // // Reduce spacing on mobile
+            // if (window.innerWidth < 768) {
+            //     navbarHeight = navbarHeight - 100;
+            // }
+            // if (window.innerWidth < 500) {
+            //     navbarHeight = navbarHeight + 40;
+            // }
+            pageContent.style.paddingTop = `${navbarHeight}px`;
+        }
+
+        window.addEventListener('load', updateNavbarHeight);
+        window.addEventListener('resize', updateNavbarHeight);
+    </script>
+
+    <script src="assets/js/flowbite.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.lifestyle-swiper', {
+            loop: true,
+            centeredSlides: true,
+            slidesPerView: 1.8,
+            spaceBetween: 20,
+            navigation: {
+                prevEl: '.lifestyle-prev',
+                nextEl: '.lifestyle-next',
+            },
+            speed: 1000,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+            grabCursor: false,
+            simulateTouch: false,
+            allowTouchMove: false,
+            breakpoints: {
+                300: { slidesPerView: 1.2, spaceBetween: 12 },
+                320: { slidesPerView: 1.3, spaceBetween: 12 },
+                375: { slidesPerView: 1.3, spaceBetween: 13 },
+                425: { slidesPerView: 1.3, spaceBetween: 15 },
+                530: { slidesPerView: 1.3, spaceBetween: 15 },
+                640: { slidesPerView: 1.5, spaceBetween: 15 },
+                768: { slidesPerView: 1.5, spaceBetween: 18 },
+                1024: { slidesPerView: 1.8, spaceBetween: 20 },
+                1200: { slidesPerView: 1.8, spaceBetween: 30 },
+                1400: { slidesPerView: 1.8, spaceBetween: 40 },
+            },
+            on: {
+                slideChange: function () {
+                    const activeSlide = this.slides[this.activeIndex];
+                    const label = activeSlide.getAttribute('data-label');
+                    document.getElementById('slide-label').textContent = label;
+                }
+            }
+        });
+    </script>
+
+    <script> 
+        AOS.init({
+            once: true,
+
+        });
+    </script>
+
+</body>
+
+</html>

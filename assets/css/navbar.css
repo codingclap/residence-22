@@ -79,13 +79,6 @@
      white-space: nowrap;
  }
 
- .nav-links a:hover,
- .nav-links button.drop-btn:hover,
- .nav-links li.active>a,
- .nav-links li.active>button {
-     color: var(--text);
-     background: var(--hover-bg);
- }
 
  /* chevron icon */
  .chevron {
