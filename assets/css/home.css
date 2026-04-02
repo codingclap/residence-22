@@ -99,15 +99,52 @@
 /****************** Home Page Section- 6 **********************/
 
 /****************** Home Page Section- 7**********************/
-.section-7 label {
-  font-family: CormorantGaramond-Bold;
-  color: #2B2C40;
+.section-7 .contactHome-container .contactHome-heading img {
+  height: 445px;
+  object-fit: cover;
+}
+
+.section-7 .contactHome-container .contactHome-form {
+  background: rgba(235, 227, 224, 1);
+  border-radius: 17px;
+}
+
+.section-7 .contactHome-container .contactHome-form input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  font-family: neutraface-condensed-medium;
+  letter-spacing: 1px;
+  font-size: 19px;
+}
+
+::placeholder {
+  font-family: neutraface-condensed-medium;
+  letter-spacing: 1px;
+  font-size: 18px;
 }
 
 .section-7 input[type="submit"] {
-  color: #2B2C40;
-  font-family: Quicksand-Variable;
-  font-weight: bold;
+  background: #C2A794;
+  color: #fff;
+  font-family: Quicksand-Medium;
+  font-weight: 500;
+}
+
+@media (max-width:1615px) {
+  .section-7 .contactHome-container .contactHome-heading img {
+    height: 460px;
+  }
+
+}
+
+@media (max-width:700px) {
+  .section-7 .contactHome-container .contactHome-heading img {
+    height: 350px;
+  }
+
+  ::placeholder {
+    font-size: 15px;
+  }
 }
 
 /****************** Home Page Section- 7 **********************/
@@ -118,13 +155,16 @@
   width: 180px;
   height: auto;
 }
+
 .footer .footer-logo-instagram img {
   width: 40px;
   height: auto;
 }
+
 @media (max-width:768px) {
   .footer .footer-logo img {
     width: 120px;
   }
 }
+
 /****************** Footer **********************/

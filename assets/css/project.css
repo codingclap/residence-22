@@ -1,25 +1,189 @@
-.section-22 .project-header{
+/****************** Project Page Section- 21 **********************/
+.section-21 .project-header {
    height: 900px;
-   object-fit: cover; 
+   object-fit: cover;
 }
 
 @media (max-width: 1550px) {
-   .section-22 .project-header{
+   .section-21 .project-header {
       height: 750px;
    }
 }
+
 @media (max-width: 1440px) {
-   .section-22 .project-header{
+   .section-21 .project-header {
       height: 700px;
    }
 }
+
 @media (max-width: 1100px) {
-   .section-22 .project-header{
+   .section-21 .project-header {
       height: 600px;
    }
 }
+
 @media (max-width: 768px) {
-   .section-22 .project-header{
+   .section-21 .project-header {
       height: 500px;
    }
 }
+
+/****************** Project Page Section- 21 **********************/
+
+
+/****************** Project Page Section- 24 **********************/
+.section-24 .project-design-grid {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 0.75rem;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.section-24 .project-design-grid .design-large {
+   aspect-ratio: 11 / 9;
+}
+
+.section-24 .project-design-grid .design-large img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: block;
+}
+
+.section-24 .project-design-grid .design-small img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: block;
+}
+
+.section-24 .project-design-grid .design-right {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 0.75rem;
+}
+
+.section-24 .project-design-grid .design-small {
+   aspect-ratio: 3 / 3;
+}
+
+
+/* Desktop */
+@media (min-width: 680px) {
+   .section-24 .project-design-grid {
+      grid-template-columns: 1fr 1fr;
+      align-items: stretch;
+      /* both columns same height */
+   }
+
+   .section-24 .project-design-grid .design-large {
+      aspect-ratio: unset;
+      height: 100%;
+   }
+
+   .section-24 .project-design-grid .design-right {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.6fr 0.6fr;
+      /* 2 equal rows */
+      gap: 0.75rem;
+      height: 100%;
+      /* fill parent height */
+   }
+
+   .section-24 .project-design-grid .design-small {
+      aspect-ratio: unset;
+      /* let grid rows control height */
+      height: 100%;
+      /* fill the 1fr row */
+      min-height: 0;
+      /* prevent overflow */
+   }
+
+   /* anchor height via the large image */
+   .section-24 .project-design-grid .design-large {
+      aspect-ratio: 4 / 4;
+      height: auto;
+   }
+}
+
+/****************** Project Page Section- 24 **********************/
+
+/****************** Project Page Section- 25 **********************/
+
+.section-25 .features-border-before::before {
+   position: absolute;
+   content: '';
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 1px;
+   background-image: url(../images/project/line-1.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   z-index: +2;
+}
+
+/****************** Project Page Section- 25 **********************/
+
+
+/****************** Project Page Section- 27 **********************/
+.section-27 .Lifestyle-design-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section-27 .Lifestyle-design-grid .design-large {
+    aspect-ratio: 16 / 9;
+}
+
+.section-27 .Lifestyle-design-grid .design-large img,
+.section-27 .Lifestyle-design-grid .design-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.section-27 .Lifestyle-design-grid .design-right {
+    display: grid;
+    grid-template-columns: 1fr;  /* single column — 2 stacked */
+    gap: 0.75rem;
+}
+
+.section-27 .Lifestyle-design-grid .design-small {
+    aspect-ratio: 16 / 9;
+}
+
+/* Desktop */
+@media (min-width: 680px) {
+    .section-27 .Lifestyle-design-grid {
+        grid-template-columns: 1fr 1fr;  /* large left | 2 stacked right */
+        align-items: stretch;
+    }
+
+    .section-27 .Lifestyle-design-grid .design-large {
+        aspect-ratio: 3.4 / 3;
+        height: auto;
+    }
+
+    .section-27 .Lifestyle-design-grid .design-right {
+        grid-template-columns: 1fr;       /* single column */
+        grid-template-rows: 1fr 1fr;      /* 2 equal rows */
+        gap: 0.75rem;
+        height: 100%;                     /* match left height */
+    }
+
+    .section-27 .Lifestyle-design-grid .design-small {
+        aspect-ratio: unset;
+        height: 100%;
+        min-height: 0;
+    }
+}
+
+/****************** Project Page Section- 27 **********************/
