@@ -1,0 +1,70 @@
+/****************** Contact Page Section- 31 **********************/
+
+.section-31 .contact-top-banner img{
+    height: 430px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .section-31 .contact-top-banner img{
+        height: 340px;
+    }
+}
+@media (max-width: 765px) {
+    .section-31 .contact-top-banner img{
+        height: 300px;
+    }
+}
+@media (max-width: 500px) {
+    .section-31 .contact-top-banner img{
+        height: 250px;
+    }
+}
+
+/*** Contact form ***/
+.section-31 .contactUs-container img {
+  height: 445px;
+  object-fit: cover;
+}
+
+.section-31 .contactUs-container .contactUs-form input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  font-family: neutraface-condensed-medium;
+  letter-spacing: 1px;
+  font-size: 19px;
+}
+
+::placeholder {
+  font-family: neutraface-condensed-medium;
+  letter-spacing: 1px;
+  font-size: 19px;
+}
+
+.section-31 input[type="submit"] {
+  background: #C2A794;
+  color: #fff;
+  font-family: Quicksand-Medium;
+  font-weight: 500;
+}
+
+@media (max-width:1615px) {
+  .section-31 .contactUs-container img {
+    height: 460px;
+  }
+
+}
+
+@media (max-width:700px) {
+  .section-31 .contactUs-container img {
+    height: 350px;
+  }
+
+  ::placeholder {
+    font-size: 15px;
+  }
+}
+/*** Contact form ***/
+
+/****************** Contact Page Section- 31 **********************/

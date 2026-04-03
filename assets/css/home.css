@@ -149,22 +149,3 @@ input[type="tel"] {
 
 /****************** Home Page Section- 7 **********************/
 
-
-/****************** Footer **********************/
-.footer .footer-logo img {
-  width: 180px;
-  height: auto;
-}
-
-.footer .footer-logo-instagram img {
-  width: 40px;
-  height: auto;
-}
-
-@media (max-width:768px) {
-  .footer .footer-logo img {
-    width: 120px;
-  }
-}
-
-/****************** Footer **********************/

@@ -193,6 +193,7 @@ body {
 
 /*#################  Custom Fonts # ##################*/
 
+/*#################  Custom Overlay # ##################*/
 .card-overlay {
    background: linear-gradient(180deg, rgba(50, 45, 42, 0) 0%, rgba(50, 45, 42, 0.75) 50%, #322D2A 100%);
 }
@@ -200,6 +201,8 @@ body {
 .card-overlay-two {
    background: linear-gradient(180deg, rgba(50, 45, 42, 0) 0%, #322D2A 100%);
 }
+
+/*#################  Custom Overlay # ##################*/
 
 .text-capitalize {
    text-transform: capitalize;
@@ -209,7 +212,9 @@ body {
    text-transform: uppercase;
 }
 
-/*########## Default - Button One  ##########*/
+
+/*########## Default - Button ##########*/
+
 .default-btn {
    height: 46px;
 }
@@ -244,7 +249,35 @@ body {
    }
 }
 
-/*########## Home - Button One  ##########*/
+/*########## Home - Button ##########*/
+
+
+
+/*#################### Footer ####################**/
+.footer .footer-logo img {
+   width: 160px;
+   height: auto;
+}
+
+.footer .footer-logo-instagram img {
+   width: 40px;
+   height: auto;
+}
+
+@media (max-width:768px) {
+   .footer .footer-logo img {
+      width: 120px;
+   }
+}
+
+@media (max-width:500px) {
+   .footer .footer-logo img {
+      width: 120px;
+   }
+}
+
+/*#################### Footer ####################**/
+
 
 
 /*########## Custom Colors ##########*/
@@ -597,6 +630,10 @@ body {
    font-size: 18px
 }
 
+.text-19 {
+   font-size: 19px
+}
+
 .text-20 {
    font-size: 20px
 }
@@ -791,8 +828,16 @@ body {
       font-size: 20px;
    }
 
+   .sm\:text-22 {
+      font-size: 22px;
+   }
+
    .sm\:text-24 {
       font-size: 24px;
+   }
+
+   .sm\:text-26 {
+      font-size: 26px;
    }
 
    .sm\:text-28 {
@@ -917,8 +962,16 @@ body {
       font-size: 20px;
    }
 
+   .md\:text-22 {
+      font-size: 22px;
+   }
+
    .md\:text-24 {
       font-size: 24px;
+   }
+
+   .md\:text-26 {
+      font-size: 26px;
    }
 
    .md\:text-28 {
@@ -1039,8 +1092,16 @@ body {
       font-size: 20px;
    }
 
+   .lg\:text-22 {
+      font-size: 22px;
+   }
+
    .lg\:text-24 {
       font-size: 24px;
+   }
+
+   .lg\:text-26 {
+      font-size: 26px;
    }
 
    .lg\:text-28 {
@@ -1161,8 +1222,16 @@ body {
       font-size: 20px;
    }
 
+   .xl\:text-22 {
+      font-size: 22px;
+   }
+
    .xl\:text-24 {
       font-size: 24px;
+   }
+
+   .xl\:text-26 {
+      font-size: 26px;
    }
 
    .xl\:text-28 {
@@ -1285,6 +1354,10 @@ body {
 
    .\32xl\:text-24 {
       font-size: 24px;
+   }
+
+   .\32xl\:text-26 {
+      font-size: 26px;
    }
 
    .\32xl\:text-28 {
@@ -3922,12 +3995,15 @@ body {
 .w-16 {
    width: 16.666667%
 }
+
 .w-10 {
    width: 10%
 }
+
 .w-10 {
    width: 10%
 }
+
 .w-8 {
    width: 8.333333%
 }
