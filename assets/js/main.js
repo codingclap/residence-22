@@ -2,6 +2,7 @@
 // Custom Navbar Toggle 
   const hamburger   = document.getElementById('hamburger');
   const mobileMenu  = document.getElementById('mobileMenu');
+  const navlogo  = document.getElementById('nav-logo');
   const navEl       = document.querySelector('nav');
   const body       = document.querySelector('body');
  
@@ -14,10 +15,12 @@
        navEl.classList.add('fixed');
        navEl.classList.remove('absolute');
        body.classList.add('overflow-hidden');
+       navlogo.src="assets/images/residence-white-logo.svg";
     }else{
       navEl.classList.add('absolute');
       navEl.classList.remove('fixed');
        body.classList.remove('overflow-hidden');
+        navlogo.src="assets/images/residence-black-logo.svg";
     }
     
     if (!opening) {
