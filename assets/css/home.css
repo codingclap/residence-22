@@ -115,6 +115,7 @@ input[type="tel"] {
   font-family: neutraface-condensed-medium;
   letter-spacing: 1px;
   font-size: 19px;
+  border: 1px solid #C2A794;
 }
 
 ::placeholder {
@@ -148,4 +149,3 @@ input[type="tel"] {
 }
 
 /****************** Home Page Section- 7 **********************/
-
