@@ -117,8 +117,44 @@
         </div> -->
 
     </div>
+    <!-- ═══════════════════════════════ Header Section ═══════════════════════════════════════════ -->
 
+    <!-- ═══════════════════════════════ Header Section ═══════════════════════════════════════════ -->
+    <style>
+        .fixed-contact-buttons{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:50;display:flex;flex-direction:column;gap:8px;align-items:flex-end}.sticky-btn{width:48px;min-width:48px;height:48px;overflow:hidden;transition:width .35s;white-space:nowrap;background-color:#c2a794;border-radius:16px 0 0 16px;padding:0 10px 0 11px}.sticky-btn span{opacity:0;width:0;overflow:hidden;transition:.35s;font-family:Quicksand-SemiBold;letter-spacing:.05em;font-size:14px}.sticky-btn img{width:27px;height:27px}.sticky-btn:hover{width:140px}.sticky-btn:last-of-type:hover{width:170px}.sticky-btn:hover span{opacity:1;width:auto;margin-left:8px}
+    </style>
+    <div class="fixed-contact-buttons">
 
+        <a href="tel:+971564093335" class="sticky-btn flex items-center bg-[#cbb7a6] text-white rounded-l-xl shadow-lg">
+
+            <img src="assets/images/phone-icon.png" alt="Phone" class="w-5 h-5 min-w-[20px] object-contain">
+
+            <span class="text-sm font-medium uppercase">
+                Call US
+            </span>
+        </a>
+
+        <a href="mailto:info@residence22.ae"
+            class="sticky-btn flex items-center bg-[#cbb7a6] text-white rounded-l-xl shadow-lg">
+
+            <img src="assets/images/email-icon.png" alt="Email" class="w-5 h-5 min-w-[20px] object-contain">
+
+            <span class="text-sm font-medium uppercase">
+                Email US
+            </span>
+        </a>
+
+        <a href="https://wa.me/564093335"
+            class="sticky-btn flex items-center bg-[#cbb7a6] text-white rounded-l-xl shadow-lg">
+
+            <img src="assets/images/whatsapp-icon.png" alt="WhatsApp" class="w-5 h-5 min-w-[20px] object-contain">
+
+            <span class="text-sm font-medium uppercase">
+                CHAT WITH US
+            </span>
+        </a>
+
+    </div>
     <!-- ═══════════════════════════════ Header Section ═══════════════════════════════════════════ -->
 
 
@@ -614,29 +650,6 @@
         </div>
     </div>
 
-    <script>
-        // Auto open after 4 seconds
-        setTimeout(() => {
-            document.getElementById('timerBar').style.display = 'none';
-            document.getElementById('contactPopup').classList.add('show');
-            document.body.style.overflow = 'hidden';
-            document.documentElement.style.overflow = 'hidden';
-        }, 4000);
-
-        // Close on X button
-        document.getElementById('closeBtn').addEventListener('click', () => {
-            document.getElementById('contactPopup').classList.remove('show');
-            document.body.style.overflow = 'visible';
-            document.documentElement.style.overflow = 'visible';
-        });
-
-        // Close on backdrop click
-        document.getElementById('contactPopup').addEventListener('click', function (e) {
-            if (e.target === this) this.classList.remove('show');
-             document.body.style.overflow = 'visible';
-            document.documentElement.style.overflow = 'visible';
-        });
-    </script>
 
     <!-- ═══════════════════════════════ Popup Form ═══════════════════════════════════════════ -->
 
@@ -646,8 +659,6 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/gsap.min.js"></script>
     <script src="assets/js/ScrollTrigger.min.js"></script>
-
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
