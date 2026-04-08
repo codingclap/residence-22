@@ -1,32 +1,37 @@
+.contactPopup .contactPopup-heading{
+    z-index: +1;
+}
 .contactPopup .contactPopup-heading img {
     height: 445px;
     object-fit: cover;
 }
 
-.contactPopup .contactPopup-form {
-    background: rgba(235, 227, 224, 1);
+.contactPopup .contactPopup-form { 
     border-radius: 17px;
+    z-index: +1;
 }
 
 .contactPopup .contactPopup-form input[type="text"],
 input[type="email"],
 input[type="tel"] {
-    font-family: neutraface-condensed-medium;
+    font-family: CormorantGaramond-Medium;
     letter-spacing: 1px;
     font-size: 19px;
     border: 1px solid #C2A794;
+    color: #000;
 }
 
-::placeholder {
-    font-family: neutraface-condensed-medium;
+.contactPopup ::placeholder {
+    font-family: CormorantGaramond-Medium;
     letter-spacing: 1px;
-    font-size: 18px;
+    font-size: 15px;
+    color: #000;
 }
 
 .contactPopup input[type="submit"] {
     background: #C2A794;
     color: #fff;
-    font-family: Quicksand-Medium;
+    font-family: CormorantGaramond-Medium;
     font-weight: 500;
 }
 
@@ -42,8 +47,9 @@ input[type="tel"] {
         height: 350px;
     }
 
-    ::placeholder {
+    .contactPopup ::placeholder {
         font-size: 13px;
+        color: #000;
     }
 
 }
@@ -57,7 +63,7 @@ input[type="tel"] {
 #contactPopup.show {
     opacity: 1;
     pointer-events: all;
-    background: #ffffff;
+    background: #ebe3e0e0;
     backdrop-filter: blur(15px);
     z-index: +2222;
 }
@@ -66,12 +72,24 @@ input[type="tel"] {
     transform: scale(1) translateY(0);
 }
 
-.popup-modal {
+.contactPopup .popup-modal {
     transform: scale(0.92) translateY(20px);
     transition: transform 0.5s cubic-bezier(.22, .68, 0, 1.2);
 }
-
-.close-x{
+.contactPopup .popup-modal::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 84%;
+  background-image: url(../images/contact/22-logo.webp);
+  z-index: 0;
+}
+.close-x {
     width: 42px;
     height: 42px;
     top: 10px;
