@@ -137,7 +137,7 @@ input[type="email"],
 input[type="tel"] {
   font-family: CormorantGaramond-Medium;
   letter-spacing: 1px;
-  font-size: 19px;
+  font-size: 18px;
   border: 1px solid #C2A794;
   color: #000;
 }
@@ -145,7 +145,7 @@ input[type="tel"] {
 .section-7 ::placeholder {
   font-family: CormorantGaramond-Medium;
   letter-spacing: 1px;
-  font-size: 15px;
+  font-size: 16px;
   color: #000;
 }
 

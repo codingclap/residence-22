@@ -31,21 +31,23 @@
 .section-31 .contactUs-container .contactUs-form input[type="text"],
 input[type="email"],
 input[type="tel"] {
-  font-family: neutraface-condensed-medium;
+  font-family: CormorantGaramond-Medium;
   letter-spacing: 1px;
-  font-size: 19px;
+  font-size: 18px;
+  color: #000;
 }
 
 ::placeholder {
-  font-family: neutraface-condensed-medium;
+  font-family: CormorantGaramond-Medium;
   letter-spacing: 1px;
-  font-size: 19px;
+  font-size: 16px;
+  color: #000;
 }
 
 .section-31 input[type="submit"] {
   background: #C2A794;
   color: #fff;
-  font-family: Quicksand-Medium;
+  font-family: CormorantGaramond-Medium;
   font-weight: 500;
 }
 
