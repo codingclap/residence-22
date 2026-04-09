@@ -116,7 +116,7 @@ setTimeout(() => {
   document.body.style.position = 'fixed';
   document.body.style.top = `-${scrollPosition}px`;
   document.body.style.width = '100%';
-}, 4000);
+}, 6000);
 
 // Close function
 function closePopup() {
