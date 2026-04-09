@@ -11,16 +11,29 @@ hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('open');
   const opening = !mobileMenu.classList.contains('open');
   navEl.classList.toggle('menu-open', opening);
-  if (navEl.classList.contains('absolute')) {
-    navEl.classList.add('fixed');
-    navEl.classList.remove('absolute');
-    body.classList.add('overflow-hidden');
-    navlogo.src = "assets/images/residence-white-logo.svg";
+
+  if (navlogo.classList.contains('black-logo')) {
+    if (navEl.classList.contains('absolute')) {
+      navEl.classList.add('fixed');
+      navEl.classList.remove('absolute');
+      body.classList.add('overflow-hidden');
+      navlogo.src = "assets/images/residence-white-logo.svg";
+    } else {
+      navEl.classList.add('absolute');
+      navEl.classList.remove('fixed');
+      body.classList.remove('overflow-hidden');
+      navlogo.src = "assets/images/residence-black-logo.svg";
+    }
   } else {
-    navEl.classList.add('absolute');
-    navEl.classList.remove('fixed');
-    body.classList.remove('overflow-hidden');
-    navlogo.src = "assets/images/residence-black-logo.svg";
+    if (navEl.classList.contains('absolute')) {
+      navEl.classList.add('fixed');
+      navEl.classList.remove('absolute');
+      body.classList.add('overflow-hidden'); 
+    } else {
+      navEl.classList.add('absolute');
+      navEl.classList.remove('fixed');
+      body.classList.remove('overflow-hidden'); 
+    }
   }
 
   if (!opening) {
