@@ -435,7 +435,71 @@
 
 
     <!-- ═══════════════════════════════ Section - 26 ═══════════════════════════════════════════ -->
+    <style>
+        /* Fix the Swiper container */
+        .section-26 {
+            box-sizing: border-box;
+            overflow: hidden;
+            /* stops swiper from pushing section width */
+        }
 
+        .floorplanSlider {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
+            /* Critical — clips the zoomed slides */
+        }
+
+        .floorplanSlider .swiper-wrapper {
+            width: 100%
+        }
+
+        /* Fix the slides */
+        .floorplanSlider .swiper-slide {
+            width: 100% !important;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Fix the images */
+        .floorplanSlider .slide-img {
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            display: block;
+
+        }
+  
+        .floorplanSlider .custom-prev,
+        .floorplanSlider .custom-next {
+            position: absolute;
+            z-index: 10;
+            width: 33px;
+            /* top is set by JS */
+        }
+
+        .floorplanSlider .custom-prev {
+            left: 0px;
+        }
+
+        .floorplanSlider .custom-next {
+            right: 0px;
+        }
+
+        .floorplanSlider .custom-prev img,
+        .floorplanSlider .custom-next img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 767px) {
+            .floorplanSlider .custom-prev,
+            .floorplanSlider .custom-next {
+                width: 24px;
+            }
+        }
+    </style>
     <section
         class="section-26 mx-1920 flex flex-col items-center justify-center w-full bg-white bg-opacity-100 px-6 sm:px-8 lg:px-14 pt-5 sm:pt-10 lg:pt-10 xl:pt-16 pb-20 sm:pb-20 lg:pb-24">
 
@@ -448,76 +512,152 @@
                     data-aos="fade-up" data-aos-duration="2000"> exclusive collection of canal-front grand
                     penthouses</h2>
                 <p class="font-Cormorant-Bold text-blue leading-snug text-18 text-center lg:text-22" data-aos="fade-up"
-                    data-aos-duration="2000">It offers residents unparalleled access to Dubai’s
-                    premier retail and leisure destinations. <span class="text-19 text-center lg:text-24">A limited
-                        number of spacious 4 Bedroom Penthouses, ranging
-                        between 4,700 sq.ft. to 4,900 sq.ft.</span></p>
+                    data-aos-duration="2000">The strategically crafted façade guarantees absolute privacy, creating an
+                    uncompromised address for those who demand only the absolute best.
+                    This limited collection features just 4 grand penthouses, with each sweeping residence commanding an
+                    entire private floor of 4,781-4,922 sq.ft. </span></p>
 
             </div>
 
+            <div class="swiper floorplanSlider overflow-hidden">
+                <div class="swiper-wrapper">
 
-            <div
-                class="flex flex-col w-full items-center justify-center pt-10 sm:pt-10 lg:pt-12 xl:pt-14 gap-10 sm:gap-12 lg:gap-15 xl:gap-15">
+                    <!-------- Slide -1 ------->
+                    <div class="swiper-slide">
+                        <!-------- Floorplan -1  ------->
+                        <div
+                            class="flex flex-col w-full items-center justify-center pt-10 sm:pt-10 lg:pt-12 xl:pt-14 gap-12 sm:gap-12 lg:gap-15 xl:gap-15">
 
-                <div class="flex w-full md:w-full justify-center items-center">
-                    <img class="w-100" src="assets/images/project/the-floorplan.svg" data-aos="fade-up"
-                        data-aos-duration="2000" alt="the-concept" />
+                            <div
+                                class="flex floorplan-img-div w-full md:w-85 lg:w-85 xl:w-90 justify-center items-center">
+                                <img class="w-100" src="assets/images/project/floorplan-1.png" alt="the-concept" />
+                            </div>
+
+                            <div class="flex flex-col w-full md:w-85 lg:w-85 xl:w-80 justify-center items-center">
+                                <h2 class="font-Cormorant-Bold max-w-full text-blue text-center text-uppercase leading-tight mb-2 font-normal text-30 sm:text-32 md:text-36 lg:text-44 xl:text-52 2xl:text-52"
+                                    data-aos="fade-up" data-aos-duration="2000" style="word-break: break-word"><span
+                                        class="font-Quicksand-Medium">4</span> BEDROOM PENTHOUSE</h2>
+                                <p class="font-Cormorant-SemiBold max-w-full text-blue text-center leading-tight mb-4 font-normal text-20 sm:text-28 md:text-28 lg:text-28 xl:text-28 2xl:text-28"
+                                    data-aos="fade-up" data-aos-duration="2000" style="word-break: break-word">TOTAL
+                                    AREA | <span class="font-Quicksand-Medium">4,781-4,922</span> sq feet</p>
+
+                                <!----- STUDIO 1 ---->
+                                <div
+                                    class="flex flex-col md:flex-row w-full items-start justify-center pt-5 sm:pt-8 lg:pt-12 xl:pt-14">
+
+                                    <div class="flex flex-col w-full md:w-75 lg:w-60 xl:w-40">
+                                        <ul style="list-style: disc; margin: 0px 0px 0px 50px;" data-aos="fade-up"
+                                            data-aos-duration="2000">
+                                            <li
+                                                class="font-Cormorant-SemiBold text-blue mb-2 text-19 sm:text-20 md:text-22 lg:text-24 xl:text-26 2xl:text-26">
+                                                Kitchen & Living Space</li>
+                                            <li
+                                                class="font-Cormorant-SemiBold text-blue mb-2 text-19 sm:text-20 md:text-22 lg:text-24 xl:text-26 2xl:text-26">
+                                                Master Bedroom</li>
+                                            <li
+                                                class="font-Cormorant-SemiBold text-blue mb-2 text-19 sm:text-20 md:text-22 lg:text-24 xl:text-26 2xl:text-26">
+                                                Master Bathroom</li>
+                                            <li
+                                                class="font-Cormorant-SemiBold text-blue mb-2 text-19 sm:text-20 md:text-22 lg:text-24 xl:text-26 2xl:text-26">
+                                                Balcony</li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex flex-col w-full md:w-75 lg:w-60 xl:w-40">
+                                        <ul style="list-style: disc; margin: 0px 0px 0px 50px;" data-aos="fade-up"
+                                            data-aos-duration="2000">
+                                            <li
+                                                class="font-Cormorant-SemiBold text-blue mb-2 text-19 sm:text-20 md:text-22 lg:text-24 xl:text-26 2xl:text-26">
+                                                En-suite Bedroom 1</li>
+                                            <li
+                                                class="font-Cormorant-SemiBold text-blue mb-2 text-19 sm:text-20 md:text-22 lg:text-24 xl:text-26 2xl:text-26">
+                                                En-suite Bedroom 2</li>
+                                            <li
+                                                class="font-Cormorant-SemiBold text-blue mb-2 text-19 sm:text-20 md:text-22 lg:text-24 xl:text-26 2xl:text-26">
+                                                En-suite Bedroom 3</li>
+                                            <li
+                                                class="font-Cormorant-SemiBold text-blue mb-2 text-19 sm:text-20 md:text-22 lg:text-24 xl:text-26 2xl:text-26">
+                                                Nanny’s Room</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-------- End of Floorplan -1  ------->
+
+                    </div><!-------- End of Slide -1 ------->
+
+                    <!-------- Slide -2 ------->
+                    <div class="swiper-slide">
+                        <!-------- Floorplan -2  ------->
+                        <div
+                            class="flex flex-col w-full items-center justify-center pt-10 sm:pt-12 lg:pt-12 xl:pt-14 gap-10 sm:gap-12 lg:gap-15 xl:gap-15">
+
+                            <div
+                                class="flex floorplan-img-div w-full md:w-85 lg:w-85 xl:w-90 justify-center items-center">
+                                <img class="w-100" src="assets/images/project/floorplan-2.png" alt="the-concept" />
+                            </div>
+
+                            <div class="flex flex-col w-full md:w-85 lg:w-85 xl:w-80 justify-center items-center">
+                                <h2 class="font-Cormorant-Bold max-w-full text-blue text-center text-uppercase leading-tight mb-2 font-normal text-30 sm:text-32 md:text-36 lg:text-44 xl:text-52 2xl:text-52"
+                                    data-aos="fade-up" data-aos-duration="2000" style="word-break: break-word"><span
+                                        class="font-Quicksand-Medium">2</span> BEDROOM PENTHOUSE</h2>
+                                <p class="font-Cormorant-SemiBold max-w-full text-blue text-center leading-tight mb-4 font-normal text-20 sm:text-28 md:text-28 lg:text-28 xl:text-28 2xl:text-28"
+                                    data-aos="fade-up" data-aos-duration="2000" style="word-break: break-word">TOTAL
+                                    AREA | <span class="font-Quicksand-Medium">3983</span> sq feet</p>
+
+                                <!----- STUDIO 1 ---->
+                                <div
+                                    class="flex flex-col md:flex-row w-full items-start justify-center pt-5 sm:pt-8 lg:pt-12 xl:pt-14">
+
+                                    <div class="flex flex-col w-full md:w-75 lg:w-60 xl:w-40">
+                                        <ul style="list-style: disc; margin: 0px 0px 0px 50px;" data-aos="fade-up"
+                                            data-aos-duration="2000">
+                                            <li
+                                                class="font-Cormorant-SemiBold text-blue mb-2 text-19 sm:text-20 md:text-22 lg:text-24 xl:text-26 2xl:text-26">
+                                                Kitchen & Living Space</li>
+                                            <li
+                                                class="font-Cormorant-SemiBold text-blue mb-2 text-19 sm:text-20 md:text-22 lg:text-24 xl:text-26 2xl:text-26">
+                                                Master Bedroom</li>
+                                            <li
+                                                class="font-Cormorant-SemiBold text-blue mb-2 text-19 sm:text-20 md:text-22 lg:text-24 xl:text-26 2xl:text-26">
+                                                Master Bathroom</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="flex flex-col w-full md:w-75 lg:w-60 xl:w-40">
+                                        <ul style="list-style: disc; margin: 0px 0px 0px 50px;" data-aos="fade-up"
+                                            data-aos-duration="2000">
+                                            <li
+                                                class="font-Cormorant-SemiBold text-blue mb-2 text-19 sm:text-20 md:text-22 lg:text-24 xl:text-26 2xl:text-26">
+                                                Balcony</li>
+                                            <li
+                                                class="font-Cormorant-SemiBold text-blue mb-2 text-19 sm:text-20 md:text-22 lg:text-24 xl:text-26 2xl:text-26">
+                                                En-suite Bedroom </li>
+                                            <li
+                                                class="font-Cormorant-SemiBold text-blue mb-2 text-19 sm:text-20 md:text-22 lg:text-24 xl:text-26 2xl:text-26">
+                                                Nanny’s Room</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-------- End of Floorplan -2  ------->
+
+                    </div><!-------- End of Slide -2 ------->
+
                 </div>
 
-                <div class="flex flex-col w-full md:w-full lg:w-80 xl:w-75 justify-center items-center">
-                    <h2 class="font-Cormorant-Bold text-blue text-center text-uppercase leading-tight mb-2 font-normal text-30 sm:text-32 md:text-36 lg:text-44 xl:text-52 2xl:text-52"
-                        data-aos="fade-up" data-aos-duration="2000">Studio Suites</h2>
-                    <p class="font-Quicksand-SemiBold text-blue leading-tight mb-4 font-normal text-20 sm:text-28 md:text-28 lg:text-28 xl:text-28 2xl:text-28"
-                        data-aos="fade-up" data-aos-duration="2000">TOTAL AREA | 4798 sq feet</p>
-
-                    <!----- STUDIO 1 ---->
-                    <div
-                        class="flex flex-col md:flex-row w-full items-start justify-center pt-5 sm:pt-8 lg:pt-12 xl:pt-14">
-
-                        <div class="flex flex-col w-full md:w-75 lg:w-60 xl:w-40">
-                            <ul style="list-style: disc; margin: 0px 0px 0px 50px;" data-aos="fade-up"
-                                data-aos-duration="2000">
-                                <li
-                                    class="font-Quicksand-SemiBold text-blue mb-2 text-19 sm:text-20 md:text-22 lg:text-24 xl:text-26 2xl:text-26">
-                                    Kitchen & Living Space</li>
-                                <li
-                                    class="font-Quicksand-SemiBold text-blue mb-2 text-19 sm:text-20 md:text-22 lg:text-24 xl:text-26 2xl:text-26">
-                                    Master Bedroom</li>
-                                <li
-                                    class="font-Quicksand-SemiBold text-blue mb-2 text-19 sm:text-20 md:text-22 lg:text-24 xl:text-26 2xl:text-26">
-                                    Master Bathroom</li>
-                                <li
-                                    class="font-Quicksand-SemiBold text-blue mb-2 text-19 sm:text-20 md:text-22 lg:text-24 xl:text-26 2xl:text-26">
-                                    Balcony</li>
-                            </ul>
-                        </div>
-                        <div class="flex flex-col w-full md:w-75 lg:w-60 xl:w-40">
-                            <ul style="list-style: disc; margin: 0px 0px 0px 50px;" data-aos="fade-up"
-                                data-aos-duration="2000">
-                                <li
-                                    class="font-Quicksand-SemiBold text-blue mb-2 text-19 sm:text-20 md:text-22 lg:text-24 xl:text-26 2xl:text-26">
-                                    En-suite Bedroom 1</li>
-                                <li
-                                    class="font-Quicksand-SemiBold text-blue mb-2 text-19 sm:text-20 md:text-22 lg:text-24 xl:text-26 2xl:text-26">
-                                    En-suite Bedroom 2</li>
-                                <li
-                                    class="font-Quicksand-SemiBold text-blue mb-2 text-19 sm:text-20 md:text-22 lg:text-24 xl:text-26 2xl:text-26">
-                                    En-suite Bedroom 3</li>
-                                <li
-                                    class="font-Quicksand-SemiBold text-blue mb-2 text-19 sm:text-20 md:text-22 lg:text-24 xl:text-26 2xl:text-26">
-                                    Nanny’s Room</li>
-                            </ul>
-                        </div>
-
-
-                    </div>
-
-
-
-
+                <div class="custom-prev cursor-pointer">
+                    <img src="assets/images/project/arrow-left.png" alt="">
                 </div>
 
-            </div>
+                <div class="custom-next cursor-pointer">
+                    <img src="assets/images/project/arrow-right.png" alt="">
+                </div>
+
+            </div><!-------- End of floorplanSlider ------->
+
 
             <div class="flex flex-col pt-2 sm:pt-10 lg:pt-14 xl:pt-14">
                 <div class="flex default-btn mt-10" data-aos="fade-up" data-aos-duration="2000">
@@ -677,42 +817,60 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-        const swiper = new Swiper('.lifestyle-swiper', {
+        function positionFloorplanArrows() {
+            const imgDiv = document.querySelector('.floorplanSlider .swiper-slide-active .floorplan-img-div');
+            const slider = document.querySelector('.floorplanSlider');
+            const prev = document.querySelector('.floorplanSlider .custom-prev');
+            const next = document.querySelector('.floorplanSlider .custom-next');
+
+            if (!imgDiv || !slider || !prev || !next) return;
+
+            const imgRect = imgDiv.getBoundingClientRect();
+            const sliderRect = slider.getBoundingClientRect();
+            const isTablet = window.innerWidth <= 767; // adjust breakpoint as needed
+
+            if (isTablet) {
+                // Move arrows to bottom of image
+                const arrowTop = (imgRect.top - sliderRect.top) + imgRect.height + 16; // 16px gap below image
+
+                prev.style.top = arrowTop + 'px';
+                next.style.top = arrowTop + 'px';
+                prev.style.transform = 'translateY(0)';
+                next.style.transform = 'translateY(0)';
+
+                // Position left and right with space between
+                prev.style.left = '0';
+                next.style.right = '0';
+
+            } else {
+                // Desktop — center on image
+                const arrowTop = (imgRect.top - sliderRect.top) + (imgRect.height / 2);
+
+                prev.style.top = arrowTop + 'px';
+                next.style.top = arrowTop + 'px';
+                prev.style.transform = 'translateY(-50%)';
+                next.style.transform = 'translateY(-50%)';
+
+                prev.style.left = '0';
+                next.style.right = '0';
+            }
+        }
+
+        window.addEventListener('load', positionFloorplanArrows);
+        window.addEventListener('resize', positionFloorplanArrows);
+
+        const floorplanSlider = new Swiper('.floorplanSlider', {
             loop: true,
-            centeredSlides: true,
-            slidesPerView: 1.8,
-            spaceBetween: 20,
+            slidesPerView: 1,
+            observer: true,
+            observeParents: true,
             navigation: {
-                prevEl: '.lifestyle-prev',
-                nextEl: '.lifestyle-next',
-            },
-            speed: 1000,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true,
-            },
-            grabCursor: false,
-            simulateTouch: false,
-            allowTouchMove: false,
-            breakpoints: {
-                300: { slidesPerView: 1.2, spaceBetween: 12 },
-                320: { slidesPerView: 1.3, spaceBetween: 12 },
-                375: { slidesPerView: 1.3, spaceBetween: 13 },
-                425: { slidesPerView: 1.3, spaceBetween: 15 },
-                530: { slidesPerView: 1.3, spaceBetween: 15 },
-                640: { slidesPerView: 1.5, spaceBetween: 15 },
-                768: { slidesPerView: 1.5, spaceBetween: 18 },
-                1024: { slidesPerView: 1.8, spaceBetween: 20 },
-                1200: { slidesPerView: 1.8, spaceBetween: 30 },
-                1400: { slidesPerView: 1.8, spaceBetween: 40 },
+                prevEl: '.floorplanSlider .custom-prev',
+                nextEl: '.floorplanSlider .custom-next',
             },
             on: {
-                slideChange: function () {
-                    const activeSlide = this.slides[this.activeIndex];
-                    const label = activeSlide.getAttribute('data-label');
-                    document.getElementById('slide-label').textContent = label;
-                }
+                init: positionFloorplanArrows,
+                slideChange: positionFloorplanArrows,
             }
         });
     </script>

@@ -121,7 +121,58 @@
 
     <!-- ═══════════════════════════════ Header Section ═══════════════════════════════════════════ -->
     <style>
-        .fixed-contact-buttons{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:50;display:flex;flex-direction:column;gap:8px;align-items:flex-end}.sticky-btn{width:48px;min-width:48px;height:48px;overflow:hidden;transition:width .35s;white-space:nowrap;background-color:#c2a794;border-radius:16px 0 0 16px;padding:0 10px 0 11px}.sticky-btn span{opacity:0;width:0;overflow:hidden;transition:.35s;font-family:Quicksand-SemiBold;letter-spacing:.05em;font-size:14px}.sticky-btn img{width:27px;height:27px}.sticky-btn:hover{width:140px}.sticky-btn:last-of-type:hover{width:170px}.sticky-btn:hover span{opacity:1;width:auto;margin-left:8px}
+        .fixed-contact-buttons {
+            position: fixed;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 50;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: flex-end
+        }
+
+        .sticky-btn {
+            width: 48px;
+            min-width: 48px;
+            height: 48px;
+            overflow: hidden;
+            transition: width .35s;
+            white-space: nowrap;
+            background-color: #c2a794;
+            border-radius: 16px 0 0 16px;
+            padding: 0 10px 0 11px
+        }
+
+        .sticky-btn span {
+            opacity: 0;
+            width: 0;
+            overflow: hidden;
+            transition: .35s;
+            font-family: Quicksand-SemiBold;
+            letter-spacing: .05em;
+            font-size: 14px
+        }
+
+        .sticky-btn img {
+            width: 27px;
+            height: 27px
+        }
+
+        .sticky-btn:hover {
+            width: 140px
+        }
+
+        .sticky-btn:last-of-type:hover {
+            width: 170px
+        }
+
+        .sticky-btn:hover span {
+            opacity: 1;
+            width: auto;
+            margin-left: 8px
+        }
     </style>
     <div class="fixed-contact-buttons">
 
@@ -159,10 +210,48 @@
 
 
     <!-- ═══════════════════════════════ Section - One ═══════════════════════════════════════════ -->
-
-    <section class="section-1 relative flex flex-col mx-1920 items-center h-screen mx-auto w-full bg-cover"
+    <style>
+        .section-1 video {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* same as background-size: cover */
+            object-position: right center;
+            /* matches your original background-position */
+            z-index: 0;
+        }
+    </style>
+    <!-- <section class="section-1 relative flex flex-col mx-1920 items-center h-screen mx-auto w-full bg-cover"
         style="background-image: url('assets/images/home/banner-image.webp');background-position: right center;">
 
+        <div class="z-20 w-full px-5 sm:px-5 lg:px-14 pt-8 pb-12 sm:pb-20 md:pb-20 lg:pb-20">
+            <div class="w-full text-center">
+                <h2 class="font-parisienne text-blue leading-tight mb-2 font-normal text-64 sm:text-64 md:text-64 lg:text-84 xl:text-84 2xl:text-96"
+                    data-aos="fade-up" data-aos-duration="2000">
+                    P<span class="font-Cormorant-Regular">enthouse</span> L<span
+                        class="font-Cormorant-Regular">iving</span></h2>
+                <p class="font-Cormorant-SemiBold text-blue leading-normal text-uppercase text-17 lg:text-18"
+                    data-aos="fade-up" data-aos-duration="2000">Residence
+                    22 seamlessly
+                    blends the sophistication of a five-star hotel with the<br class="hidden lg:block"> privacy and
+                    comfort of a residential property.</p>
+            </div>
+        </div>
+
+    </section> -->
+    <section class="section-1 relative flex flex-col mx-1920 items-center h-screen mx-auto w-full overflow-hidden">
+
+        <!--  Background Video -->
+        <video class="absolute inset-0 w-full h-full object-cover z-0" autoplay muted loop playsinline preload="auto">
+            <source src="assets/images/main-intro.mp4" type="video/mp4">
+        </video>
+
+        <!-- Optional dark overlay — remove if not needed -->
+        <div class="absolute inset-0 bg-black bg-opacity-20 z-10"></div>
+
+        <!-- Content — z-20 keeps it above video -->
         <div class="z-20 w-full px-5 sm:px-5 lg:px-14 pt-8 pb-12 sm:pb-20 md:pb-20 lg:pb-20">
             <div class="w-full text-center">
                 <h2 class="font-parisienne text-blue leading-tight mb-2 font-normal text-64 sm:text-64 md:text-64 lg:text-84 xl:text-84 2xl:text-96"
