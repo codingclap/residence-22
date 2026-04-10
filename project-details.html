@@ -127,10 +127,61 @@
     <!-- ═══════════════════════════════ Header Section ═══════════════════════════════════════════ -->
 
 
-    
+
     <!-- ═══════════════════════════════ Sticky Button ═══════════════════════════════════════════ -->
     <style>
-       .fixed-contact-buttons{position:fixed;right:0;top:70%;transform:translateY(-50%);z-index:50;display:flex;flex-direction:column;gap:8px;align-items:flex-end}.sticky-btn{width:48px;min-width:48px;height:48px;overflow:hidden;transition:width .35s;white-space:nowrap;background-color:#c2a794;border-radius:16px 0 0 16px;padding:0 10px 0 11px}.sticky-btn span{opacity:0;width:0;overflow:hidden;transition:.35s;font-family:Quicksand-SemiBold;letter-spacing:.05em;font-size:14px}.sticky-btn img{width:27px;height:27px}.sticky-btn:hover{width:140px}.sticky-btn:last-of-type:hover{width:170px}.sticky-btn:hover span{opacity:1;width:auto;margin-left:8px}
+        .fixed-contact-buttons {
+            position: fixed;
+            right: 0;
+            top: 70%;
+            transform: translateY(-50%);
+            z-index: 50;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: flex-end
+        }
+
+        .sticky-btn {
+            width: 48px;
+            min-width: 48px;
+            height: 48px;
+            overflow: hidden;
+            transition: width .35s;
+            white-space: nowrap;
+            background-color: #c2a794;
+            border-radius: 16px 0 0 16px;
+            padding: 0 10px 0 11px
+        }
+
+        .sticky-btn span {
+            opacity: 0;
+            width: 0;
+            overflow: hidden;
+            transition: .35s;
+            font-family: Quicksand-SemiBold;
+            letter-spacing: .05em;
+            font-size: 14px
+        }
+
+        .sticky-btn img {
+            width: 27px;
+            height: 27px
+        }
+
+        .sticky-btn:hover {
+            width: 140px
+        }
+
+        .sticky-btn:last-of-type:hover {
+            width: 170px
+        }
+
+        .sticky-btn:hover span {
+            opacity: 1;
+            width: auto;
+            margin-left: 8px
+        }
     </style>
     <div class="fixed-contact-buttons">
 
@@ -166,7 +217,7 @@
     </div>
     <!-- ═══════════════════════════════ Sticky Button ═══════════════════════════════════════════ -->
 
-    
+
     <!-- ═══════════════════════════════ Section - 21 ═══════════════════════════════════════════ -->
 
 
@@ -543,14 +594,7 @@
                             </div>
                         </div>
                         <!-------- End of Floorplan -1  ------->
-                        <div class="flex flex-col pt-2 sm:pt-10 lg:pt-14 xl:pt-14">
-                            <div class="flex justify-center default-btn mt-10" data-aos="fade-up"
-                                data-aos-duration="2000">
-                                <a href="#"
-                                    class="btn-primary text-center text-uppercase bg-blue bg-opacity-100 px-6 sm:px-7 md:px-7 lg:px-7 xl:px-7 py-4">Download
-                                    Brochure</a>
-                            </div>
-                        </div>
+
                     </div><!-------- End of Slide -1 ------->
 
                     <!-------- Slide -2 ------->
@@ -576,7 +620,8 @@
                                 <div
                                     class="flex flex-col md:flex-row w-full items-start justify-center pt-5 sm:pt-8 lg:pt-12 xl:pt-14">
 
-                                    <div class="flex flex-col items-start sm:items-start md:items-center lg:items-center w-full md:w-75 lg:w-60 xl:w-40">
+                                    <div
+                                        class="flex flex-col items-start sm:items-start md:items-center lg:items-center w-full md:w-75 lg:w-60 xl:w-40">
                                         <ul style="list-style: disc; margin: 0px 0px 0px 50px;" data-aos="fade-up"
                                             data-aos-duration="2000">
                                             <li
@@ -591,7 +636,8 @@
 
                                         </ul>
                                     </div>
-                                    <div class="flex flex-col items-start sm:items-start md:items-center lg:items-center w-full md:w-75 lg:w-60 xl:w-40">
+                                    <div
+                                        class="flex flex-col items-start sm:items-start md:items-center lg:items-center w-full md:w-75 lg:w-60 xl:w-40">
                                         <ul style="list-style: disc; margin: 0px 0px 0px 50px;" data-aos="fade-up"
                                             data-aos-duration="2000">
                                             <li
@@ -611,14 +657,7 @@
                         </div>
                         <!-------- End of Floorplan -2  ------->
 
-                        <div class="flex flex-col pt-2 sm:pt-10 lg:pt-14 xl:pt-14">
-                            <div class="flex justify-center default-btn mt-10" data-aos="fade-up"
-                                data-aos-duration="2000">
-                                <a href="#"
-                                    class="btn-primary text-center text-uppercase bg-blue bg-opacity-100 px-6 sm:px-7 md:px-7 lg:px-7 xl:px-7 py-4">Download
-                                    Brochure</a>
-                            </div>
-                        </div>
+
                     </div><!-------- End of Slide -2 ------->
 
                 </div>
@@ -635,7 +674,13 @@
             </div><!-------- End of floorplanSlider ------->
 
 
-
+            <div class="flex flex-col pt-2 sm:pt-10 lg:pt-14 xl:pt-14">
+                <div class="flex justify-center default-btn mt-10" data-aos="fade-up" data-aos-duration="2000">
+                    <a href="#"
+                        class="btn-primary text-center text-uppercase bg-blue bg-opacity-100 px-6 sm:px-7 md:px-7 lg:px-7 xl:px-7 py-4">Download
+                        Brochure</a>
+                </div>
+            </div>
 
         </div>
     </section>
