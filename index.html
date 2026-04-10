@@ -683,6 +683,7 @@
 
         </div>
     </footer>
+
     <!-- ═══════════════════════════════ Footer ═══════════════════════════════════════════ -->
 
     <!-- ═══════════════════════════════ Popup Form ═══════════════════════════════════════════ -->
@@ -772,7 +773,76 @@
     </div>
     <!-- ═══════════════════════════════ Popup Form ═══════════════════════════════════════════ -->
 
+    <!-- ═══════════════════════════════ Back To Top ═══════════════════════════════════════════ -->
+    <style>
+        #backToTop {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: #C2A794;
+            color: #fff;
+            font-size: 22px;
+            border: none;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            transition: background-color 0.3s ease;
+        }
 
+        #backToTop:hover {
+            background-color: #C2A794;
+        }
+    </style>
+    <button id="backToTop"> <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+            fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg></button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const btn = document.getElementById("backToTop");
+
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 800) {
+                    btn.style.display = "flex";
+                } else {
+                    btn.style.display = "none";
+                }
+            });
+
+            btn.addEventListener("click", function () {
+                const duration = 800; // ms — increase for slower
+                const start = window.scrollY;
+                const startTime = performance.now();
+
+                function scroll(currentTime) {
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+
+                    // Ease in out effect
+                    const ease = progress < 0.5
+                        ? 2 * progress * progress
+                        : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+
+                    window.scrollTo(0, start * (1 - ease));
+
+                    if (progress < 1) {
+                        requestAnimationFrame(scroll);
+                    }
+                }
+
+                requestAnimationFrame(scroll);
+            });
+
+        });
+    </script>
+    <!-- ═══════════════════════════════ Back To Top ═══════════════════════════════════════════ -->
 
     <script src="assets/js/flowbite.min.js"></script>
     <script src="assets/js/main.js"></script>
