@@ -1,18 +1,18 @@
 /****************** Project Page Section- 21 **********************/
 .section-21 .project-header {
-   height: 900px;
+   height: 720px;
    object-fit: cover;
 }
 
 @media (max-width: 1550px) {
    .section-21 .project-header {
-      height: 750px;
+      height: 700px;
    }
 }
 
 @media (max-width: 1440px) {
    .section-21 .project-header {
-      height: 700px;
+      height: 600px;
    }
 }
 
@@ -27,6 +27,7 @@
       height: 500px;
    }
 }
+
 
 /****************** Project Page Section- 21 **********************/
 
@@ -128,87 +129,155 @@
 
 /****************** Project Page Section- 25 **********************/
 
+/****************** Project Page Section- 26 **********************/
+/* Fix the Swiper container */
+.section-26 {
+   box-sizing: border-box;
+   overflow: hidden;
+   /* stops swiper from pushing section width */
+}
+
+.floorplanSlider {
+   position: relative;
+   width: 100%;
+   max-width: 100%;
+   overflow: hidden;
+   /* Critical — clips the zoomed slides */
+}
+
+.floorplanSlider .swiper-wrapper {
+   width: 100%
+}
+
+/* Fix the slides */
+.floorplanSlider .swiper-slide {
+   width: 100% !important;
+   max-width: 100%;
+   box-sizing: border-box;
+}
+
+/* Fix the images */
+.floorplanSlider .slide-img {
+   width: 100%;
+   height: 100%;
+   max-width: 100%;
+   display: block;
+
+}
+
+.floorplanSlider .custom-prev,
+.floorplanSlider .custom-next {
+   position: absolute;
+   z-index: 10;
+   width: 33px;
+   /* top is set by JS */
+}
+
+.floorplanSlider .custom-prev {
+   left: 0px;
+}
+
+.floorplanSlider .custom-next {
+   right: 0px;
+}
+
+.floorplanSlider .custom-prev img,
+.floorplanSlider .custom-next img {
+   width: 100%;
+   height: auto;
+}
+
+@media (max-width: 767px) {
+
+   .floorplanSlider .custom-prev,
+   .floorplanSlider .custom-next {
+      width: 24px;
+   }
+}
+
+/****************** Project Page Section- 26 **********************/
+
 
 /****************** Project Page Section- 27 **********************/
 .section-27 .Lifestyle-design-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-    width: 100%;
-    margin: 0 auto;
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 0.75rem;
+   width: 100%;
+   margin: 0 auto;
 }
 
 .section-27 .Lifestyle-design-grid .design-large {
-    aspect-ratio: 16 / 9;
+   aspect-ratio: 16 / 9;
 }
 
 .section-27 .Lifestyle-design-grid .design-large img,
 .section-27 .Lifestyle-design-grid .design-small img,
 .section-27 .Lifestyle-design-grid .design-small-half img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: block;
 }
 
 .section-27 .Lifestyle-design-grid .design-right {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 0.75rem;
 }
 
 .section-27 .Lifestyle-design-grid .design-small {
-    aspect-ratio: 16 / 9;
+   aspect-ratio: 16 / 9;
 }
 
 /* Second row — two side by side */
 .section-27 .Lifestyle-design-grid .design-small-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.75rem;
-    aspect-ratio: 16 / 9;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 0.75rem;
+   aspect-ratio: 16 / 9;
 }
 
 .section-27 .Lifestyle-design-grid .design-small-half {
-    width: 100%;
-    height: 100%;
+   width: 100%;
+   height: 100%;
 }
 
 /* Desktop */
 @media (min-width: 680px) {
-    .section-27 .Lifestyle-design-grid {
-        grid-template-columns: 1fr 1fr;
-        align-items: stretch;
-    }
+   .section-27 .Lifestyle-design-grid {
+      grid-template-columns: 1fr 1fr;
+      align-items: stretch;
+   }
 
-    .section-27 .Lifestyle-design-grid .design-large {
-        aspect-ratio: 3.4 / 3;
-        height: auto;
-    }
+   .section-27 .Lifestyle-design-grid .design-large {
+      aspect-ratio: 3.4 / 3;
+      height: auto;
+   }
 
-    .section-27 .Lifestyle-design-grid .design-right {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 0.75rem;
-        height: 100%;
-    }
+   .section-27 .Lifestyle-design-grid .design-right {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 0.75rem;
+      height: 100%;
+   }
 
-    .section-27 .Lifestyle-design-grid .design-small {
-        aspect-ratio: unset;
-        height: 100%;
-        min-height: 0;
-    }
+   .section-27 .Lifestyle-design-grid .design-small {
+      aspect-ratio: unset;
+      height: 100%;
+      min-height: 0;
+   }
 
-    .section-27 .Lifestyle-design-grid .design-small-row {
-        aspect-ratio: unset;
-        height: 100%;
-        min-height: 0;
-    }
+   .section-27 .Lifestyle-design-grid .design-small-row {
+      aspect-ratio: unset;
+      height: 100%;
+      min-height: 0;
+   }
 
-    .section-27 .Lifestyle-design-grid .design-small-half {
-        height: 100%;
-        min-height: 0;
-    }
+   .section-27 .Lifestyle-design-grid .design-small-half {
+      height: 100%;
+      min-height: 0;
+   }
 }
 
 /****************** Project Page Section- 27 **********************/
