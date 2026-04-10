@@ -107,16 +107,16 @@ hamburger.addEventListener('click', () => {
 let scrollPosition = 0;
 
 // Auto open after 4 seconds
-// setTimeout(() => {
-//   scrollPosition = window.pageYOffset;
+setTimeout(() => {
+  scrollPosition = window.pageYOffset;
 
-//   document.getElementById('timerBar').style.display = 'none';
-//   document.getElementById('contactPopup').classList.add('show');
+  document.getElementById('timerBar').style.display = 'none';
+  document.getElementById('contactPopup').classList.add('show');
 
-//   document.body.style.position = 'fixed';
-//   document.body.style.top = `-${scrollPosition}px`;
-//   document.body.style.width = '100%';
-// }, 10000);
+  document.body.style.position = 'fixed';
+  document.body.style.top = `-${scrollPosition}px`;
+  document.body.style.width = '100%';
+}, 10000);
 
 // Close function
 function closePopup() {

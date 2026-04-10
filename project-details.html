@@ -786,7 +786,92 @@
     </footer>
 
     <!-- ═══════════════════════════════ Footer ═══════════════════════════════════════════ -->
+    <!-- ═══════════════════════════════ Popup Form ═══════════════════════════════════════════ -->
+    <link rel="stylesheet" href="assets/css/popup.css" />
+    <!-- Timer Bar -->
+    <div id="timerBar" class="fixed top-0 left-0 w-full h-[3px] bg-[#0f3d2e] z-40"></div>
 
+    <!-- Popup Overlay -->
+    <div id="contactPopup"
+        class="contactPopup fixed inset-0 z-50 bg-black/60 flex items-center justify-center p-3 md:p-8 overflow-y-auto">
+
+        <div
+            class="popup-modal relative flex flex-col md:flex-row items-start justify-center w-full gap-8 sm:gap-8 lg:gap-10 xl:gap-10 overflow-hidden shadow-2xl">
+
+            <!-- LEFT: Full Cover Image -->
+            <div class="contactPopup-heading hidden lg:block w-full md:w-full lg:w-50 xl:w-40">
+                <h2 class="font-Cormorant-Bold text-green text-left text-uppercase leading-none mb-5 font-normal text-64 sm:text-64 md:text-64 lg:text-64 xl:text-64 2xl:text-64"
+                    data-aos="fade-up" data-aos-duration="2000">
+                    <span class="font-parisienne">C</span>onnect<br class="hidden lg:block"> with us
+                </h2>
+                <img src="assets/images/home/contact-form-banner.webp" class="w-100" alt="">
+            </div>
+            <!-- Right: Full Cover Image -->
+            <div class="contactPopup-form w-full md:w-full lg:w-100 lg:w-50 xl:w-40 pt-14 lg:pt-14 pb-10 lg:pb-10 px-5 sm:px-8 md:px-8 lg:px-10 xl:px-10"
+                data-aos="fade-up" data-aos-duration="2000">
+                <!-- Close Button -->
+                <button id="closeBtn"
+                    class="close-x absolute top-4 right-4 w-8 h-8 rounded-full bg-gray-100 border border-gray-200
+                 flex items-center justify-center cursor-pointer hover:bg-[#0f3d2e] hover:border-[#0f3d2e] transition-all z-10">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <path d="M1 1L11 11M11 1L1 11" stroke="#777" stroke-width="1.8" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <h2 class="font-Cormorant-Bold text-blue text-left text-uppercase leading-tight mb-5 font-normal pt-1 sm:pt-1 md:pt-5 lg:pt-5 xl:pt-5 text-22 sm:text-24 md:text-26 lg:text-28 xl:text-30 2xl:text-30"
+                    data-aos="fade-up" data-aos-duration="2000">
+                    REGISTER YOUR INTERESTS </h2>
+
+                <form class="grid grid-cols-2 md:grid-cols-2 gap-x-4 gap-y-5">
+
+                    <div class="col-span-1 md:col-span-1">
+                        <input type="text" class="h-[48px] w-full bg-white border border-transparent px-4"
+                            placeholder="FIRST NAME">
+                    </div>
+                    <div class="col-span-1 md:col-span-1">
+                        <input type="text" class="h-[48px] w-full bg-white border border-transparent px-4"
+                            placeholder="LAST NAME">
+                    </div>
+
+                    <div class="col-span-1 md:col-span-2">
+                        <input type="email" class="h-[48px] w-full bg-white border border-transparent px-4 "
+                            placeholder="EMAIL">
+                    </div>
+
+                    <div class="col-span-1 md:col-span-1">
+                        <input type="tel" class="h-[48px] w-full bg-white border border-transparent px-4 "
+                            placeholder="PHONE NUMBER">
+                    </div>
+
+                    <div class="col-span-1 md:col-span-1">
+                        <input type="text" class="h-[48px] w-full bg-white border border-transparent px-4 "
+                            placeholder="COUNTRY OF RESIDENCE">
+                    </div>
+                    <div class="col-span-1 md:col-span-1">
+                        <input type="text" class="h-[48px] w-full bg-white border border-transparent px-4 "
+                            placeholder="ARE YOU AN AGENT?">
+                    </div>
+
+                    <div class="col-span-1 md:col-span-1">
+                        <input type="text" class="h-[48px] w-full bg-white border border-transparent px-4 "
+                            placeholder="RESIDENT TYPE?">
+                    </div>
+                    <div class="col-span-1 md:col-span-2">
+                        <input type="text" class="h-[48px] w-full bg-white border border-transparent px-4 "
+                            placeholder="MESSAGE">
+                    </div>
+                    <div class="col-span-2 pt-0">
+                        <input type="submit"
+                            class="w-full h-[48px] text-uppercase font-Quicksand-Variable text-18 sm:text-18 md:text-20 lg:text-22 xl:text-22"
+                            value="SUBMIT" />
+
+                    </div>
+                </form>
+            </div>
+            <!-- Right: Full Cover Image -->
+
+        </div>
+    </div>
+    <!-- ═══════════════════════════════ Popup Form ═══════════════════════════════════════════ -->
 
 
     <script>
