@@ -38,10 +38,12 @@ body {
    letter-spacing: 2px;
 }
 
-.letter-1 {
+.letter-3 {
    letter-spacing: 0.1em;
 }
-
+.letter-4 {
+   letter-spacing: 0.2em;
+}
 .letter-10 {
    letter-spacing: 0.2em;
 }
