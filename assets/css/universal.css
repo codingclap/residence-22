@@ -304,7 +304,7 @@ body {
 
 /*#################### Footer ####################**/
 .footer .footer-logo img {
-   width: 150px;
+   width: 110px;
    height: auto;
 }
 
@@ -315,13 +315,13 @@ body {
 
 @media (max-width:768px) {
    .footer .footer-logo img {
-      width: 100px;
+      width: 80px;
    }
 }
 
 @media (max-width:500px) {
    .footer .footer-logo img {
-      width: 90px;
+      width: 80px;
    }
 }
 
