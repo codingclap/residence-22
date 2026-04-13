@@ -981,6 +981,12 @@
                 prevEl: '.floorplanSlider .custom-prev',
                 nextEl: '.floorplanSlider .custom-next',
             },
+            speed: 1500,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
             on: {
                 init: positionFloorplanArrows,
                 slideChange: positionFloorplanArrows,
