@@ -1240,7 +1240,9 @@ body {
    .lg\:text-120 {
       font-size: 120px;
    }
-
+   .lg\:text-130 {
+      font-size: 130px;
+   }
    .lg\:text-150 {
       font-size: 150px;
    }
@@ -1369,6 +1371,10 @@ body {
 
    .xl\:text-120 {
       font-size: 120px;
+   }
+
+   .xl\:text-130 {
+      font-size: 130px;
    }
 
    .xl\:text-150 {
@@ -1511,6 +1517,10 @@ body {
 
    .\32xl\:text-150 {
       font-size: 150px;
+   }
+
+   .\32xl\:text-160 {
+      font-size: 160px;
    }
 
    .\32xl\:text-180 {
