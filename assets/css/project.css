@@ -32,6 +32,34 @@
 /****************** Project Page Section- 21 **********************/
 
 
+
+/****************** Project Page Section- 23 **********************/
+.section-23 .city-walking-route {
+  min-height: 550px;
+}
+.section-23 .city-route-guide .city-route-km { 
+    line-height: 50px; 
+  }
+@media (max-width:1600px) {
+  .section-23 .city-walking-route {
+    min-height: 450px;
+  }
+}
+
+@media (max-width:768px) {
+  .section-23 .city-walking-route {
+    min-height: 200px;
+  } 
+}
+
+@media (max-width:767px) { 
+  .section-23 .city-route-guide .city-route-km {
+    width: 50px; 
+    line-height: 40px; 
+  }
+}
+/****************** Project Page Section- 23 **********************/
+
 /****************** Project Page Section- 24 **********************/
 .section-24 .project-design-grid {
    display: grid;

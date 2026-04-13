@@ -1299,6 +1299,10 @@ body {
       font-size: 36px;
    }
 
+   .xl\:text-38 {
+      font-size: 36px;
+   }
+
    .xl\:text-40 {
       font-size: 40px;
    }
@@ -1423,6 +1427,10 @@ body {
 
    .\32xl\:text-34 {
       font-size: 34px;
+   }
+
+   .\32xl\:text-38 {
+      font-size: 38px;
    }
 
    .\32xl\:text-40 {
