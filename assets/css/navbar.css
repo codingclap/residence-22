@@ -23,7 +23,7 @@
      z-index: 1000;
      display: flex;
      justify-content: space-between;
-     align-items: center;
+     align-items: start;
      transition: all .3s ease-in-out;
  }
 
@@ -33,10 +33,13 @@
  }
 
  .header-logo {
-     height: 120px;
-     width: 130px;
+     height: 90px;
+     width: 100px;
  }
-
+/* .header-logo img{
+     height: 100%;
+     width: 100%;
+ } */
  @keyframes pulse {
 
      0%,
@@ -62,8 +65,8 @@
 
  .nav-links a,
  .nav-links button.drop-btn {
-     font-family: Quicksand-SemiBold, serif;
-     font-size: 16.5px;
+     font-family: brandon-grotesque-bold, sans-serif;
+     font-size: 15.6px;
      color: #fff;
      letter-spacing: 1px;
      text-decoration: none;
@@ -274,8 +277,8 @@
      justify-content: space-between;
      padding: 1rem 1.1rem;
      border-radius: 12px;
-     font-family: Quicksand-SemiBold, serif;
-     font-size: 16px;
+     font-family: brandon-grotesque-bold, sans-serif;
+     font-size: 14.8px;
      color: #fff;
      text-decoration: none;
      transition: background .2s, color .2s;
@@ -421,11 +424,18 @@
  }
 
  /* ─── RESPONSIVE ─── */
+  @media (max-width: 1200px) {
+
+     .nav-links a,
+     .nav-links button.drop-btn {
+         font-size: 15px;
+     }
+ }
  @media (max-width: 1024px) {
 
      .nav-links a,
      .nav-links button.drop-btn {
-         font-size: 16px;
+         font-size: 15px;
      }
  }
 
@@ -441,7 +451,7 @@
 
      .nav-links a,
      .nav-links button.drop-btn {
-         font-size: 16px;
+         font-size: 14.8px;
      }
 
      nav {

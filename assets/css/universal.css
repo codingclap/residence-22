@@ -61,192 +61,97 @@ body {
 }
 /*#################  Custom Fonts # ##################*/
 @font-face {
-   font-family: parisienne;
-   src: url("../fonts/parisienne/Parisienne-Regular.ttf") format("woff2");
-   font-weight: 400;
-   font-style: normal;
-   font-display: swap;
-}
-
-@font-face {
-   font-family: CormorantGaramond-Regular;
-   src: url("../fonts/cormorant_garamond/CormorantGaramond-Regular.ttf") format("woff2");
-   font-weight: 400;
-   font-style: normal;
-   font-display: swap;
-}
-
-@font-face {
-   font-family: CormorantGaramond-Medium;
-   src: url("../fonts/cormorant_garamond/CormorantGaramond-Medium.ttf") format("woff2");
-   font-weight: 500;
-   font-style: normal;
-   font-display: swap;
-}
-
-@font-face {
-   font-family: CormorantGaramond-Bold;
-   src: url("../fonts/cormorant_garamond/CormorantGaramond-Bold.ttf") format("woff2");
-   font-weight: 800;
-   font-style: normal;
-   font-display: swap;
-}
-
-@font-face {
-   font-family: CormorantGaramond-SemiBold;
-   src: url("../fonts/cormorant_garamond/CormorantGaramond-SemiBold.ttf") format("woff2");
-   font-weight: 500;
-   font-style: normal;
-   font-display: swap;
-}
-
-@font-face {
-   font-family: Quicksand-Regular;
-   src: url("../fonts/quicksand/Quicksand-Regular.otf") format("woff2");
-   font-weight: 400;
-   font-style: normal;
-   font-display: swap;
-}
-
-@font-face {
-   font-family: Quicksand-Medium;
-   src: url("../fonts/quicksand/Quicksand-Medium.otf") format("woff2");
-   font-weight: 400;
-   font-style: normal;
-   font-display: swap;
-}
-
-@font-face {
-   font-family: Quicksand-Bold;
-   src: url("../fonts/quicksand/Quicksand-Bold.otf") format("woff2");
-   font-weight: 400;
-   font-style: normal;
-   font-display: swap;
-}
-
-@font-face {
-   font-family: Quicksand-SemiBold;
-   src: url("../fonts/quicksand/Quicksand-SemiBold.otf") format("woff2");
-   font-weight: 400;
-   font-style: normal;
-   font-display: swap;
-}
-
-@font-face {
-   font-family: Quicksand-Variable;
-   src: url("../fonts/quicksand/Quicksand-Variable.ttf") format("woff2");
-   font-weight: 400;
-   font-style: normal;
-   font-display: swap;
-}
-
-@font-face {
    font-family: neutraface-condensed-medium;
    src: url("../fonts/neutraface/neutraface-condensed-medium.otf") format("woff2");
-   font-weight: 400;
+   font-weight: 200;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: quichesans-regular;
+   src: url("../fonts/quiche-sans/quichesans-regular.otf") format("woff2");
+   font-weight: 200;
    font-style: normal;
    font-display: swap;
 }
 
 @font-face {
-   font-family: neutraface-condensed-bold;
-   src: url("../fonts/neutraface/neutraface-condensed-bold.otf") format("woff2");
-   font-weight: 400;
+   font-family: quichesans-medium;
+   src: url("../fonts/quiche-sans/quichesans-medium.otf") format("woff2");
+   font-weight: 500;
    font-style: normal;
    font-display: swap;
 }
 
 @font-face {
-   font-family: times-regular;
-   src: url("../fonts/times-new-roman/times-nomal.TTF") format("woff2");
-   font-weight: 400;
+   font-family: quichesans-bold;
+   src: url("../fonts/quiche-sans/quichesans-bold.otf") format("woff2");
+   font-weight: 600;
    font-style: normal;
    font-display: swap;
 }
 
 @font-face {
-   font-family: times-italic;
-   src: url("../fonts/times-new-roman/times-italic.TTF") format("woff2");
-   font-weight: 400;
+   font-family: brandon-grotesque-light;
+   src: url("../fonts/brandon-grotesque/Brandon_Grotesque_light.otf") format("woff2");
+   font-weight: 200;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: brandon-grotesque-regular;
+   src: url("../fonts/brandon-grotesque/Brandon_Grotesque_regular.otf") format("woff2");
+   font-weight: 200;
    font-style: normal;
    font-display: swap;
 }
 
 @font-face {
-   font-family: times-bold-italic;
-   src: url("../fonts/times-new-roman/times-bold-italic.TTF") format("woff2");
-   font-weight: 400;
+   font-family: brandon-grotesque-medium;
+   src: url("../fonts/brandon-grotesque/Brandon_Grotesque_medium.otf") format("woff2");
+   font-weight: 500;
    font-style: normal;
    font-display: swap;
 }
 
 @font-face {
-   font-family: times-bold;
-   src: url("../fonts/times-new-roman/times-bold.TTF") format("woff2");
-   font-weight: 400;
+   font-family: brandon-grotesque-bold;
+   src: url("../fonts/brandon-grotesque/Brandon_Grotesque_bold.otf") format("woff2");
+   font-weight: 600;
    font-style: normal;
    font-display: swap;
 }
-
-.font-parisienne {
-   font-family: parisienne, sans-serif;
+ 
+ .font-neutraface-medium {
+   font-family: neutraface-condensed-medium, sans-serif;
+}
+.font-quichesans-Regular {
+   font-family: quichesans-regular, sans-serif;
 }
 
-.font-Cormorant-Regular {
-   font-family: CormorantGaramond-Regular, sans-serif;
+.font-quichesans-Medium {
+   font-family: quichesans-medium, sans-serif;
 }
 
-.font-Cormorant-Medium {
-   font-family: CormorantGaramond-Medium, sans-serif;
+.font-quichesans-Bold {
+   font-family: quichesans-bold, sans-serif;
 }
 
-.font-Cormorant-Bold {
-   font-family: CormorantGaramond-Bold, serif;
+.font-Brandon-Light {
+   font-family: brandon-grotesque-light, sans-serif;
+}
+.font-Brandon-Regular {
+   font-family: brandon-grotesque-regular, sans-serif;
 }
 
-.font-Cormorant-SemiBold {
-   font-family: CormorantGaramond-SemiBold, serif;
+.font-Brandon-Medium {
+   font-family: brandon-grotesque-medium, sans-serif;
 }
 
-.font-Quicksand-Bold {
-   font-family: Quicksand-Bold, serif;
+.font-Brandon-Bold {
+   font-family: brandon-grotesque-bold, sans-serif;
 }
-
-.font-Quicksand-Medium {
-   font-family: Quicksand-Medium, serif;
-}
-
-.font-Quicksand-SemiBold {
-   font-family: Quicksand-SemiBold;
-}
-
-.font-Quicksand-Variable {
-   font-family: Quicksand-Variable;
-}
-
-.font-neutraface-medium {
-   font-family: neutraface-condensed-medium;
-}
-
-.font-neutraface-bold {
-   font-family: neutraface-condensed-bold;
-}
-
-.font-times-regular {
-   font-family: times-regular;
-}
-
-.font-times-bold {
-   font-family: times-bold;
-}
-
-.font-times-italic {
-   font-family: times-italic;
-}
-
-.font-times-bold-italic {
-   font-family: times-bold-italic;
-}
+ 
 
 /*#################  Custom Fonts # ##################*/
 
@@ -277,7 +182,7 @@ body {
 }
 
 .default-btn .btn-primary {
-   font-family: Quicksand-Bold, serif;
+   font-family: brandon-grotesque-bold, sans-serif;
    background: #142434;
    border-radius: 11px;
    font-style: normal;
