@@ -878,15 +878,15 @@
             let img = wrap.querySelector("img");
 
             gsap.fromTo(img,
-                { yPercent: -10 },   // start slightly up
+                { yPercent: -20 },   // start slightly up
                 {
-                    yPercent: 10,      // move down inside container
+                    yPercent: 20,      // move down inside container
                     ease: "none",
                     scrollTrigger: {
                         trigger: wrap,
                         start: "top bottom",
                         end: "bottom top",
-                        scrub: 1.5   // smooth inertia
+                        scrub: 2  // smooth inertia
                     }
                 }
             );
