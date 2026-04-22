@@ -315,9 +315,9 @@
                                     Brochure</a>
                             </div>
                         </div>
-                        <div
-                            class="flex w-full md:w-full lg:w-50 xl:w-50 border-radius-15 justify-center items-center img-wrap">
-                            <img class="w-100 parallax-img"
+                        <div class="flex w-full md:w-full lg:w-50 xl:w-50 border-radius-15 justify-center items-center img-wrap"
+                            data-aos="fade-up" data-aos-duration="3000">
+                            <img class="w-100 parallax-img border-radius-15"
                                 src="assets/images/home/pulsating-heart-of-business-bay.webp"
                                 alt="pulsating-heart-of-business-bay">
                         </div>
@@ -329,7 +329,7 @@
 
                         <div class="flex border-radius-15 w-full md:w-full lg:w-50 xl:w-50 justify-center items-center img-wrap"
                             data-aos="fade-up" data-aos-duration="3000">
-                            <img class="w-100 parallax-img" src="assets/images/home/excellence-in-design.webp"
+                            <img class="w-100 parallax-img border-radius-15" src="assets/images/home/excellence-in-design.webp"
                                 alt="excellence-in-design">
                         </div>
                         <div class="flex flex-col w-full md:w-full lg:w-50 xl:w-40 justify-center items-start">
@@ -886,7 +886,7 @@
                         trigger: wrap,
                         start: "top bottom",
                         end: "bottom top",
-                        scrub: 2  // smooth inertia
+                        scrub: 2   // smooth inertia
                     }
                 }
             );
@@ -908,17 +908,19 @@
     <script>
         const lenis = new Lenis({
             duration: 1.2,
-            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-            smoothWheel: true,
-            smoothTouch: false,
+            smooth: true
         });
-
         function raf(time) {
             lenis.raf(time);
             requestAnimationFrame(raf);
         }
-
         requestAnimationFrame(raf);
+
+        //Connect with GSAP
+        lenis.on('scroll', ScrollTrigger.update);
+        gsap.ticker.add((time) => {
+            lenis.raf(time * 1000);
+        });
     </script>
     <script>
 
