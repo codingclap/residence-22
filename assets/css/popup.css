@@ -1,12 +1,13 @@
-.contactPopup .contactPopup-heading{
+.contactPopup .contactPopup-heading {
     z-index: +1;
 }
+
 .contactPopup .contactPopup-heading img {
     height: 445px;
     object-fit: cover;
 }
 
-.contactPopup .contactPopup-form { 
+.contactPopup .contactPopup-form {
     border-radius: 17px;
     z-index: +1;
 }
@@ -14,24 +15,25 @@
 .contactPopup .contactPopup-form input[type="text"],
 input[type="email"],
 input[type="tel"] {
-    font-family: CormorantGaramond-Medium;
+    font-family: brandon-grotesque-medium;
     letter-spacing: 1px;
-    font-size: 18px;
+    font-size: 15px;
     border: 1px solid #C2A794;
     color: #000;
 }
 
 .contactPopup ::placeholder {
-    font-family: CormorantGaramond-Medium;
+    font-family: brandon-grotesque-medium;
     letter-spacing: 1px;
-    font-size: 16px;
+    font-size: 15px;
     color: #000;
 }
+
 
 .contactPopup input[type="submit"] {
     background: #C2A794;
     color: #fff;
-    font-family: CormorantGaramond-Medium;
+    font-family: brandon-grotesque-medium;
     font-weight: 500;
 }
 
@@ -76,19 +78,21 @@ input[type="tel"] {
     transform: scale(0.92) translateY(20px);
     transition: transform 0.5s cubic-bezier(.22, .68, 0, 1.2);
 }
+
 .contactPopup .popup-modal::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 84%;
-  background-image: url(../images/contact/22-logo.webp);
-  z-index: 0;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 84%;
+    background-image: url(../images/contact/22-logo.webp);
+    z-index: 0;
 }
+
 .close-x {
     width: 42px;
     height: 42px;

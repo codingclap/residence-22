@@ -8,8 +8,9 @@ html,
 body {
    scroll-behavior: smooth;
    margin: 0;
-   padding: 0;
+   padding: 0; 
    min-height: 100%;
+   overflow-x: hidden;
 }
 
 .mx-1920 {
@@ -50,15 +51,19 @@ body {
 .letter-10 {
    letter-spacing: 0.2em;
 }
+
 .border-radius-10 {
    border-radius: 10px;
 }
+
 .border-radius-15 {
    border-radius: 15px;
 }
+
 .border-radius-20 {
    border-radius: 20px;
 }
+
 /*#################  Custom Fonts # ##################*/
 @font-face {
    font-family: neutraface-condensed-medium;
@@ -67,6 +72,7 @@ body {
    font-style: normal;
    font-display: swap;
 }
+
 @font-face {
    font-family: quichesans-regular;
    src: url("../fonts/quiche-sans/quichesans-regular.otf") format("woff2");
@@ -98,6 +104,7 @@ body {
    font-style: normal;
    font-display: swap;
 }
+
 @font-face {
    font-family: brandon-grotesque-regular;
    src: url("../fonts/brandon-grotesque/Brandon_Grotesque_regular.otf") format("woff2");
@@ -121,10 +128,11 @@ body {
    font-style: normal;
    font-display: swap;
 }
- 
- .font-neutraface-medium {
+
+.font-neutraface-medium {
    font-family: neutraface-condensed-medium, sans-serif;
 }
+
 .font-quichesans-Regular {
    font-family: quichesans-regular, sans-serif;
 }
@@ -140,6 +148,7 @@ body {
 .font-Brandon-Light {
    font-family: brandon-grotesque-light, sans-serif;
 }
+
 .font-Brandon-Regular {
    font-family: brandon-grotesque-regular, sans-serif;
 }
@@ -151,7 +160,7 @@ body {
 .font-Brandon-Bold {
    font-family: brandon-grotesque-bold, sans-serif;
 }
- 
+
 
 /*#################  Custom Fonts # ##################*/
 
@@ -253,6 +262,10 @@ body {
 
 .text-blue {
    color: #2B2C40;
+}
+
+.text-darkblue {
+   color: #142434;
 }
 
 .text-green {
@@ -1153,9 +1166,11 @@ body {
    .lg\:text-120 {
       font-size: 120px;
    }
+
    .lg\:text-130 {
       font-size: 130px;
    }
+
    .lg\:text-150 {
       font-size: 150px;
    }
@@ -2287,6 +2302,7 @@ body {
    justify-content: stretch
 }
 
+
 /* ─────────────────────────────────────────
    JUSTIFY ITEMS
 ───────────────────────────────────────── */
@@ -2388,6 +2404,7 @@ body {
 .items-stretch {
    align-items: stretch
 }
+
 
 /* ─────────────────────────────────────────
    ALIGN SELF
@@ -4048,6 +4065,10 @@ body {
       justify-content: flex-start
    }
 
+   .sm\:justify-evenly {
+      justify-content: space-evenly;
+   }
+
    .sm\:justify-center {
       justify-content: center
    }
@@ -4226,6 +4247,10 @@ body {
 
    .md\:justify-center {
       justify-content: center
+   }
+
+   .md\:justify-evenly {
+      justify-content: space-evenly;
    }
 
    .md\:justify-between {
@@ -4439,6 +4464,10 @@ body {
       justify-content: center
    }
 
+   .lg\:justify-evenly {
+      justify-content: space-evenly;
+   }
+
    .lg\:justify-between {
       justify-content: space-between
    }
@@ -4640,6 +4669,10 @@ body {
 
    .xl\:justify-between {
       justify-content: space-between
+   }
+
+   .xl\:justify-evenly {
+      justify-content: space-evenly;
    }
 
    .xl\:justify-end {

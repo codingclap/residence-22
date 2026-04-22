@@ -35,29 +35,32 @@
 
 /****************** Project Page Section- 23 **********************/
 .section-23 .city-walking-route {
-  min-height: 550px;
+   min-height: 550px;
 }
-.section-23 .city-route-guide .city-route-km { 
-    line-height: 50px; 
-  }
+
+.section-23 .city-route-guide .city-route-km {
+   line-height: 50px;
+}
+
 @media (max-width:1600px) {
-  .section-23 .city-walking-route {
-    min-height: 450px;
-  }
+   .section-23 .city-walking-route {
+      min-height: 450px;
+   }
 }
 
 @media (max-width:768px) {
-  .section-23 .city-walking-route {
-    min-height: 200px;
-  } 
+   .section-23 .city-walking-route {
+      min-height: 200px;
+   }
 }
 
-@media (max-width:767px) { 
-  .section-23 .city-route-guide .city-route-km {
-    width: 50px; 
-    line-height: 40px; 
-  }
+@media (max-width:767px) {
+   .section-23 .city-route-guide .city-route-km {
+      width: 50px;
+      line-height: 40px;
+   }
 }
+
 /****************** Project Page Section- 23 **********************/
 
 /****************** Project Page Section- 24 **********************/
@@ -95,6 +98,162 @@
 
 .section-24 .project-design-grid .design-small {
    aspect-ratio: 3 / 3;
+}
+
+.section-24 .thedesign-swiper .swiper-slide img {
+   height: 650px;
+   border-radius: 15px;
+}
+
+.section-24 .thedesign-swiper .swiper-pagination {
+   position: relative;
+   /* sits below the slides, not overlaid */
+   margin-top: 32px;
+   bottom: unset;
+}
+
+.section-24 .swiper-pagination-bullet {
+   width: 15px;
+   height: 15px;
+   background-color: #D9D9D9;
+   /* inactive bullet color */
+   opacity: 0.4;
+   border-radius: 50%;
+   transition: all 0.3s ease;
+}
+
+.section-24 .swiper-pagination-bullet-active {
+   background-color: #C2A794;
+   /* active bullet color */
+   opacity: 1;
+   width: 15px;
+   /* pill shape for active */
+   border-radius: 50%;
+}
+
+/* Rectangle 165 */
+
+.section-24 .thedesign-swiper::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 138px;
+   height: 100%;
+   background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+   /* semi-transparent white overlay */
+   z-index: 2;
+}
+
+.section-24 .thedesign-swiper::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 138px;
+   height: 100%;
+   background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+   transform: matrix(-1, 0, 0, 1, 0, 0);
+   z-index: 2;
+}
+
+/* Rectangle 166 */
+.section-24 .thedesign-swiper .design-prev,
+.section-24 .thedesign-swiper .design-next {
+   position: absolute;
+   z-index: 10;
+   width: 33px;
+   /* top is set by JS */
+}
+
+.section-24 .thedesign-swiper .design-prev {
+   left: 30px;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.section-24 .thedesign-swiper .design-next {
+   right: 30px;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.section-24 .thedesign-swiper .design-prev img,
+.section-24 .thedesign-swiper .design-next img {
+   width: 100%;
+   height: auto;
+}
+
+@media (max-width: 767px) {
+
+   .section-24 .thedesign-swiper .design-prev,
+   .section-24 .thedesign-swiper .design-next {
+      width: 24px;
+   }
+}
+
+@media (max-width:1500px) {
+   .section-24 .thedesign-swiper .swiper-slide img {
+      height: 500px;
+   }
+}
+
+@media (max-width:991px) {
+   .section-24 .thedesign-swiper .swiper-slide img {
+      height: 420px;
+   }
+}
+
+@media (max-width:850px) {
+   .section-24 .thedesign-swiper .swiper-slide img {
+      height: 380px;
+   }
+}
+
+@media (max-width:768px) {
+   .section-24 .thedesign-swiper .design-prev {
+      left: 20px;
+   }
+
+   .section-24 .thedesign-swiper .design-next {
+      right: 20px;
+   }
+
+   .section-24 .thedesign-swiper .swiper-slide img {
+      height: 350px;
+   }
+}
+
+@media (max-width:700px) {
+   .section-24 .thedesign-swiper .swiper-slide img {
+      height: 300px;
+   }
+}
+
+@media (max-width:530px) {
+   .section-24 .thedesign-swiper .swiper-slide img {
+      height: 280px;
+   }
+
+   .section-24 .thedesign-swiper .design-prev {
+      left: 10px;
+   }
+
+   .section-24 .thedesign-swiper .design-next {
+      right: 10px;
+   }
+}
+
+@media (max-width:425px) {
+   .section-24 .thedesign-swiper .swiper-slide img {
+      height: 250px;
+   }
+}
+
+@media (max-width:375px) {
+   .section-24 .thedesign-swiper .swiper-slide img {
+      height: 200px;
+   }
 }
 
 
