@@ -354,10 +354,15 @@
     <!-- ═══════════════════════════════ Section - Three ═══════════════════════════════════════════ -->
 
     <section
-        class="section-3 mx-1920 flex flex-col items-center justify-center min-h-screen h-[500px] w-full bg-cream bg-opacity-100 px-6 sm:px-8 lg:px-14 py-12 sm:py-12 lg:py-20 bg-cover"
-        style="background-image: url('assets/images/home/a-life-of-seamless-ease.webp');background-position: right center;">
-
-        <div class="flex flex-col justify-center items-center">
+        class="section-3 relative mx-1920 flex flex-col items-center z-10  justify-center min-h-screen h-[500px] w-full bg-cream bg-opacity-100 ">
+        
+        <!-- Background Image Layer -->
+        <div class="absolute w-100 h-full inset-0 bg-cover bg-center z-0 img-wrap">
+            <img src="assets/images/home/a-life-of-seamless-ease.webp" alt="A life of seamless ease"
+                class="absolute inset-0 w-full h-full object-cover z-0 parallax-img" />
+        </div>
+         
+        <div class="flex flex-col absolute justify-center items-center px-6 sm:px-8 lg:px-14 py-12 sm:py-12 lg:py-20">
             <div class="flex flex-col w-full md:w-full lg:w-80 xl:w-75 justify-center items-center">
                 <h2 class="font-quichesans-Bold text-white text-center text-uppercase leading-tight mb-3 font-normal text-34 sm:text-34 md:text-36 lg:text-44 xl:text-52 2xl:text-52"
                     data-aos="fade-up" data-aos-duration="3000">
@@ -780,7 +785,7 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/gsap.min.js"></script>
     <script src="assets/js/ScrollTrigger.min.js"></script>
-    <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script> 
+    <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -878,7 +883,7 @@
         });
 
     </script>
-    
+
     <script>
 
         AOS.init({
