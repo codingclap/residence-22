@@ -1,0 +1,122 @@
+/****************** Lifestyle Section- 41 **********************/
+.section-41 .project-header {
+   height: 720px;
+   object-fit: cover;
+}
+
+@media (max-width: 1550px) {
+   .section-41 .project-header {
+      height: 700px;
+   }
+}
+
+@media (max-width: 1440px) {
+   .section-41 .project-header {
+      height: 600px;
+   }
+}
+
+@media (max-width: 1100px) {
+   .section-41 .project-header {
+      height: 600px;
+   }
+}
+
+@media (max-width: 768px) {
+   .section-41 .project-header {
+      height: 500px;
+   }
+}
+
+
+/****************** Lifestyle Section- 41 **********************/
+
+
+/****************** Lifestyle Section- 42 **********************/
+.section-42 .Lifestyle-living {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 0.75rem;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.section-42 .Lifestyle-living .design-large {
+   aspect-ratio: 16 / 9;
+}
+
+.section-42 .Lifestyle-living .design-large img,
+.section-42 .Lifestyle-living .design-small img,
+.section-42 .Lifestyle-living .design-small-half img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: block;
+}
+
+.section-42 .Lifestyle-living .design-right {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 0.75rem;
+}
+
+.section-42 .Lifestyle-living .design-small {
+   aspect-ratio: 16 / 9;
+}
+
+/* Second row — two side by side */
+.section-42 .Lifestyle-living .design-small-row {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 0.75rem;
+   aspect-ratio: 16 / 9;
+}
+
+.section-42 .Lifestyle-living .design-small-half {
+   width: 100%;
+   height: 100%;
+}
+
+/* Desktop */
+@media (min-width: 680px) {
+   .section-42 .Lifestyle-living {
+      grid-template-columns: 1fr 1fr;
+      align-items: stretch;
+   }
+
+   .section-42 .Lifestyle-living .design-large {
+      aspect-ratio: 3.4 / 3;
+      height: auto;
+   }
+
+   .section-42 .Lifestyle-living .design-right {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 0.75rem;
+      height: 100%;
+   }
+
+   .section-42 .Lifestyle-living .design-small {
+      aspect-ratio: unset;
+      height: 100%;
+      min-height: 0;
+   }
+
+   .section-42 .Lifestyle-living .design-small-row {
+      aspect-ratio: unset;
+      height: 100%;
+      min-height: 0;
+   }
+
+   .section-42 .Lifestyle-living .design-small-half {
+      height: 100%;
+      min-height: 0;
+   }
+}
+/****************** Lifestyle Section- 42 **********************/
+
+/****************** Lifestyle Section- 43 **********************/
+.section-43 {
+   min-height: 800px;
+}
+/****************** Lifestyle Section- 43 **********************/

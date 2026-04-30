@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle Residence-22</title>
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/flowbite.min.css" />
+    <link rel="stylesheet" href="assets/css/universal.css" />
+    <link rel="stylesheet" href="assets/css/lifestyle.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- ═══════════════════════════════ Header Section ═══════════════════════════════════════════ -->
+    <style>
+        .nav-links a,
+        .nav-links button.drop-btn {
+            color: #fff;
+        }
+
+        .nav-links a:hover,
+        .nav-links button.drop-btn:hover,
+        .nav-links li.active>a,
+        .nav-links li.active>button {
+            color: #142434;
+        }
+    </style>
+    <nav class="navbar-menu mx-1920 mx-auto w-full px-5 absolute sm:px-5 md:px-6 lg:px-15 xl:px-20 py-10 ">
+        <a href="#" class="header-logo" data-aos="fade-up" data-aos-duration="3000">
+            <img id="nav-logo" class="white-logo" src="assets/images/residence-white-logo.svg" alt="">
+        </a>
+
+        <!-- Desktop Links -->
+        <ul class="nav-links gap-3 sm:gap-3 md:gap-4 lg:gap-10 xl:gap-14 pt-4" id="desktopMenu" data-aos="fade-up"
+            data-aos-duration="3000">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="project-details.html">PROJECT DETAILS</a></li>
+            <li><a href="contact-us.html">GET IN TOUCH</a></li>
+            <!-- Resources Dropdown -->
+            <!-- <li>
+                <button class="drop-btn" id="dropResources" aria-expanded="false">
+                    Resources
+                    <svg class="chevron" viewBox="0 0 24 24">
+                        <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                </button>
+                <div class="dropdown" id="menuResources">
+                    <a href="#"><span class="icon"></span> Docs</a>
+                    <a href="#"><span class="icon"></span> Blog</a>
+                    <a href="#"><span class="icon"></span> Podcast</a>
+                    <div class="divider"></div>
+                    <a href="#"><span class="icon"></span> Support</a>
+                </div>
+            </li> -->
+
+        </ul>
+
+        <button class="hamburger " id="hamburger" aria-label="Toggle menu" data-aos="fade-up" data-aos-duration="3000">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- ═══ MOBILE MENU ═══ -->
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="index.html" class="mobile-link">HOME</a>
+        <div class="mobile-divider"></div>
+        <a href="about.html" class="mobile-link">ABOUT US</a>
+        <div class="mobile-divider"></div>
+        <a href="project-details.html" class="mobile-link">PROJECT DETAILS</a>
+        <div class="mobile-divider"></div>
+        <a href="contact-us.html" class="mobile-link">GET IN TOUCH</a>
+        <!-- Products -->
+        <!-- <button class="mobile-link" id="mobileDropProducts">
+            Products
+            <svg class="chevron" viewBox="0 0 24 24"
+                style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s">
+                <polyline points="6 9 12 15 18 9" />
+            </svg>
+        </button>
+        <div class="mobile-dropdown" id="mobileMenuProducts">
+            <a href="#" class="mobile-sub-link"><span class="icon"></span> Analytics</a>
+            <a href="#" class="mobile-sub-link"><span class="icon"></span> Security</a>
+            <a href="#" class="mobile-sub-link"><span class="icon"></span> Automations</a>
+            <a href="#" class="mobile-sub-link"><span class="icon"></span> Roadmap</a>
+        </div> -->
+
+        <!-- Solutions -->
+        <!-- <button class="mobile-link" id="mobileDropSolutions">
+            Solutions
+            <svg class="chevron" viewBox="0 0 24 24"
+                style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s">
+                <polyline points="6 9 12 15 18 9" />
+            </svg>
+        </button>
+        <div class="mobile-dropdown" id="mobileMenuSolutions">
+            <a href="#" class="mobile-sub-link"><span class="icon"></span> Enterprise</a>
+            <a href="#" class="mobile-sub-link"><span class="icon"></span> Startups</a>
+            <a href="#" class="mobile-sub-link"><span class="icon"></span> Developers</a>
+            <a href="#" class="mobile-sub-link"><span class="icon"></span> Case Studies</a>
+        </div> -->
+
+        <!-- Resources -->
+        <!-- <button class="mobile-link" id="mobileDropResources">
+            Resources
+            <svg class="chevron" viewBox="0 0 24 24"
+                style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s">
+                <polyline points="6 9 12 15 18 9" />
+            </svg>
+        </button>
+        <div class="mobile-dropdown" id="mobileMenuResources">
+            <a href="#" class="mobile-sub-link"><span class="icon"></span> Docs</a>
+            <a href="#" class="mobile-sub-link"><span class="icon"></span> Blog</a>
+            <a href="#" class="mobile-sub-link"><span class="icon"></span> Podcast</a>
+            <a href="#" class="mobile-sub-link"><span class="icon"></span> Support</a>
+        </div> -->
+
+    </div>
+
+
+    <!-- ═══════════════════════════════ Header Section ═══════════════════════════════════════════ -->
+
+
+
+    <!-- ═══════════════════════════════ Sticky Button ═══════════════════════════════════════════ -->
+    <style>
+        .fixed-contact-buttons {
+            position: fixed;
+            right: 0;
+            top: 70%;
+            transform: translateY(-50%);
+            z-index: 50;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: flex-end
+        }
+
+        .sticky-btn {
+            width: 48px;
+            min-width: 48px;
+            height: 48px;
+            overflow: hidden;
+            transition: width .35s;
+            white-space: nowrap;
+            background-color: #c2a794;
+            border-radius: 16px 0 0 16px;
+            padding: 0 10px 0 11px
+        }
+
+        .sticky-btn span {
+            opacity: 0;
+            width: 0;
+            overflow: hidden;
+            transition: .35s;
+            font-family: brandon-grotesque-medium, sans-serif;
+            letter-spacing: .05em;
+            font-size: 14px
+        }
+
+        .sticky-btn img {
+            width: 27px;
+            height: 27px
+        }
+
+        .sticky-btn:hover {
+            width: 140px
+        }
+
+        .sticky-btn:last-of-type:hover {
+            width: 170px
+        }
+
+        .sticky-btn:hover span {
+            opacity: 1;
+            width: auto;
+            margin-left: 8px
+        }
+    </style>
+    <div class="fixed-contact-buttons">
+
+        <a href="tel:+971564093335" class="sticky-btn flex items-center bg-[#cbb7a6] text-white rounded-l-xl shadow-lg">
+
+            <img src="assets/images/phone-icon.png" alt="Phone" class="w-5 h-5 min-w-[20px] object-contain">
+
+            <span class="text-sm font-medium uppercase">
+                Call US
+            </span>
+        </a>
+
+        <a href="mailto:info@residence22.ae"
+            class="sticky-btn flex items-center bg-[#cbb7a6] text-white rounded-l-xl shadow-lg">
+
+            <img src="assets/images/email-icon.png" alt="Email" class="w-5 h-5 min-w-[20px] object-contain">
+
+            <span class="text-sm font-medium uppercase">
+                Email US
+            </span>
+        </a>
+
+        <a href="https://wa.me/564093335"
+            class="sticky-btn flex items-center bg-[#cbb7a6] text-white rounded-l-xl shadow-lg">
+
+            <img src="assets/images/whatsapp-icon.png" alt="WhatsApp" class="w-5 h-5 min-w-[20px] object-contain">
+
+            <span class="text-sm font-medium uppercase">
+                CHAT WITH US
+            </span>
+        </a>
+
+    </div>
+    <!-- ═══════════════════════════════ Sticky Button ═══════════════════════════════════════════ -->
+
+
+    <!-- ═══════════════════════════════ Section - 41 ═══════════════════════════════════════════ -->
+
+
+    <section class="section-41 banner-head md:flex-row relative flex flex-col mx-1920 items-center w-full bg-cover"
+        style="background-image: url('assets/images/lifestyle/lifestyle-banner.webp');background-position:bottom;padding-top: 170px;">
+
+        <div
+            class="project-header flex justify-center items-center z-20 w-full px-5 sm:px-5 lg:px-14 pt-0 md:pt-0 lg:pt-0 pb-12 sm:pb-20 md:pb-20 lg:pb-20">
+            <div class="w-full text-center">
+                <h1 class="font-quichesans-Medium text-white text-uppercase letter-2 leading-tight pb-5 font-normal text-30 sm:text-44 md:text-52 lg:text-60 xl:text-64 2xl:text-72"
+                    data-aos="fade-up" data-aos-duration="3000">Seamless Living,<br class="hidden md:block">
+                    Thoughtfully Curated.
+                </h1>
+                <p class="font-Brandon-Medium text-white leading-normal text-18 text-center lg:text-22"
+                    data-aos="fade-up" data-aos-duration="3000">THOUGHTFULLY CURATED AMENITIES
+                    DEFINE MODERN LUXURY LIVING.</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- ═══════════════════════════════ Section - 41 ═══════════════════════════════════════════ -->
+
+
+    <!-- ═══════════════════════════════ Section - 42 ═══════════════════════════════════════════ -->
+    <section
+        class="section-42 mx-1920 flex flex-col items-center justify-center w-full bg-lightcream bg-opacity-100 px-6 sm:px-8 lg:px-14 py-10 sm:py-10 lg:py-16 xl:py-20">
+
+        <div class="flex flex-col w-full justify-center items-center">
+            <div
+                class="flex flex-col lg:flex-row w-full md:w-full lg:w-100 xl:w-90 gap-2 sm:gap-2 md:gap-3 lg:gap-10 xl:gap-10 justify-between items-center">
+                <div class="w-full md:w-full lg:w-60 xl:w-60">
+                    <h2 class="font-quichesans-Bold text-blue text-start text-uppercase leading-tight font-normal text-34 sm:text-34 md:text-48 lg:text-48 xl:text-60 2xl:text-60"
+                        data-aos="fade-up" data-aos-duration="3000">
+                        EFFORTLESS LIVING, <br class="hidden xl:block">
+                        PERFECTLY BALANCED
+                    </h2>
+                </div>
+                <div class="w-full md:w-full lg:w-50 xl:w-50">
+                    <p class="font-Brandon-Medium text-blue leading-normal text-18 text-start md:text-20 lg:text-20 xl:text-24"
+                        data-aos="fade-up" data-aos-duration="3000">At Residence 22, life is designed to flow
+                        seamlessly—where luxury, comfort, and convenience exist in perfect harmony. Life here is defined
+                        by service that anticipates your needs before you do, from dedicated valet to a
+                        temperature-controlled rooftop pool and state-of-the-art gym. With day-to-day operations
+                        effortlessly managed by our round-the-clock concierge, on-property maintenance, and housekeeping
+                        teams, you can focus entirely on what matters. </p>
+                </div>
+
+
+            </div>
+
+            <div
+                class="flex flex-col w-full md:w-full lg:w-100 xl:w-100 justify-center items-center pt-10 sm:pt-10 lg:pt-16 xl:pt-20">
+
+                <div class="Lifestyle-living">
+
+                    <!-- Large left image -->
+                    <div class="design-large">
+                        <img src="assets/images/lifestyle/lifestyle-gallery-1.webp"
+                            class="border-radius-15 aos-init aos-animate" alt="" data-aos="fade-up"
+                            data-aos-duration="3000">
+                    </div>
+
+                    <!-- Right grid -->
+                    <div class="design-right">
+
+                        <div class="design-small-row">
+                            <div class="design-small-half">
+                                <img src="assets/images/lifestyle/lifestyle-gallery-2.webp"
+                                    class="border-radius-15 aos-init aos-animate" alt="" data-aos="fade-up"
+                                    data-aos-duration="3000">
+                            </div>
+                            <div class="design-small-half">
+                                <img src="assets/images/lifestyle/lifestyle-gallery-3.webp"
+                                    class="border-radius-15 aos-init aos-animate" alt="" data-aos="fade-up"
+                                    data-aos-duration="3000">
+                            </div>
+                        </div>
+                        <div class="design-small">
+                            <img src="assets/images/lifestyle/lifestyle-gallery-4.webp"
+                                class="border-radius-15 aos-init aos-animate" alt="" data-aos="fade-up"
+                                data-aos-duration="3000">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ═══════════════════════════════ Section - 42 ═══════════════════════════════════════════ -->
+
+    <!-- ═══════════════════════════════ Section - 43 ═══════════════════════════════════════════ -->
+
+    <section
+        class="section-43 relative mx-1920 flex flex-col items-center z-10 justify-center min-h-screen h-[500px] w-full bg-cream bg-opacity-100 ">
+
+        <!-- Background Image Layer -->
+        <div class="absolute w-100 h-full inset-0 bg-cover bg-center z-0 img-wrap">
+            <img src="assets/images/lifestyle/lifestyle-pillers.webp" alt="A life of seamless ease"
+                class="absolute inset-0 w-full h-full object-cover z-0 parallax-img" />
+        </div>
+
+        <div class="flex flex-col absolute justify-center items-center px-6 sm:px-8 lg:px-14 py-12 sm:py-12 lg:py-20">
+            <div class="flex flex-col w-full md:w-full lg:w-90 xl:w-90 justify-center items-center">
+                <h2 class="font-quichesans-Bold text-white text-center text-uppercase leading-tight mb-3 font-normal text-34 sm:text-34 md:text-36 lg:text-44 xl:text-52 2xl:text-52"
+                    data-aos="fade-up" data-aos-duration="3000">
+                    THE PILLARS OF PENTHOUSE LIVING</h2>
+                <p class="font-Brandon-Medium text-white leading-snug text-18 text-center md:text-20 lg:text-22"
+                    data-aos="fade-up" data-aos-duration="3000">Residence 22 offers a comprehensive suite of amenities
+                    designed to elevate both productivity and well-being, with every detail thoughtfully curated for
+                    modern luxury living.
+                </p>
+            </div>
+
+            <!-- Grid -->
+            <div class="flex flex-col w-full md:w-full lg:w-90 xl:w-90 justify-center items-center pt-20">
+                <div class="flex flex-col items-center gap-12">
+
+                    <!-- ROW 1 (4 items centered) -->
+                    <div class="flex flex-wrap justify-center gap-12 md:gap-20 max-w-5xl">
+
+                        <div class="flex flex-col items-center space-y-3 w-40 text-center">
+                            <img src="assets/images/lifestyle/garden.svg" class="w-16 md:w-20" alt="">
+                            <p class="text-xs md:text-sm">STATE-OF-THE-ART FITNESS CENTER</p>
+                        </div>
+
+                        <div class="flex flex-col items-center space-y-3 w-40 text-center">
+                            <img src="assets/images/lifestyle/garden.svg" class="w-16 md:w-20" alt="">
+                            <p class="text-xs md:text-sm">JAPANESE ZEN GARDEN</p>
+                        </div>
+
+                        <div class="flex flex-col items-center space-y-3 w-40 text-center">
+                            <img src="assets/images/lifestyle/garden.svg" class="w-16 md:w-20" alt="">
+                            <p class="text-xs md:text-sm">OUTDOOR FITNESS AREA</p>
+                        </div>
+
+                        <div class="flex flex-col items-center space-y-3 w-40 text-center">
+                            <img src="assets/images/lifestyle/garden.svg" class="w-16 md:w-20" alt="">
+                            <p class="text-xs md:text-sm">ROOFTOP POOL</p>
+                        </div>
+
+                    </div>
+
+                    <!-- ROW 2 (5 items full width) -->
+                    <div class="flex flex-wrap justify-center gap-12 md:gap-20 max-w-6xl">
+
+                        <div class="flex flex-col items-center space-y-3 w-40 text-center">
+                            <img src="assets/images/lifestyle/garden.svg" class="w-16 md:w-20" alt="">
+                            <p class="text-xs md:text-sm">CHANGING ROOMS</p>
+                        </div>
+
+                        <div class="flex flex-col items-center space-y-3 w-40 text-center">
+                            <img src="assets/images/lifestyle/garden.svg" class="w-16 md:w-20" alt="">
+                            <p class="text-xs md:text-sm">PILATES</p>
+                        </div>
+
+                        <div class="flex flex-col items-center space-y-3 w-40 text-center">
+                            <img src="assets/images/lifestyle/garden.svg" class="w-16 md:w-20" alt="">
+                            <p class="text-xs md:text-sm">SPA</p>
+                        </div>
+
+                        <div class="flex flex-col items-center space-y-3 w-40 text-center">
+                            <img src="assets/images/lifestyle/garden.svg" class="w-16 md:w-20" alt="">
+                            <p class="text-xs md:text-sm">JACUZZI</p>
+                        </div>
+
+                        <div class="flex flex-col items-center space-y-3 w-40 text-center">
+                            <img src="assets/images/lifestyle/garden.svg" class="w-16 md:w-20" alt="">
+                            <p class="text-xs md:text-sm">STEAM AND SAUNA</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ═══════════════════════════════ Section - 43 ═══════════════════════════════════════════ -->
+
+
+
+    <!-- ═══════════════════════════════ Footer ═══════════════════════════════════════════ -->
+    <footer
+        class="footer mx-1920 flex flex-col items-center justify-center w-full bg-blue bg-opacity-100 px-6 sm:px-8 lg:px-14 py-10 sm:py-14 md:py-16 lg:py-16">
+
+        <div class="flex flex-col justify-center md:flex-row w-full gap-10 sm:gap-10 md:gap-10 lg:gap-5 xl:gap-5">
+
+            <div class="flex flex-col w-full gap-6">
+                <div class="flex flex-col items-center" data-aos="fade-down" data-aos-duration="3000">
+                    <a href="#" class="footer-logo">
+                        <img src="assets/images/residence-white-logo.svg" class="w-100 " alt="">
+                    </a>
+                    <h3
+                        class="font-neutraface-medium text-white text-uppercase leading-snug letter-4 text-left pt-4 text-16 sm:text-16 md:text-18 lg:text-18 xl:text-18 2xl:text-18">
+                        Penthouse living</h3>
+                </div>
+                <div class="flex flex-col items-center" data-aos="fade-down" data-aos-duration="3000">
+                    <span
+                        class="font-quichesans-Bold text-white text-uppercase leading-snug text-center pt-4 text-18 sm:text-18 md:text-20 lg:text-24 xl:text-20 2xl:text-20">
+                        MARASI DRIVE, BUSINESS BAY</span>
+                    <span
+                        class="font-quichesans-Bold text-white text-uppercase leading-snug text-center text-18 sm:text-18 md:text-20 lg:text-24 xl:text-20 2xl:text-20">
+                        Dubai, uae</span>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- ═══════════════════════════════ Footer ═══════════════════════════════════════════ -->
+
+
+    <script src="assets/js/flowbite.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        AOS.init({
+            once: true,
+
+        });
+    </script>
+
+</body>
+
+</html>
