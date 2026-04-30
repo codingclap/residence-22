@@ -8,7 +8,7 @@ html,
 body {
    scroll-behavior: smooth;
    margin: 0;
-   padding: 0; 
+   padding: 0;
    min-height: 100%;
    overflow-x: hidden;
 }
@@ -68,7 +68,15 @@ body {
 @font-face {
    font-family: neutraface-condensed-medium;
    src: url("../fonts/neutraface/neutraface-condensed-medium.otf") format("woff2");
-   font-weight: 200;
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: neutraface-condensed-bold;
+   src: url("../fonts/neutraface/neutraface-condensed-bold.otf") format("woff2");
+   font-weight: 700;
    font-style: normal;
    font-display: swap;
 }
@@ -77,6 +85,38 @@ body {
    font-family: quichesans-regular;
    src: url("../fonts/quiche-sans/quichesans-regular.otf") format("woff2");
    font-weight: 200;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: quicksand-regular;
+   src: url("../fonts/quicksand/Quicksand-Regular.otf") format("woff2");
+   font-weight: 200;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: quicksand-medium;
+   src: url("../fonts/quicksand/Quicksand-Medium.otf") format("woff2");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: quicksand-SemiBold;
+   src: url("../fonts/quicksand/Quicksand-SemiBold.otf") format("woff2");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: quicksand-bold;
+   src: url("../fonts/quicksand/Quicksand-Bold.otf") format("woff2");
+   font-weight: 700;
    font-style: normal;
    font-display: swap;
 }
@@ -92,7 +132,7 @@ body {
 @font-face {
    font-family: quichesans-bold;
    src: url("../fonts/quiche-sans/quichesans-bold.otf") format("woff2");
-   font-weight: 600;
+   font-weight: 700;
    font-style: normal;
    font-display: swap;
 }
@@ -116,7 +156,7 @@ body {
 @font-face {
    font-family: brandon-grotesque-medium;
    src: url("../fonts/brandon-grotesque/Brandon_Grotesque_medium.otf") format("woff2");
-   font-weight: 500;
+   font-weight: 400;
    font-style: normal;
    font-display: swap;
 }
@@ -124,13 +164,34 @@ body {
 @font-face {
    font-family: brandon-grotesque-bold;
    src: url("../fonts/brandon-grotesque/Brandon_Grotesque_bold.otf") format("woff2");
-   font-weight: 600;
+   font-weight: 700;
    font-style: normal;
    font-display: swap;
 }
 
-.font-neutraface-medium {
+.font-neutraface-Medium {
    font-family: neutraface-condensed-medium, sans-serif;
+}
+
+.font-neutraface-Bold {
+   font-family: neutraface-condensed-bold, sans-serif;
+}
+
+
+.font-quicksand-Regular {
+   font-family: quicksand-regular, sans-serif;
+}
+
+.font-quicksand-Medium {
+   font-family: quicksand-medium, sans-serif;
+}
+
+.font-quicksand-SemiBold {
+   font-family: quicksand-SemiBold, sans-serif;
+}
+
+.font-quicksand-Bold {
+   font-family: quicksand-bold, sans-serif;
 }
 
 .font-quichesans-Regular {
@@ -448,40 +509,197 @@ body {
 /* ── Base text alignment ── */
 
 /* ── Height and Min-height ── */
+/* Base (mobile) */
 .h-\[100px\] {
-   height: 100px
+   height: 100px;
 }
 
 .h-\[150px\] {
-   height: 150px
+   height: 150px;
 }
 
 .h-\[200px\] {
-   height: 200px
+   height: 200px;
 }
 
 .h-\[300px\] {
-   height: 300px
+   height: 300px;
 }
 
 .h-\[400px\] {
-   height: 400px
+   height: 400px;
 }
 
 .h-\[450px\] {
-   height: 450px
+   height: 450px;
 }
 
 .h-\[500px\] {
-   height: 500px
+   height: 500px;
 }
 
 .h-\[600px\] {
-   height: 600px
+   height: 600px;
 }
 
 .h-\[700px\] {
-   height: 700px
+   height: 700px;
+}
+
+/* sm (≥640px) */
+@media (min-width: 640px) {
+   .sm\:h-\[100px\] {
+      height: 100px;
+   }
+
+   .sm\:h-\[150px\] {
+      height: 150px;
+   }
+
+   .sm\:h-\[200px\] {
+      height: 200px;
+   }
+
+   .sm\:h-\[300px\] {
+      height: 300px;
+   }
+
+   .sm\:h-\[400px\] {
+      height: 400px;
+   }
+
+   .sm\:h-\[450px\] {
+      height: 450px;
+   }
+
+   .sm\:h-\[500px\] {
+      height: 500px;
+   }
+
+   .sm\:h-\[600px\] {
+      height: 600px;
+   }
+
+   .sm\:h-\[700px\] {
+      height: 700px;
+   }
+}
+
+/* md (≥768px) */
+@media (min-width: 768px) {
+   .md\:h-\[100px\] {
+      height: 100px;
+   }
+
+   .md\:h-\[150px\] {
+      height: 150px;
+   }
+
+   .md\:h-\[200px\] {
+      height: 200px;
+   }
+
+   .md\:h-\[300px\] {
+      height: 300px;
+   }
+
+   .md\:h-\[400px\] {
+      height: 400px;
+   }
+
+   .md\:h-\[450px\] {
+      height: 450px;
+   }
+
+   .md\:h-\[500px\] {
+      height: 500px;
+   }
+
+   .md\:h-\[600px\] {
+      height: 600px;
+   }
+
+   .md\:h-\[700px\] {
+      height: 700px;
+   }
+}
+
+/* lg (≥1024px) */
+@media (min-width: 1024px) {
+   .lg\:h-\[100px\] {
+      height: 100px;
+   }
+
+   .lg\:h-\[150px\] {
+      height: 150px;
+   }
+
+   .lg\:h-\[200px\] {
+      height: 200px;
+   }
+
+   .lg\:h-\[300px\] {
+      height: 300px;
+   }
+
+   .lg\:h-\[400px\] {
+      height: 400px;
+   }
+
+   .lg\:h-\[450px\] {
+      height: 450px;
+   }
+
+   .lg\:h-\[500px\] {
+      height: 500px;
+   }
+
+   .lg\:h-\[600px\] {
+      height: 600px;
+   }
+
+   .lg\:h-\[700px\] {
+      height: 700px;
+   }
+}
+
+/* xl (≥1280px) */
+@media (min-width: 1280px) {
+   .xl\:h-\[100px\] {
+      height: 100px;
+   }
+
+   .xl\:h-\[150px\] {
+      height: 150px;
+   }
+
+   .xl\:h-\[200px\] {
+      height: 200px;
+   }
+
+   .xl\:h-\[300px\] {
+      height: 300px;
+   }
+
+   .xl\:h-\[400px\] {
+      height: 400px;
+   }
+
+   .xl\:h-\[450px\] {
+      height: 450px;
+   }
+
+   .xl\:h-\[500px\] {
+      height: 500px;
+   }
+
+   .xl\:h-\[600px\] {
+      height: 600px;
+   }
+
+   .xl\:h-\[700px\] {
+      height: 700px;
+   }
 }
 
 .min-h-\[100px\] {

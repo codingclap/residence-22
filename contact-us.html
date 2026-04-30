@@ -336,48 +336,7 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script>
-        const swiper = new Swiper('.lifestyle-swiper', {
-            loop: true,
-            centeredSlides: true,
-            slidesPerView: 1.8,
-            spaceBetween: 20,
-            navigation: {
-                prevEl: '.lifestyle-prev',
-                nextEl: '.lifestyle-next',
-            },
-            speed: 1000,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true,
-            },
-            grabCursor: false,
-            simulateTouch: false,
-            allowTouchMove: false,
-            breakpoints: {
-                300: { slidesPerView: 1.2, spaceBetween: 12 },
-                320: { slidesPerView: 1.3, spaceBetween: 12 },
-                375: { slidesPerView: 1.3, spaceBetween: 13 },
-                425: { slidesPerView: 1.3, spaceBetween: 15 },
-                530: { slidesPerView: 1.3, spaceBetween: 15 },
-                640: { slidesPerView: 1.5, spaceBetween: 15 },
-                768: { slidesPerView: 1.5, spaceBetween: 18 },
-                1024: { slidesPerView: 1.8, spaceBetween: 20 },
-                1200: { slidesPerView: 1.8, spaceBetween: 30 },
-                1400: { slidesPerView: 1.8, spaceBetween: 40 },
-            },
-            on: {
-                slideChange: function () {
-                    const activeSlide = this.slides[this.activeIndex];
-                    const label = activeSlide.getAttribute('data-label');
-                    document.getElementById('slide-label').textContent = label;
-                }
-            }
-        });
-    </script>
-
+ 
     <script>
         AOS.init({
             once: true,

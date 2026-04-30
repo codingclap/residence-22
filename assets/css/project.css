@@ -386,6 +386,95 @@
 
 
 /****************** Project Page Section- 27 **********************/
+
+
+.section-27 .fivestar-lifestyle .swiper-slide img {
+   height: 650px;
+   border-radius: 15px;
+}
+
+/* Rectangle 166 */
+.section-27 .fivestar-navigation .fivestar-prev,
+.section-27 .fivestar-navigation .fivestar-next {
+   position: absolute;
+   z-index: 10;
+   width: 33px;
+   /* top is set by JS */
+}
+
+.section-27 .fivestar-navigation .fivestar-prev {
+   left:10%;
+}
+
+.section-27 .fivestar-navigation .fivestar-next {
+   right: 10%;
+}
+
+.section-27 .fivestar-navigation .fivestar-prev img,
+.section-27 .fivestar-navigation .fivestar-next img {
+   width: 100%;
+   height: auto;
+}
+
+@media (max-width: 767px) {
+
+   .section-27 .fivestar-navigation .fivestar-prev,
+   .section-27 .fivestar-navigation .fivestar-next {
+      width: 24px;
+   }
+}
+
+@media (max-width:1500px) {
+   .section-27 .fivestar-lifestyle .swiper-slide img {
+      height: 500px;
+   }
+}
+
+@media (max-width:991px) {
+   .section-27 .fivestar-lifestyle .swiper-slide img {
+      height: 420px;
+   }
+}
+
+@media (max-width:850px) {
+   .section-27 .fivestar-lifestyle .swiper-slide img {
+      height: 380px;
+   }
+}
+
+@media (max-width:768px) {
+
+   .section-27 .fivestar-navigation .swiper-slide img {
+      height: 350px;
+   }
+}
+
+@media (max-width:700px) {
+   .section-27 .fivestar-lifestyle .swiper-slide img {
+      height: 300px;
+   }
+}
+
+@media (max-width:530px) {
+   .section-27 .fivestar-lifestyle .swiper-slide img {
+      height: 280px;
+   }
+
+}
+
+@media (max-width:425px) {
+   .section-27 .fivestar-lifestyle .swiper-slide img {
+      height: 250px;
+   }
+}
+
+@media (max-width:375px) {
+   .section-27 .fivestar-lifestyle .swiper-slide img {
+      height: 200px;
+   }
+}
+
+/* 
 .section-27 .Lifestyle-design-grid {
    display: grid;
    grid-template-columns: 1fr;
@@ -417,7 +506,7 @@
    aspect-ratio: 16 / 9;
 }
 
-/* Second row — two side by side */
+ 
 .section-27 .Lifestyle-design-grid .design-small-row {
    display: grid;
    grid-template-columns: 1fr 1fr;
@@ -430,7 +519,7 @@
    height: 100%;
 }
 
-/* Desktop */
+ 
 @media (min-width: 680px) {
    .section-27 .Lifestyle-design-grid {
       grid-template-columns: 1fr 1fr;
@@ -465,6 +554,6 @@
       height: 100%;
       min-height: 0;
    }
-}
+} */
 
 /****************** Project Page Section- 27 **********************/

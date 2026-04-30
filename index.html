@@ -12,6 +12,7 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -255,9 +256,9 @@
         <div class="z-20 w-full px-5 sm:px-5 lg:px-14 pt-8 pb-0 sm:pb-1 md:pb-18 lg:pb-20">
             <div class="w-full text-center" data-aos="fade-down" data-aos-duration="3000" data-aos-once="true">
                 <h2
-                    class="font-quichesans-Regular text-white leading-none mb-3 font-normal text-50 sm:text-64 md:text-64 lg:text-84 xl:text-84 2xl:text-96">
+                    class="font-neutraface-medium text-white text-uppercase leading-none mb-3 font-normal text-50 sm:text-64 md:text-64 lg:text-84 xl:text-84 2xl:text-96">
                     Penthouse Living</h2>
-                <p class="font-Brandon-Medium text-white leading-normal text-uppercase text-16 lg:text-18">
+                <p class="font-quicksand-Medium text-white leading-normal text-uppercase text-16 lg:text-18">
                     Residence 22
                     seamlessly
                     blends the sophistication of a five-star hotel with the<br class="hidden lg:block"> privacy
@@ -281,14 +282,33 @@
             will-change: transform;
             transform: translate3d(0, 0, 0);
             backface-visibility: hidden;
+            width: 100%;
+            height: 120%;
+            object-fit: cover;
+
+            position: absolute;
+            top: -10%;
+            left: 0;
         }
 
         .parallax-img {
             width: 100%;
             height: 120%;
-            /* bigger than container */
             object-fit: cover;
             will-change: transform;
+        }
+
+        /*  FIX: FULL RESET ON MOBILE */
+        @media (max-width: 768px) {
+
+            .img-wrap img,
+            .parallax-img {
+                position: relative !important;
+                height: 100% !important;
+                top: 0 !important;
+                left: 0 !important;
+                transform: none !important;
+            }
         }
     </style>
     <section
@@ -299,15 +319,13 @@
                 <div class="flex flex-col w-full md:w-full lg:w-50 xl:w-40 justify-center items-start">
                     <h2 class="font-quichesans-Medium text-blue text-uppercase leading-tight mb-3 font-normal text-32 sm:text-36 md:text-36 lg:text-40 xl:text-44 2xl:text-48"
                         data-aos="fade-right" data-aos-duration="3000">
-                        pulsating heart of Business Bay</h2>
+                        pulsating heart of MARASI DRIVE</h2>
                     <p class="font-Brandon-Regular text-blue leading-relaxed text-17 text-justify lg:text-18"
-                        data-aos="fade-right" data-aos-duration="3000">
-                        Residence 22 stands tall as an urban oasis located within Business Bay. In the midst of
-                        the fast
-                        paced city, this address
-                        offers an exclusive retreat where you may enjoy not only the finer things in life, but
-                        serenity
-                        and
+                        data-aos="fade-right" data-aos-duration="3000">Residence 22 stands tall as an urban oasis
+                        located at Marasi Drive within Business Bay. In the midst of
+                        the fast paced city, this address offers an
+                        exclusive retreat where you may enjoy not
+                        only the finer things in life, but serenity and
                         peace of mind.</p>
                     <div class="flex default-btn mt-8" data-aos="fade-right" data-aos-duration="3000">
                         <a href=""
@@ -316,8 +334,8 @@
                     </div>
                 </div>
                 <div
-                    class="flex w-full md:w-full lg:w-50 xl:w-50 border-radius-15 justify-center items-center img-wrap">
-                    <img class="w-100 parallax-img border-radius-15"
+                    class="flex w-full md:w-full h-[300px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[500px] lg:w-50 xl:w-50 border-radius-15 justify-center items-center img-wrap">
+                    <img class="parallax-img border-radius-15"
                         src="assets/images/home/pulsating-heart-of-business-bay.webp"
                         alt="pulsating-heart-of-business-bay">
                 </div>
@@ -328,7 +346,7 @@
                 class="flex hero-section flex-col-reverse md:flex-row w-full items-center justify-center gap-10 sm:gap-12 lg:gap-15 xl:gap-20">
 
                 <div
-                    class="flex border-radius-15 w-full md:w-full lg:w-50 xl:w-50 justify-center items-center img-wrap">
+                    class="flex border-radius-15 h-[300px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[500px] w-full md:w-full lg:w-50 xl:w-50 justify-center items-center img-wrap">
                     <img class="w-100 parallax-img border-radius-15" src="assets/images/home/excellence-in-design.webp"
                         alt="excellence-in-design">
                 </div>
@@ -338,11 +356,11 @@
                         Excellence in design</h2>
                     <p class="font-Brandon-Regular text-blue leading-relaxed text-17 text-justify lg:text-18"
                         data-aos="fade-left" data-aos-duration="3000">Masterfully-designed for those who demand only the
-                        absolute best, Residence 22 seamlessly blends the sophistication of a five-star hotel with the
-                        privacy and comfort of a residential property. Spanning an expansive 6,000 sq.ft., each of our
-                        twenty-two elegant suites commands an entire private floor, offering not only a palatial living
-                        experience but also breathtaking views of Dubai’s inimitable skyline and the serene Dubai Water
-                        Canal.</p>
+                        absolute best, Residence 22 seamlessly blends the sophistication of a five-star hotel living
+                        with the privacy and comfort of a residential property.
+                        Spanning 4,700 sq.ft upto 6,000 sq.ft., each of our twenty-two elegant suites commands an entire
+                        private floor, offering not only a palatial living experience but also breathtaking 360 degrees
+                        views of Dubai’s inimitable skyline and the serene Dubai Water Canal.</p>
                     <div class="flex default-btn mt-8">
                         <a href=""
                             class="btn-primary text-center text-uppercase w-100 bg-blue bg-opacity-100 px-6 sm:px-6 md:px-6 lg:px-6 xl:px-6 py-4"
@@ -369,18 +387,15 @@
         </div>
 
         <div class="flex flex-col absolute justify-center items-center px-6 sm:px-8 lg:px-14 py-12 sm:py-12 lg:py-20">
-            <div class="flex flex-col w-full md:w-full lg:w-80 xl:w-75 justify-center items-center">
+            <div class="flex flex-col w-full md:w-full lg:w-80 xl:w-66 justify-center items-center">
                 <h2 class="font-quichesans-Bold text-white text-center text-uppercase leading-tight mb-3 font-normal text-34 sm:text-34 md:text-36 lg:text-44 xl:text-52 2xl:text-52"
                     data-aos="fade-up" data-aos-duration="3000">
                     A life of
                     seamless ease</h2>
                 <p class="font-Brandon-Medium text-white leading-snug text-18 text-center lg:text-20" data-aos="fade-up"
-                    data-aos-duration="3000">At Residence 22, life flows effortlessly. Our
-                    residents enjoy a lifestyle
-                    defined by community,
-                    where well-being and stress-free living are paramount. Our signature services provide a
-                    level of
-                    convenience and luxury that sets us apart.
+                    data-aos-duration="3000">At Residence 22, life flows effortlessly. Our residents enjoy a lifestyle
+                    defined by community, where well-being and stress-free living are paramount. Our signature
+                    services provide a level of convenience and luxury that sets us apart.
                 </p>
             </div>
 
@@ -394,18 +409,21 @@
     <section
         class="section-4 mx-1920 flex flex-col items-center justify-center w-full bg-white bg-opacity-100 px-6 sm:px-8 lg:px-14 py-20 sm:py-20 lg:py-24">
 
-        <div class="flex flex-col justify-center items-center">
+        <div class="flex flex-col w-full justify-center items-center">
             <div class="flex flex-col w-full md:w-full lg:w-80 xl:w-75 justify-center items-center">
                 <h2 class="font-quichesans-Bold text-blue text-center text-uppercase leading-tight mb-3 font-normal pt-5 md:pt-5 lg:pt-10 xl:pt-10 text-34 sm:text-34 md:text-36 lg:text-44 xl:text-52 2xl:text-52"
                     data-aos="fade-up" data-aos-duration="3000">
                     The residence</h2>
                 <p class="font-Brandon-Regular text-blue leading-snug text-18 text-center lg:text-20" data-aos="fade-up"
-                    data-aos-duration="3000">From the
-                    impressive marble lobby to your own luxurious suite, Residence 22 is a
-                    celebration of space and light. Each of the 22 penthouse suites enjoys its own floor
-                    with breathtaking panoramic views of the
-                    Dubai skyline.</p>
-                <div class="flex default-btn mt-5">
+                    data-aos-duration="3000">From the impressive marble lobby to your own luxurious suite, Residence 22
+                    is a celebration of space and light.<br class="hidden lg:block"> Each of the 22 penthouse suites
+                    enjoys its own floor with breathtaking
+                    panoramic views of the Dubai skyline, offering <br class="hidden lg:block"><span
+                        class="font-Brandon-Bold text-uppercase">4 Bedroom Ensuite Penthouses, 4 meter ceiling height,
+                    </span> <br class="hidden lg:block">timber flooring, custom built wardrobes, branded fittings and
+                    appliances</p>
+
+                <div class="flex default-btn mt-8">
                     <a href="project-details.html"
                         class="btn-primary text-center text-uppercase w-100 bg-blue bg-opacity-100 px-10 sm:px-10 md:px-12 lg:px-12 xl:px-12 py-4"
                         data-aos="fade-up" data-aos-duration="3000">explore
@@ -415,33 +433,34 @@
 
             <div
                 class="flex flex-col w-full md:w-full lg:w-100 xl:w-100 justify-center items-center pt-8 sm:pt-10 lg:pt-10 xl:pt-14">
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full min-h-[800px]">
 
                     <!-- Left - tall single image -->
-                    <div class="col-span-1">
+                    <div class="col-span-1 img-wrap border-radius-15" data-aos="fade-up" data-aos-duration="3000">
                         <img src="assets/images/home/gallery-1.webp" alt=""
-                            class="w-full h-full object-cover border-radius-15" data-aos="fade-up"
-                            data-aos-duration="3000">
+                            class="w-full h-full object-cover border-radius-15 parallax-img">
                     </div>
 
                     <!-- Middle - 3 stacked images -->
-                    <div class="col-span-1 flex flex-col gap-3">
-                        <img src="assets/images/home/gallery-2.webp" alt=""
-                            class="w-full flex-1 object-cover border-radius-15" data-aos="fade-up"
-                            data-aos-duration="3000">
-                        <img src="assets/images/home/gallery-3.webp" alt=""
-                            class="w-full flex-1 object-cover border-radius-15" data-aos="fade-up"
-                            data-aos-duration="3000">
-                        <img src="assets/images/home/gallery-4.webp" alt=""
-                            class="w-full flex-1 object-cover border-radius-15" data-aos="fade-up"
-                            data-aos-duration="3000">
+                    <div class="col-span-1 flex flex-col gap-3" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="w-full flex-1 border-radius-15 img-wrap">
+                            <img src="assets/images/home/gallery-2.webp" alt=""
+                                class="object-cover border-radius-15 parallax-img">
+                        </div>
+                        <div class="w-full flex-1 border-radius-15 img-wrap">
+                            <img src="assets/images/home/gallery-3.webp" alt=""
+                                class="object-cover border-radius-15 parallax-img">
+                        </div>
+                        <div class="w-full flex-1 border-radius-15 img-wrap">
+                            <img src="assets/images/home/gallery-4.webp" alt=""
+                                class="object-cover border-radius-15 parallax-img">
+                        </div>
                     </div>
 
                     <!-- Right - tall single image -->
-                    <div class="col-span-1">
+                    <div class="col-span-1 img-wrap border-radius-15" data-aos="fade-up" data-aos-duration="3000">
                         <img src="assets/images/home/gallery-5.webp" alt=""
-                            class="w-full h-full object-cover border-radius-15" data-aos="fade-up"
-                            data-aos-duration="3000">
+                            class="w-full h-full object-cover border-radius-15 parallax-img">
                     </div>
                 </div>
             </div>
@@ -449,30 +468,62 @@
     </section>
     <!-- ═══════════════════════════════ Section - Four ═══════════════════════════════════════════ -->
 
+    <!-- ═══════════════════════════════ Section - Four/Five ═══════════════════════════════════════════ -->
+    <section
+        class="section-4-5 mx-1920 flex flex-col items-center justify-center w-full bg-darkcream bg-opacity-100 px-6 sm:px-8 lg:px-14 py-20 sm:py-20 lg:py-24">
+
+        <div class="flex flex-col w-full justify-center items-center">
+            <div
+                class="flex flex-col lg:flex-row w-full md:w-full lg:w-90 xl:w-85 gap-2 sm:gap-2 md:gap-3 lg:gap-10 xl:gap-20 justify-between items-center">
+                <div class="w-full md:w-full lg:w-65 xl:w-60">
+                    <h2 class="font-quichesans-Bold text-white text-start text-uppercase leading-tight font-normal pt-5 md:pt-5 lg:pt-10 xl:pt-10 text-34 sm:text-34 md:text-48 lg:text-48 xl:text-60 2xl:text-60"
+                        data-aos="fade-up" data-aos-duration="3000">
+                        22 RESIDENCES.<br class="hidden lg:block">
+                        NO COMPROMISE.<br class="hidden lg:block">
+                        ALL YOURS.</h2>
+                </div>
+                <div class="w-full md:w-full lg:w-60 xl:w-60">
+                    <p class="font-Brandon-Regular text-white leading-normal text-uppercase text-18 text-start md:text-20 lg:text-24"
+                        data-aos="fade-up" data-aos-duration="3000">With only 22 penthouse suites each
+                        claiming its own dedicated floor. this address serves as a lavish island of tranquility for
+                        those who
+                        value space as the ultimate luxury. </p>
+                </div>
+
+
+            </div>
+
+            <div
+                class="flex flex-col w-full md:w-full lg:w-100 xl:w-100 justify-center items-center pt-8 sm:pt-10 lg:pt-10 xl:pt-14">
+                <img src="assets/images/home/22-residences-no-compromise.webp" alt=""
+                    class="w-full h-full object-cover border-radius-15 parallax-img" data-aos="fade-up"
+                    data-aos-duration="3000">
+            </div>
+        </div>
+    </section>
+    <!-- ═══════════════════════════════ Section - Four/Five ═══════════════════════════════════════════ -->
+
     <!-- ═══════════════════════════════ Section - Five ═══════════════════════════════════════════ -->
     <section
         class="section-5 mx-1920 flex flex-col items-center justify-center w-full bg-white bg-opacity-100 px-6 sm:px-8 lg:px-14 pt-10 sm:pt-5 lg:pt-5 xl:pt-8 pb-20 sm:pb-20 lg:pb-20">
 
         <div class="flex flex-col w-full justify-center items-center">
             <div
-                class="flex flex-col w-full md:w-full lg:w-80 xl:w-75 pt-5 md:pt-5 lg:pt-10 xl:pt-10  justify-center items-center">
+                class="flex flex-col w-full md:w-full lg:w-90 xl:w-80 pt-5 md:pt-5 lg:pt-10 xl:pt-10  justify-center items-center">
 
                 <h2 class="font-quichesans-Bold text-blue text-center text-uppercase leading-tight mb-5 font-normal text-28 sm:text-32 md:text-36 lg:text-44 xl:text-52 2xl:text-52"
                     data-aos="fade-up" data-aos-duration="3000">
                     city within a city</h2>
                 <p class="font-Brandon-Regular text-blue leading-snug text-18 text-center lg:text-22" data-aos="fade-up"
-                    data-aos-duration="3000">Located on the waterfront in the pulsating heart
-                    of Business Bay, Residence
-                    22 is the
-                    area’s most sought after address, serving as a lavish island of tranquility for those
-                    fortunate
-                    enough to call it home.</p>
+                    data-aos-duration="3000">Located on the waterfront in the pulsating heart of Marasi Drive, Residence
+                    22 is the area’s most sought after
+                    address, serving as a lavish island of tranquility for those fortunate enough to call it home.</p>
 
             </div>
 
             <div
                 class="flex flex-col w-full md:w-full lg:w-100 xl:w-100 justify-center items-center pt-8 sm:pt-10 lg:pt-10 xl:pt-12">
-                <img src="assets/images/home/residence22-map.svg" alt="" class="w-full border-radius-15"
+                <img src="assets/images/home/residence22-map.jpg" alt="" class="w-full border-radius-15"
                     data-aos="fade-up" data-aos-duration="3000">
             </div>
         </div>
@@ -483,7 +534,7 @@
                 <div
                     class="flex flex-row sm:justify-start lg:justify-center items-start gap-0 sm:gap-2 lg:gap-2 w-100 md:w-45 lg:w-auto xl:w-auto">
                     <h3
-                        class="city-route-km font-Brandon-Bold text-green mb-3 text-40 sm:text-48 md:text-48 lg:text-48 xl:text-52 2xl:text-60 shrink-0">
+                        class="city-route-km font-quichesans-Bold text-green mb-3 text-40 sm:text-48 md:text-48 lg:text-48 xl:text-52 2xl:text-60 shrink-0">
                         15
                     </h3>
                     <span
@@ -496,7 +547,7 @@
                 <div
                     class="flex flex-row sm:justify-start lg:justify-center items-start gap-0 sm:gap-2 lg:gap-2 w-100 md:w-45 lg:w-auto xl:w-auto">
                     <h3
-                        class="city-route-km font-Brandon-Bold text-green mb-3 text-40 sm:text-48 md:text-48 lg:text-48 xl:text-52 2xl:text-60 shrink-0">
+                        class="city-route-km font-quichesans-Bold text-green mb-3 text-40 sm:text-48 md:text-48 lg:text-48 xl:text-52 2xl:text-60 shrink-0">
                         5
                     </h3>
                     <span
@@ -509,7 +560,7 @@
                 <div
                     class="flex flex-row sm:justify-start lg:justify-center items-start gap-0 sm:gap-2 lg:gap-2 w-100 md:w-45 lg:w-auto xl:w-auto">
                     <h3
-                        class="city-route-km font-Brandon-Bold text-green mb-3 text-40 sm:text-48 md:text-48 lg:text-48 xl:text-52 2xl:text-60 shrink-0">
+                        class="city-route-km font-quichesans-Bold text-green mb-3 text-40 sm:text-48 md:text-48 lg:text-48 xl:text-52 2xl:text-60 shrink-0">
                         10
                     </h3>
                     <span
@@ -522,7 +573,7 @@
                 <div
                     class="flex flex-row sm:justify-start lg:justify-center items-start gap-0 sm:gap-2 lg:gap-2 w-100 md:w-45 lg:w-auto xl:w-auto">
                     <h3
-                        class="city-route-km font-Brandon-Bold text-green mb-3 text-40 sm:text-48 md:text-48 lg:text-48 xl:text-52 2xl:text-60 shrink-0">
+                        class="city-route-km font-quichesans-Bold text-green mb-3 text-40 sm:text-48 md:text-48 lg:text-48 xl:text-52 2xl:text-60 shrink-0">
                         8
                     </h3>
                     <span
@@ -535,7 +586,7 @@
                 <div
                     class="flex flex-row sm:justify-start lg:justify-center xl:justify-center items-start gap-0 sm:gap-2 lg:gap-2 w-100 md:w-45 lg:w-auto xl:w-auto">
                     <h3
-                        class="city-route-km font-Brandon-Bold text-green mb-3 text-40 sm:text-48 md:text-48 lg:text-48 xl:text-52 2xl:text-60 shrink-0">
+                        class="city-route-km font-quichesans-Bold text-green mb-3 text-40 sm:text-48 md:text-48 lg:text-48 xl:text-52 2xl:text-60 shrink-0">
                         7
                     </h3>
                     <span
@@ -565,10 +616,11 @@
                 Residence 22 is a place to truly call home.
             </p>
             <p class="font-Brandon-Regular text-blue leading-snug text-18 text-center lg:text-22" data-aos="fade-up"
-                data-aos-duration="3000">A place where you are
-                at the forefront of Dubai, only minutes away from the best retail destinations, business<br
-                    class="hidden lg:block">
-                hubs and bustling social scenes.</p>
+                data-aos-duration="3000">A place where you are at the forefront of Dubai, only minutes away from the
+                best retail destinations, business
+                <br class="hidden lg:block">
+                hubs and bustling social scenes.
+            </p>
         </div>
 
         <!-- Swiper -->
@@ -590,12 +642,20 @@
                 <div class="swiper-slide" data-label="AMENITIES">
                     <img src="assets/images/home/lifestyle-6.webp" alt="" class="w-full object-cover">
                 </div>
-
+                <div class="swiper-slide" data-label="AMENITIES">
+                    <img src="assets/images/home/lifestyle-7.webp" alt="" class="w-full object-cover">
+                </div>
+                <div class="swiper-slide" data-label="AMENITIES">
+                    <img src="assets/images/home/lifestyle-8.webp" alt="" class="w-full object-cover">
+                </div>
+                <div class="swiper-slide" data-label="AMENITIES">
+                    <img src="assets/images/home/lifestyle-9.webp" alt="" class="w-full object-cover">
+                </div>
             </div>
         </div>
 
         <!-- Custom Controls -->
-        <div class="lifestyle-pagination mt-8 flex justify-center items-center gap-2"></div>
+        <div class="lifestyle-pagination pt-14 flex justify-center items-center gap-1"></div>
         <!-- <div class="flex items-center justify-center gap-10 mt-10" data-aos="fade-up" data-aos-duration="3000">
             <button class="lifestyle-prev text-xl"><img src="assets/images/home/arrow-left.png"
                     style="width:25px;height:25px;" alt="arrow-left"></button>
@@ -618,17 +678,18 @@
             <div
                 class="contactHome-container relative flex flex-col md:flex-row w-full items-start justify-center gap-8 sm:gap-8 lg:gap-10 xl:gap-10">
 
-                <div class="contactHome-heading w-full md:w-full lg:w-50 xl:w-40">
-                    <h2 class="font-quichesans-Bold text-green text-left text-uppercase leading-none mb-5 font-normal text-40 sm:text-46 md:text-52 lg:text-84 xl:text-84 2xl:text-84"
-                        data-aos="fade-up" data-aos-duration="3000">
+                <div class="contactHome-heading w-full md:w-full lg:w-50 xl:w-40" data-aos="fade-up"
+                    data-aos-duration="3000">
+                    <h2
+                        class="font-quichesans-Bold text-green text-left text-uppercase leading-none mb-5 font-normal text-40 sm:text-46 md:text-52 lg:text-84 xl:text-84 2xl:text-84">
                         Connect<br class="hidden lg:block"> with us
                     </h2>
                     <img src="assets/images/home/contact-form-banner.webp" class="w-100 border-radius-15" alt="">
                 </div>
                 <div class="contactHome-form w-full md:w-full lg:w-100 lg:w-50 xl:w-45 pt-10 lg:pt-14 pb-5 lg:pb-10 px-1 sm:px-5 md:px-6 lg:px-10 xl:px-10"
                     data-aos="fade-up" data-aos-duration="3000">
-                    <h2 class="font-Brandon-Bold text-blue text-left text-uppercase leading-tight mb-5 font-normal pt-1 sm:pt-1 md:pt-5 lg:pt-5 xl:pt-5 text-30 sm:text-30 md:text-36 lg:text-36 xl:text-36 2xl:text-36"
-                        data-aos="fade-up" data-aos-duration="3000">
+                    <h2
+                        class="font-Brandon-Bold text-blue text-left text-uppercase leading-tight mb-5 font-normal pt-1 sm:pt-1 md:pt-5 lg:pt-5 xl:pt-5 text-30 sm:text-30 md:text-36 lg:text-36 xl:text-36 2xl:text-36">
                         REGISTER YOUR INTERESTS </h2>
 
                     <form class="grid grid-cols-2 md:grid-cols-2 gap-x-4 gap-y-5">
@@ -867,28 +928,35 @@
     </script>
     <script>
         gsap.registerPlugin(ScrollTrigger);
-         gsap.ticker.lagSmoothing(0);
-        gsap.utils.toArray(".img-wrap").forEach((wrap) => {
+        gsap.ticker.lagSmoothing(0);
+        ScrollTrigger.matchMedia({
 
-            let img = wrap.querySelector("img");
+            // ✅ Enable only above 768px
+            "(min-width: 769px)": function () {
 
-            gsap.fromTo(img,
-                { yPercent: -10 },   // start slightly up
-                {
-                    yPercent: 10,      // move down inside container
-                    ease: "power1.out",
-                    scrollTrigger: {
-                        trigger: wrap,
-                        start: "top bottom",
-                        end: "bottom top",
-                        scrub: 2,
-                        anticipatePin: 1
-                    }
-                }
-            );
+                gsap.utils.toArray(".img-wrap").forEach((wrap) => {
+
+                    let img = wrap.querySelector("img");
+
+                    gsap.fromTo(img,
+                        { yPercent: -8 },   // start slightly up
+                        {
+                            yPercent: 8,      // move down inside container
+                            ease: "power1.out",
+                            scrollTrigger: {
+                                trigger: wrap,
+                                start: "top bottom",
+                                end: "bottom top",
+                                scrub: 1.5,
+                                anticipatePin: 1
+                            }
+                        }
+                    );
+
+                });
+            }
 
         });
-
     </script>
 
     <script>
