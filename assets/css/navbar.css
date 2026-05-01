@@ -65,7 +65,7 @@
 
  .nav-links a,
  .nav-links button.drop-btn {
-     font-family: brandon-grotesque-bold, sans-serif;
+     font-family: quicksand-bold, sans-serif;
      font-size: 15.6px;
      color: #fff;
      letter-spacing: 1px;
@@ -277,7 +277,7 @@
      justify-content: space-between;
      padding: 1rem 1.1rem;
      border-radius: 12px;
-     font-family: brandon-grotesque-bold, sans-serif;
+     font-family: quicksand-bold, sans-serif;
      font-size: 14.8px;
      color: #fff;
      text-decoration: none;
@@ -438,7 +438,17 @@
          font-size: 15px;
      }
  }
+@media (max-width: 991px) {
+     
+     .nav-links,
+     .cta-btn {
+         display: none;
+     }
 
+     .hamburger {
+         display: flex;
+     }
+ }
  @media (max-width: 768px) {
      .header-logo {
          height: 80px;

@@ -65,6 +65,7 @@ body {
 }
 
 /*#################  Custom Fonts # ##################*/
+
 @font-face {
    font-family: neutraface-condensed-medium;
    src: url("../fonts/neutraface/neutraface-condensed-medium.otf") format("woff2");
@@ -77,6 +78,14 @@ body {
    font-family: neutraface-condensed-bold;
    src: url("../fonts/neutraface/neutraface-condensed-bold.otf") format("woff2");
    font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: voltaire-regular;
+   src: url("../fonts/voltaire/Voltaire-Regular.ttf") format("woff2");
+   font-weight: 400;
    font-style: normal;
    font-display: swap;
 }
@@ -169,6 +178,18 @@ body {
    font-display: swap;
 }
 
+@font-face {
+   font-family: brandon-grotesque-bold;
+   src: url("../fonts/brandon-grotesque/Brandon_Grotesque_bold.otf") format("woff2");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+.font-voltaire-regular {
+   font-family: voltaire-regular, sans-serif;
+}
+
 .font-neutraface-Medium {
    font-family: neutraface-condensed-medium, sans-serif;
 }
@@ -176,7 +197,6 @@ body {
 .font-neutraface-Bold {
    font-family: neutraface-condensed-bold, sans-serif;
 }
-
 
 .font-quicksand-Regular {
    font-family: quicksand-regular, sans-serif;
@@ -313,6 +333,12 @@ body {
 
 
 /*########## Custom Colors ##########*/
+.rounded-top-50{
+   border-radius: 50px 50px 0px 0px;
+}
+.rounded-bottom-50{
+   border-radius: 50px 50px 0px 0px;
+}
 .text-black {
    color: #000;
 }
@@ -809,7 +835,9 @@ body {
 .text-14 {
    font-size: 14px
 }
-
+.text-15 {
+   font-size: 15px
+}
 .text-16 {
    font-size: 16px
 }
@@ -2853,6 +2881,10 @@ body {
    gap: 4rem
 }
 
+.gap-18 {
+   gap: 4.5rem
+}
+
 .gap-20 {
    gap: 5rem
 }
@@ -2916,6 +2948,10 @@ body {
 
    .sm\:gap-16 {
       gap: 4rem
+   }
+
+   .sm\:gap-18 {
+      gap: 4.5rem
    }
 
    .sm\:gap-20 {
@@ -2983,7 +3019,9 @@ body {
    .md\:gap-16 {
       gap: 4rem
    }
-
+   .md\:gap-18 {
+      gap: 4.5rem
+   }
    .md\:gap-20 {
       gap: 5rem
    }
@@ -3049,7 +3087,9 @@ body {
    .lg\:gap-16 {
       gap: 4rem
    }
-
+   .lg\:gap-18 {
+      gap: 4.5rem
+   }
    .lg\:gap-20 {
       gap: 5rem
    }
@@ -3115,7 +3155,9 @@ body {
    .xl\:gap-16 {
       gap: 4rem
    }
-
+   .xl\:gap-18 {
+      gap: 4.5rem
+   }
    .xl\:gap-20 {
       gap: 5rem
    }

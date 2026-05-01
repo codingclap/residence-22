@@ -40,6 +40,7 @@
             data-aos-duration="3000">
             <li><a href="index.html">HOME</a></li>
             <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="lifestyle.html">LIFESTYLE</a></li>
             <li><a href="project-details.html">PROJECT DETAILS</a></li>
             <li><a href="contact-us.html">GET IN TOUCH</a></li>
             <!-- Resources Dropdown -->
@@ -72,6 +73,8 @@
         <a href="index.html" class="mobile-link">HOME</a>
         <div class="mobile-divider"></div>
         <a href="about.html" class="mobile-link">ABOUT US</a>
+        <div class="mobile-divider"></div>
+        <a href="lifestyle.html" class="mobile-link">LIFESTYLE</a>
         <div class="mobile-divider"></div>
         <a href="project-details.html" class="mobile-link">PROJECT DETAILS</a>
         <div class="mobile-divider"></div>
@@ -227,13 +230,13 @@
         <div
             class="project-header flex justify-center items-center z-20 w-full px-5 sm:px-5 lg:px-14 pt-0 md:pt-0 lg:pt-0 pb-12 sm:pb-20 md:pb-20 lg:pb-20">
             <div class="w-full text-center">
-                <h1 class="font-quichesans-Medium text-white text-uppercase letter-2 leading-tight pb-5 font-normal text-30 sm:text-44 md:text-52 lg:text-60 xl:text-64 2xl:text-72"
+                <h1 class="font-voltaire-regular text-white text-uppercase letter-2 leading-tight pb-5 font-normal text-30 sm:text-44 md:text-52 lg:text-60 xl:text-64 2xl:text-72"
                     data-aos="fade-up" data-aos-duration="3000">Seamless Living,<br class="hidden md:block">
-                    Thoughtfully Curated.
+                    Thoughtfully Curated
                 </h1>
                 <p class="font-Brandon-Medium text-white leading-normal text-18 text-center lg:text-22"
                     data-aos="fade-up" data-aos-duration="3000">THOUGHTFULLY CURATED AMENITIES
-                    DEFINE MODERN LUXURY LIVING.</p>
+                    DEFINE MODERN LUXURY LIVING</p>
             </div>
         </div>
 
@@ -242,6 +245,45 @@
 
 
     <!-- ═══════════════════════════════ Section - 42 ═══════════════════════════════════════════ -->
+    <style>
+        .img-wrap {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .img-wrap img {
+            will-change: transform;
+            transform: translate3d(0, 0, 0);
+            backface-visibility: hidden;
+            width: 100%;
+            height: 120%;
+            object-fit: cover;
+
+            position: absolute;
+            top: -10%;
+            left: 0;
+        }
+
+        .parallax-img {
+            width: 100%;
+            height: 120%;
+            object-fit: cover;
+            will-change: transform;
+        }
+
+        /*  FIX: FULL RESET ON MOBILE */
+        @media (max-width: 768px) {
+
+            .img-wrap img,
+            .parallax-img {
+                position: relative !important;
+                height: 100% !important;
+                top: 0 !important;
+                left: 0 !important;
+                transform: none !important;
+            }
+        }
+    </style>
     <section
         class="section-42 mx-1920 flex flex-col items-center justify-center w-full bg-lightcream bg-opacity-100 px-6 sm:px-8 lg:px-14 py-10 sm:py-10 lg:py-16 xl:py-20">
 
@@ -249,13 +291,13 @@
             <div
                 class="flex flex-col lg:flex-row w-full md:w-full lg:w-100 xl:w-90 gap-2 sm:gap-2 md:gap-3 lg:gap-10 xl:gap-10 justify-between items-center">
                 <div class="w-full md:w-full lg:w-60 xl:w-60">
-                    <h2 class="font-quichesans-Bold text-blue text-start text-uppercase leading-tight font-normal text-34 sm:text-34 md:text-48 lg:text-48 xl:text-60 2xl:text-60"
+                    <h2 class="font-voltaire-regular text-blue text-start text-uppercase leading-tight font-normal text-34 sm:text-36 md:text-44 lg:text-56 xl:text-64 2xl:text-68"
                         data-aos="fade-up" data-aos-duration="3000">
                         EFFORTLESS LIVING, <br class="hidden xl:block">
                         PERFECTLY BALANCED
                     </h2>
                 </div>
-                <div class="w-full md:w-full lg:w-50 xl:w-50">
+                <div class="w-full md:w-full lg:w-60 xl:w-60">
                     <p class="font-Brandon-Medium text-blue leading-normal text-18 text-start md:text-20 lg:text-20 xl:text-24"
                         data-aos="fade-up" data-aos-duration="3000">At Residence 22, life is designed to flow
                         seamlessly—where luxury, comfort, and convenience exist in perfect harmony. Life here is defined
@@ -271,34 +313,30 @@
             <div
                 class="flex flex-col w-full md:w-full lg:w-100 xl:w-100 justify-center items-center pt-10 sm:pt-10 lg:pt-16 xl:pt-20">
 
-                <div class="Lifestyle-living">
+                <div class="Lifestyle-living" data-aos="fade-up" data-aos-duration="3000">
 
                     <!-- Large left image -->
-                    <div class="design-large">
+                    <div class="design-large img-wrap border-radius-15">
                         <img src="assets/images/lifestyle/lifestyle-gallery-1.webp"
-                            class="border-radius-15 aos-init aos-animate" alt="" data-aos="fade-up"
-                            data-aos-duration="3000">
+                            class="border-radius-15 parallax-img" alt="">
                     </div>
 
                     <!-- Right grid -->
                     <div class="design-right">
 
                         <div class="design-small-row">
-                            <div class="design-small-half">
+                            <div class="design-small-half img-wrap border-radius-15">
                                 <img src="assets/images/lifestyle/lifestyle-gallery-2.webp"
-                                    class="border-radius-15 aos-init aos-animate" alt="" data-aos="fade-up"
-                                    data-aos-duration="3000">
+                                    class="border-radius-15 parallax-img" alt="">
                             </div>
-                            <div class="design-small-half">
+                            <div class="design-small-half img-wrap border-radius-15">
                                 <img src="assets/images/lifestyle/lifestyle-gallery-3.webp"
-                                    class="border-radius-15 aos-init aos-animate" alt="" data-aos="fade-up"
-                                    data-aos-duration="3000">
+                                    class="border-radius-15 parallax-img" alt="">
                             </div>
                         </div>
-                        <div class="design-small">
+                        <div class="design-small img-wrap border-radius-15">
                             <img src="assets/images/lifestyle/lifestyle-gallery-4.webp"
-                                class="border-radius-15 aos-init aos-animate" alt="" data-aos="fade-up"
-                                data-aos-duration="3000">
+                                class="border-radius-15 parallax-img" alt="">
                         </div>
 
                     </div>
@@ -313,7 +351,7 @@
     <!-- ═══════════════════════════════ Section - 43 ═══════════════════════════════════════════ -->
 
     <section
-        class="section-43 relative mx-1920 flex flex-col items-center z-10 justify-center min-h-screen h-[500px] w-full bg-cream bg-opacity-100 ">
+        class="section-43 relative mx-1920 flex flex-col items-center z-10 justify-center  w-full bg-cream bg-opacity-100 ">
 
         <!-- Background Image Layer -->
         <div class="absolute w-100 h-full inset-0 bg-cover bg-center z-0 img-wrap">
@@ -321,109 +359,241 @@
                 class="absolute inset-0 w-full h-full object-cover z-0 parallax-img" />
         </div>
 
-        <div class="flex flex-col absolute justify-center items-center px-6 sm:px-8 lg:px-14 py-12 sm:py-12 lg:py-20">
+        <div
+            class="flex flex-col w-full relative justify-center items-center px-6 sm:px-8 lg:px-14 py-16 sm:py-16 lg:py-20">
             <div class="flex flex-col w-full md:w-full lg:w-90 xl:w-90 justify-center items-center">
-                <h2 class="font-quichesans-Bold text-white text-center text-uppercase leading-tight mb-3 font-normal text-34 sm:text-34 md:text-36 lg:text-44 xl:text-52 2xl:text-52"
+                <h2 class="font-voltaire-regular text-white text-center text-uppercase leading-tight mb-3 font-normal text-28 sm:text-32 md:text-44 lg:text-52 xl:text-56 2xl:text-60"
                     data-aos="fade-up" data-aos-duration="3000">
                     THE PILLARS OF PENTHOUSE LIVING</h2>
                 <p class="font-Brandon-Medium text-white leading-snug text-18 text-center md:text-20 lg:text-22"
                     data-aos="fade-up" data-aos-duration="3000">Residence 22 offers a comprehensive suite of amenities
-                    designed to elevate both productivity and well-being, with every detail thoughtfully curated for
+                    designed to elevate both productivity and well-being, with every detail<br class="hidden lg:block">
+                    thoughtfully curated for
                     modern luxury living.
                 </p>
             </div>
 
             <!-- Grid -->
-            <div class="flex flex-col w-full md:w-full lg:w-90 xl:w-90 justify-center items-center pt-20">
-                <div class="flex flex-col items-center gap-12">
+            <div
+                class="flex flex-col w-full md:w-full lg:w-100 xl:w-90 justify-center items-center pt-10 md:pt-10 lg:pt-16 xl:pt-20">
+                <div class="flex w-full flex-col items-center gap-10 md:gap-20 lg:gap-20">
 
-                    <!-- ROW 1 (4 items centered) -->
-                    <div class="flex flex-wrap justify-center gap-12 md:gap-20 max-w-5xl">
-
-                        <div class="flex flex-col items-center space-y-3 w-40 text-center">
-                            <img src="assets/images/lifestyle/garden.svg" class="w-16 md:w-20" alt="">
-                            <p class="text-xs md:text-sm">STATE-OF-THE-ART FITNESS CENTER</p>
+                    <!-- ROW 1 (4 items - centered) -->
+                    <div data-aos="fade-up" data-aos-duration="3000"
+                        class="penthouse-living w-100 grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-10 md:gap-10 lg:gap-20 xl:gap-20 text-center max-w-7xl mx-auto">
+                        <div class="flex flex-col items-center space-y-3">
+                            <div class="penthouse-list flex items-end justify-end pb-3">
+                                <img src="assets/images/fitness.svg" alt="">
+                            </div>
+                            <p
+                                class="font-Brandon-Regular text-white text-uppercase text-16 text-center md:text-16 lg:text-18 xl:text-18">
+                                STATE-OF-THE-ART <br class="hidden lg:block">FITNESS CENTER</p>
                         </div>
-
-                        <div class="flex flex-col items-center space-y-3 w-40 text-center">
-                            <img src="assets/images/lifestyle/garden.svg" class="w-16 md:w-20" alt="">
-                            <p class="text-xs md:text-sm">JAPANESE ZEN GARDEN</p>
+                        <div class="flex flex-col items-center space-y-3">
+                            <div class="penthouse-list flex items-end pb-3">
+                                <img src="assets/images/garden.svg" alt="">
+                            </div>
+                            <p
+                                class="font-Brandon-Regular text-white text-uppercase text-16 text-center md:text-16 lg:text-18 xl:text-18">
+                                Japanese Zen<br class="hidden lg:block"> Garden</p>
                         </div>
-
-                        <div class="flex flex-col items-center space-y-3 w-40 text-center">
-                            <img src="assets/images/lifestyle/garden.svg" class="w-16 md:w-20" alt="">
-                            <p class="text-xs md:text-sm">OUTDOOR FITNESS AREA</p>
+                        <div class="flex flex-col items-center space-y-3">
+                            <div class="penthouse-list flex items-end pb-3">
+                                <img src="assets/images/outdoor.svg" class="" alt="">
+                            </div>
+                            <p
+                                class="font-Brandon-Regular text-white text-uppercase text-16 text-center md:text-16 lg:text-18 xl:text-18">
+                                Outdoor <br class="hidden lg:block">
+                                fitness area</p>
                         </div>
-
-                        <div class="flex flex-col items-center space-y-3 w-40 text-center">
-                            <img src="assets/images/lifestyle/garden.svg" class="w-16 md:w-20" alt="">
-                            <p class="text-xs md:text-sm">ROOFTOP POOL</p>
+                        <div class="flex flex-col items-center space-y-3">
+                            <div class="penthouse-list flex items-end pb-3">
+                                <img src="assets/images/pool.svg" class="" alt="">
+                            </div>
+                            <p
+                                class="font-Brandon-Regular text-white text-uppercase text-16 text-center md:text-16 lg:text-18 xl:text-18">
+                                Temperature-controlled <br class="hidden lg:block">
+                                rooftop pool</p>
                         </div>
-
                     </div>
 
-                    <!-- ROW 2 (5 items full width) -->
-                    <div class="flex flex-wrap justify-center gap-12 md:gap-20 max-w-6xl">
-
-                        <div class="flex flex-col items-center space-y-3 w-40 text-center">
-                            <img src="assets/images/lifestyle/garden.svg" class="w-16 md:w-20" alt="">
-                            <p class="text-xs md:text-sm">CHANGING ROOMS</p>
+                    <!-- ROW 2 (5 items - flex wrap so they always center) -->
+                    <div data-aos="fade-up" data-aos-duration="3000"
+                        class="penthouse-living w-100 grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-5 gap-10 md:gap-10 lg:gap-18 xl:gap-18 text-center max-w-7xl mx-auto">
+                        <div class="flex flex-col items-center space-y-3 ">
+                            <div class="penthouse-list flex items-end pb-3">
+                                <img src="assets/images/changing-room.svg" class="" alt="">
+                            </div>
+                            <p
+                                class="font-Brandon-Regular text-white text-uppercase text-16 text-center md:text-16 lg:text-18 xl:text-18">
+                                Changing rooms</p>
                         </div>
-
-                        <div class="flex flex-col items-center space-y-3 w-40 text-center">
-                            <img src="assets/images/lifestyle/garden.svg" class="w-16 md:w-20" alt="">
-                            <p class="text-xs md:text-sm">PILATES</p>
+                        <div class="flex flex-col items-center space-y-3">
+                            <div class="penthouse-list flex items-end pb-3">
+                                <img src="assets/images/pilates.svg" class="" alt="">
+                            </div>
+                            <p
+                                class="font-Brandon-Regular text-white text-uppercase text-16 text-center md:text-16 lg:text-18 xl:text-18">
+                                Pilates</p>
                         </div>
-
-                        <div class="flex flex-col items-center space-y-3 w-40 text-center">
-                            <img src="assets/images/lifestyle/garden.svg" class="w-16 md:w-20" alt="">
-                            <p class="text-xs md:text-sm">SPA</p>
+                        <div class="flex flex-col items-center space-y-3">
+                            <div class="penthouse-list flex items-end pb-3">
+                                <img src="assets/images/spa.svg" class="" alt="">
+                            </div>
+                            <p
+                                class="font-Brandon-Regular text-white text-uppercase text-16 text-center md:text-16 lg:text-18 xl:text-18">
+                                Spa</p>
                         </div>
-
-                        <div class="flex flex-col items-center space-y-3 w-40 text-center">
-                            <img src="assets/images/lifestyle/garden.svg" class="w-16 md:w-20" alt="">
-                            <p class="text-xs md:text-sm">JACUZZI</p>
+                        <div class="flex flex-col items-center space-y-3">
+                            <div class="penthouse-list flex items-end pb-3">
+                                <img src="assets/images/jacuzzi.svg" class="" alt="">
+                            </div>
+                            <p
+                                class="font-Brandon-Regular text-white text-uppercase text-16 text-center md:text-16 lg:text-18 xl:text-18">
+                                Jacuzzi</p>
                         </div>
-
-                        <div class="flex flex-col items-center space-y-3 w-40 text-center">
-                            <img src="assets/images/lifestyle/garden.svg" class="w-16 md:w-20" alt="">
-                            <p class="text-xs md:text-sm">STEAM AND SAUNA</p>
+                        <div class="flex flex-col items-center space-y-3">
+                            <div class="penthouse-list flex items-end pb-3">
+                                <img src="assets/images/steam.svg" class="" alt="">
+                            </div>
+                            <p
+                                class="font-Brandon-Regular text-white text-uppercase text-16 text-center md:text-16 lg:text-18 xl:text-18">
+                                Steam and Sauna</p>
                         </div>
-
                     </div>
 
                 </div>
             </div>
+
+
+        </div>
 
         </div>
 
     </section>
     <!-- ═══════════════════════════════ Section - 43 ═══════════════════════════════════════════ -->
 
+    <!-- ═══════════════════════════════ Section - 44 ═══════════════════════════════════════════ -->
+    <section
+        class="section-44 mx-1920 flex flex-col items-center justify-center w-full bg-white bg-opacity-100 px-6 sm:px-8 lg:px-14 pt-20 sm:pt-20 lg:pt-24 xl:pt-24 pb-0 sm:pb-0 lg:pb-0 xl:pb-0">
 
+        <div class="flex flex-col w-full justify-center items-center">
+
+            <div class="flex flex-col w-full md:w-full lg:w-100 xl:w-80 bg-lightcream bg-opacity-100 rounded-top-50 justify-center items-center px-6 sm:px-8 lg:px-14 pt-14 sm:pt-20 lg:pt-24 xl:pt-24 pb-20 sm:pb-20 lg:pb-24 xl:pb-24"
+                data-aos="fade-up" data-aos-duration="3000">
+
+                <div class="relative flex items-center justify-center w-full">
+                    <div
+                        class="flex flex-col sm:flex-row md:flex-row lg:flex-row justify-center items-center pb-10 xl:pb-10 gap-3 sm:gap-10 lg:gap-10 w-full">
+
+                        <div class="w-85 text-center sm:text-center lg:text-center">
+                            <span
+                                class="font-Brandon-Regular text-blue text-uppercase text-24 sm:text-26 md:text-26 lg:text-32 xl:text-36">Seamless
+                                Arrival</span>
+                            <p
+                                class="font-Brandon-Regular text-blue leading-normal pt-1 text-18 sm:text-20 md:text-22 lg:text-24 xl:text-28">
+                                Experience smooth transitions with our dedicated valet parking and bellboy service.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative flex items-center justify-center w-full lifestyle-service-border"
+                    data-aos="fade-up" data-aos-duration="3000">
+                    <div
+                        class="flex flex-col sm:flex-row md:flex-row lg:flex-row justify-center items-center py-10 xl:py-10 gap-3 sm:gap-8 lg:gap-10 w-full">
+
+                        <div class="w-85 text-center sm:text-center lg:text-center">
+                            <span
+                                class="font-voltaire-regular text-blue text-uppercase text-24 sm:text-26 md:text-26 lg:text-32 xl:text-36">Flawless
+                                Upkeep</span>
+                            <p
+                                class="font-Brandon-Regular text-blue leading-normal text-capitalize pt-1 text-18 sm:text-20 md:text-22 lg:text-24 xl:text-28">
+                                On-property maintenance support is always available to keep your home in pristine
+                                condition. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative flex items-center justify-center w-full lifestyle-service-border"
+                    data-aos="fade-up" data-aos-duration="3000">
+                    <div
+                        class="flex flex-col sm:flex-row md:flex-row lg:flex-row justify-center items-center py-10 xl:py-10 gap-3 sm:gap-8 lg:gap-10 w-full">
+
+                        <div class="w-85 text-center sm:text-center lg:text-center">
+                            <span
+                                class="font-voltaire-regular text-blue text-uppercase text-24 sm:text-26 md:text-26 lg:text-32 xl:text-36">Absolute
+                                Discretion</span>
+                            <p
+                                class="font-Brandon-Regular text-blue leading-normal text-capitalize pt-1 text-18 sm:text-20 md:text-22 lg:text-24 xl:text-28">
+                                Round-the-clock security ensures your sanctuary remains private and protected.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative flex items-center justify-center w-full lifestyle-service-border"
+                    data-aos="fade-up" data-aos-duration="3000">
+                    <div
+                        class="flex flex-col sm:flex-row md:flex-row lg:flex-row justify-center items-center pt-10 xl:pt-10 gap-3 sm:gap-8 lg:gap-10 w-full">
+
+                        <div class="w-85 text-center sm:text-center lg:text-center">
+                            <span
+                                class="font-voltaire-regular text-blue text-uppercase text-24 sm:text-26 md:text-26 lg:text-32 xl:text-36">Dedicated
+                                Building Manager</span>
+                            <p
+                                class="font-Brandon-Regular text-blue leading-normal text-capitalize pt-1 text-18 sm:text-20 md:text-22 lg:text-24 xl:text-28">
+                                A single, expert point of contact to orchestrate the smooth running of your residence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ═══════════════════════════════ Section - 44 ═══════════════════════════════════════════ -->
+
+    <!-- ═══════════════════════════════ Section - 45 ═══════════════════════════════════════════ -->
+    <section
+        class="section-45 mx-1920 flex flex-col items-center justify-center w-full bg-white bg-opacity-100  pb-20 sm:pb-20 lg:pb-20 xl:pb-20 ">
+
+        <div class="flex flex-col w-full justify-center items-center">
+            <img src="assets/images/lifestyle/lifestyle-enquire.webp" data-aos="fade-up" data-aos-duration="3000"
+                alt="">
+        </div>
+        <div class="flex default-btn mt-10">
+            <a href="project-details.html"
+                class="btn-primary text-center text-uppercase w-100 bg-blue bg-opacity-100 px-10 sm:px-10 md:px-12 lg:px-12 xl:px-12 py-4"
+                data-aos="fade-up" data-aos-duration="3000">ENQUIRE NOW</a>
+        </div>
+    </section>
+    <!-- ═══════════════════════════════ Section - 45 ═══════════════════════════════════════════ -->
 
     <!-- ═══════════════════════════════ Footer ═══════════════════════════════════════════ -->
     <footer
-        class="footer mx-1920 flex flex-col items-center justify-center w-full bg-blue bg-opacity-100 px-6 sm:px-8 lg:px-14 py-10 sm:py-14 md:py-16 lg:py-16">
+        class="footer mx-1920 flex flex-col items-center justify-center w-full bg-blue bg-opacity-100 px-6 sm:px-8 lg:px-14 pt-10 sm:pt-14 md:pt-16 lg:pt-16 pb-8 sm:pb-8 md:pb-8 lg:pb-8">
 
         <div class="flex flex-col justify-center md:flex-row w-full gap-10 sm:gap-10 md:gap-10 lg:gap-5 xl:gap-5">
 
-            <div class="flex flex-col w-full gap-6">
-                <div class="flex flex-col items-center" data-aos="fade-down" data-aos-duration="3000">
+            <div class="flex flex-col w-full gap-6" data-aos="fade-down" data-aos-duration="3000">
+                <div class="flex flex-col items-center">
                     <a href="#" class="footer-logo">
                         <img src="assets/images/residence-white-logo.svg" class="w-100 " alt="">
                     </a>
                     <h3
-                        class="font-neutraface-medium text-white text-uppercase leading-snug letter-4 text-left pt-4 text-16 sm:text-16 md:text-18 lg:text-18 xl:text-18 2xl:text-18">
+                        class="font-voltaire-regular text-white text-uppercase leading-snug letter-4 text-left pt-4 text-16 sm:text-16 md:text-18 lg:text-18 xl:text-18 2xl:text-18">
                         Penthouse living</h3>
                 </div>
-                <div class="flex flex-col items-center" data-aos="fade-down" data-aos-duration="3000">
+                <div class="flex flex-col items-center">
                     <span
                         class="font-quichesans-Bold text-white text-uppercase leading-snug text-center pt-4 text-18 sm:text-18 md:text-20 lg:text-24 xl:text-20 2xl:text-20">
                         MARASI DRIVE, BUSINESS BAY</span>
                     <span
                         class="font-quichesans-Bold text-white text-uppercase leading-snug text-center text-18 sm:text-18 md:text-20 lg:text-24 xl:text-20 2xl:text-20">
                         Dubai, uae</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span
+                        class="font-Brandon-Medium text-white text-uppercase leading-snug text-center pt-4 text-10">Disclaimer:
+                        images are real but not all apartments come in the same manner - images shown here are for
+                        illustration purpose only and can change as per the Owners discretion.</span>
+
                 </div>
             </div>
 
@@ -441,6 +611,38 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.ticker.lagSmoothing(0);
+        ScrollTrigger.matchMedia({
+
+            // ✅ Enable only above 768px
+            "(min-width: 769px)": function () {
+
+                gsap.utils.toArray(".img-wrap").forEach((wrap) => {
+
+                    let img = wrap.querySelector("img");
+
+                    gsap.fromTo(img,
+                        { yPercent: -8 },   // start slightly up
+                        {
+                            yPercent: 8,      // move down inside container
+                            ease: "power1.out",
+                            scrollTrigger: {
+                                trigger: wrap,
+                                start: "top bottom",
+                                end: "bottom top",
+                                scrub: 1.5,
+                                anticipatePin: 1
+                            }
+                        }
+                    );
+
+                });
+            }
+
+        });
+    </script>
     <script>
         AOS.init({
             once: true,

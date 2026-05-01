@@ -48,8 +48,7 @@
 .section-42 .Lifestyle-living .design-large img,
 .section-42 .Lifestyle-living .design-small img,
 .section-42 .Lifestyle-living .design-small-half img {
-   width: 100%;
-   height: 100%;
+   width: 100%; 
    object-fit: cover;
    display: block;
 }
@@ -113,10 +112,62 @@
       min-height: 0;
    }
 }
+
 /****************** Lifestyle Section- 42 **********************/
 
 /****************** Lifestyle Section- 43 **********************/
 .section-43 {
-   min-height: 800px;
+   min-height: 900px;
+}
+
+.section-43 .penthouse-living .penthouse-list {
+   height: 100px;
+   width: 120px;
+}
+
+.section-43 .penthouse-living img {
+   height: 100%;
+   width: 120px;
+}
+
+
+@media (max-width: 768px) {
+   .section-43 .penthouse-living .penthouse-list {
+      height: 80px;
+      width: 100px;
+   }
+
+   .section-43 .penthouse-living img {
+      height: 100%;
+      width: 100px;
+   }
+
+}
+@media (max-width: 500px) {
+   .section-43 .penthouse-living .penthouse-list {
+      height: 80px;
+      width: 90px;
+   }
+
+   .section-43 .penthouse-living img {
+      height: 100%;
+      width: 90px;
+   }
+
 }
 /****************** Lifestyle Section- 43 **********************/
+
+
+.section-44 .lifestyle-service-border::before {
+   position: absolute;
+   content: '';
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 1px;
+   background-image: url(../images/project/line-1.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   z-index: +2;
+}
