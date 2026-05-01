@@ -56,7 +56,7 @@
 
 /****************** Home Page Section- 6 **********************/
 .section-6 .swiper-slide img {
-  height: 600px;
+  height: 680px;
   border-radius: 15px;
 }
 
@@ -88,7 +88,7 @@
 
 @media (max-width:1500px) {
   .section-6 .swiper-slide img {
-    height: 500px;
+    height: 580px;
   }
 }
 
