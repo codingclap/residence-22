@@ -536,6 +536,9 @@ body {
 
 /* ── Height and Min-height ── */
 /* Base (mobile) */
+.h-100{
+   height:100%;
+}
 .h-\[100px\] {
    height: 100px;
 }

@@ -18,16 +18,23 @@
 <body>
     <!-- ═══════════════════════════════ Header Section ═══════════════════════════════════════════ -->
     <style>
-        .nav-links a:hover,
-        .nav-links button.drop-btn:hover,
-        .nav-links li.active>a,
-        .nav-links li.active>button {
+        .navbar-menu .nav-links a:hover,
+        .navbar-menu .nav-links button.drop-btn:hover,
+        .navbar-menu .nav-links li.active>a,
+        .navbar-menu .nav-links li.active>button {
             color: #142434;
         }
+
+        .navbar-fixed .nav-links a:hover,
+        .navbar-fixed .nav-links button.drop-btn:hover,
+        .navbar-fixed .nav-links li.active>a,
+        .navbar-fixed .nav-links li.active>button {
+            color: #c2a794;
+        }
     </style>
-    <nav class="navbar-menu mx-1920 mx-auto w-full px-5 absolute sm:px-5 md:px-6 lg:px-15 xl:px-20 py-10 ">
+    <nav class="navbar-menu mx-1920 mx-auto w-full px-5 absolute sm:px-5 md:px-6 lg:px-15 xl:px-20 py-10">
         <a href="#" class="header-logo" data-aos="fade-down" data-aos-duration="3000">
-            <img id="nav-logo" class="white-logo" src="assets/images/residence-white-logo.svg" alt="">
+            <img id="nav-logo" class="white-logo w-100" src="assets/images/residence-white-logo.svg" alt="">
         </a>
 
         <!-- Desktop Links -->
@@ -655,7 +662,7 @@
                 <div class="swiper-slide" data-label="AMENITIES">
                     <img src="assets/images/home/lifestyle-8.webp" alt="" class="w-full object-cover">
                 </div>
-                
+
             </div>
         </div>
 
@@ -963,7 +970,56 @@
     </script>
 
     <script>
+        let lastScroll = 0;
+        const navbar = document.querySelector(".navbar-menu");
+        const navLogo = document.getElementById("nav-logo");
+        const navLink = document.querySelector(".nav-links");
+        window.addEventListener("scroll", () => {
+            let lastScroll = 0;
+            const navbar = document.querySelector(".navbar-menu");
+            const navLogo = document.getElementById("nav-logo");
+            const navLink = document.querySelector(".nav-links");
+            window.addEventListener("scroll", () => {
+                const currentScroll = window.scrollY;
 
+                // activate fixed after small scroll
+                if (currentScroll > 90) {
+                    navbar.classList.add("navbar-fixed");
+                    navbar.classList.add("items-center");
+                    navbar.classList.remove("py-10");
+                    navbar.classList.add("py-5");
+                    navLink.classList.remove("pt-4");
+                    navLogo.classList.add("h-100");
+
+                    // hide on scroll down
+                    if (currentScroll > lastScroll) {
+                        navbar.classList.add("navbar-hidden");
+                        navLink.classList.add("pt-4");
+                    } else {
+                        navbar.classList.remove("navbar-hidden");
+                        if (navLogo.classList.contains("about-img")) {
+                            navLogo.src = "https://residence22.ae/wp-content/themes/residence22/assets/images/residence-white-logo.svg";
+                        }
+                        if (navLogo.classList.contains("contact-img")) {
+                            navLogo.src = "https://residence22.ae/wp-content/themes/residence22/assets/images/residence-white-logo.svg";
+                        }
+                    }
+
+                } else {
+                    navbar.classList.remove("navbar-fixed");
+                    navbar.classList.remove("navbar-hidden");
+                    navLogo.classList.remove("h-100");
+                    navbar.classList.remove("py-5");
+                    navbar.classList.add("py-10");
+                    navbar.classList.remove("items-center");
+                    if (navLogo.classList.contains("about-img") || navLogo.classList.contains("contact-img")) {
+                        navLogo.src = "https://residence22.ae/wp-content/themes/residence22/assets/images/residence-black-logo.svg";
+                    }
+                }
+
+                lastScroll = currentScroll;
+            });
+        });
         AOS.init({
             once: true,
 

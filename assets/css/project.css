@@ -393,6 +393,33 @@
    border-radius: 15px;
 }
 
+
+.section-27 .fivestar-swiper .swiper-pagination {
+   position: relative;
+   /* sits below the slides, not overlaid */
+   margin-top: 32px;
+   bottom: unset;
+}
+
+.section-27 .swiper-pagination-bullet {
+   width: 15px;
+   height: 15px;
+   background-color: #D9D9D9;
+   /* inactive bullet color */
+   opacity: 0.4;
+   border-radius: 50%;
+   transition: all 0.3s ease;
+}
+
+.section-27 .swiper-pagination-bullet-active {
+   background-color: #C2A794;
+   /* active bullet color */
+   opacity: 1;
+   width: 15px;
+   /* pill shape for active */
+   border-radius: 50%;
+}
+
 /* Rectangle 166 */
 .section-27 .fivestar-navigation .fivestar-prev,
 .section-27 .fivestar-navigation .fivestar-next {

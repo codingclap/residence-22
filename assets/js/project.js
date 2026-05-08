@@ -120,7 +120,11 @@ const lifestyleSwiper = new Swiper('.fivestar-lifestyle', {
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
     },
-
+     pagination: {
+        el: '.fivestar-pagination',   //  points to the div outside the swiper
+        clickable: true,
+        type: 'bullets',
+    },
     grabCursor: false,
     simulateTouch: false,
     allowTouchMove: false,
