@@ -145,9 +145,9 @@
         }
 
         .sticky-btn {
-            width: 48px;
-            min-width: 48px;
-            height: 48px;
+            width: 45px;
+            min-width: 45px;
+            height: 45px;
             overflow: hidden;
             transition: width .35s;
             white-space: nowrap;
@@ -167,12 +167,17 @@
         }
 
         .sticky-btn img {
-            width: 27px;
-            height: 27px
+            width: 23px;
+            height: 23px;
+            object-fit: contain;
         }
 
         .sticky-btn:hover {
             width: 140px
+        }
+
+        .sticky-btn:nth-last-of-type(2):hover {
+            width: 200px;
         }
 
         .sticky-btn:last-of-type:hover {
@@ -184,10 +189,19 @@
             width: auto;
             margin-left: 8px
         }
+
+        @media (max-width:768px) {
+            .sticky-btn {
+                width: 42px;
+                min-width: 42px;
+                height: 42px;
+            }
+        }
     </style>
     <div class="fixed-contact-buttons">
 
-        <a href="tel:+971564093335" class="sticky-btn flex items-center bg-[#cbb7a6] text-white rounded-l-xl shadow-lg">
+        <a href="tel:+971564093335"
+            class="sticky-btn hidden md:flex items-center bg-[#cbb7a6] text-white rounded-l-xl shadow-lg">
 
             <img src="assets/images/phone-icon.png" alt="Phone" class="w-5 h-5 min-w-[20px] object-contain">
 
@@ -197,7 +211,7 @@
         </a>
 
         <a href="mailto:info@residence22.ae"
-            class="sticky-btn flex items-center bg-[#cbb7a6] text-white rounded-l-xl shadow-lg">
+            class="sticky-btn hidden md:flex items-center bg-[#cbb7a6] text-white rounded-l-xl shadow-lg">
 
             <img src="assets/images/email-icon.png" alt="Email" class="w-5 h-5 min-w-[20px] object-contain">
 
@@ -205,7 +219,14 @@
                 Email US
             </span>
         </a>
+        <a href="#" class="sticky-btn flex md:hidden items-center bg-[#cbb7a6] text-white rounded-l-xl shadow-lg">
 
+            <img src="assets/images/request.png" alt="Email" class="w-5 h-5 min-w-[30px] object-contain">
+
+            <span class="text-sm font-medium uppercase">
+                Request Viewing
+            </span>
+        </a>
         <a href="https://wa.me/564093335"
             class="sticky-btn flex items-center bg-[#cbb7a6] text-white rounded-l-xl shadow-lg">
 
@@ -246,7 +267,7 @@
                 <p class="font-Cormorant-SemiBold text-blue leading-normal text-uppercase text-17 lg:text-18"
                     data-aos="fade-up" data-aos-duration="3000">Residence
                     22 seamlessly
-                    blends the sophistication of a five-star hotel with the<br class="hidden lg:block"> privacy and
+                    blends the sophistication of a five-star hotel with the<br class="hidden xl:block"> privacy and
                     comfort of a residential property.</p>
             </div>
         </div>
@@ -264,14 +285,15 @@
 
         <!-- Content — z-20 keeps it above video -->
         <div class="z-20 w-full px-5 sm:px-5 lg:px-14 pt-8 pb-0 sm:pb-1 md:pb-18 lg:pb-20">
-            <div class="w-full text-center" data-aos="fade-down" data-aos-duration="3000" data-aos-once="true">
+            <div class="w-full text-center w-full mx-auto md:w-90 lg:w-90 xl:w-60" data-aos="fade-down"
+                data-aos-duration="3000" data-aos-once="true">
                 <h1
-                    class="font-voltaire-regular text-white text-uppercase leading-none mb-3 font-normal text-50 sm:text-64 md:text-64 lg:text-84 xl:text-84 2xl:text-96">
-                    Full-Floor Penthouse Living<br class="hidden lg:block"> on Marasi Drive
+                    class="font-voltaire-regular text-white text-uppercase leading-none mb-3 font-normal text-50 sm:text-64 md:text-64 lg:text-84 xl:text-84 2xl:text-96 ">
+                    Full-Floor Penthouse Living on Marasi Drive
                 </h1>
                 <p class="font-quicksand-Medium text-white leading-normal text-uppercase text-16 lg:text-18">
                     A limited collection of private penthouse residences designed around space, light, and quiet luxury
-                    - moments <br class="hidden lg:block">from Downtown Dubai, yet with privacy and comfort away from
+                    - moments from Downtown Dubai, yet with privacy and comfort away from
                     the city noise.
 
                 </p>
@@ -329,11 +351,11 @@
                 <div class="flex flex-col w-full md:w-full lg:w-50 xl:w-40 justify-center items-start">
                     <h2 class="font-voltaire-regular text-blue text-uppercase leading-tight pb-4 md:pb-4 lg:pb-5 font-normal text-32 sm:text-36 md:text-36 lg:text-40 xl:text-48 2xl:text-52"
                         data-aos="fade-right" data-aos-duration="3000">
-                        The Heart of the City<br class="hidden lg:block">The Calm of Home</h2>
+                        The Heart of the City<br class="hidden xl:block">The Calm of Home</h2>
                     <p class="font-Brandon-Regular text-blue leading-relaxed text-17 text-justify lg:text-18"
                         data-aos="fade-right" data-aos-duration="3000">Set on Marasi Drive, alongside the Dubai Water
                         Canal, Residence 22 offers something rare. A canal-front address where the energy of Downtown
-                        Dubai, DIFC, Dubai Mall, Dubai Opera, and Dubai Design District is always within reach; yet
+                        Dubai, DIFC, Dubai Mall, Dubai Opera, and Dubai Design District is always within reach, yet
                         never intrudes.
                     </p>
                     <p class="font-Brandon-Regular text-blue leading-relaxed text-17 text-justify lg:text-18"
@@ -364,15 +386,15 @@
                 <div class="flex flex-col w-full md:w-full lg:w-50 xl:w-40 justify-center items-start">
                     <h2 class="font-voltaire-regular text-blue text-uppercase leading-tight pb-4 md:pb-4 lg:pb-5 font-normal text-32 sm:text-36 md:text-36 lg:text-40 xl:text-48 2xl:text-52"
                         data-aos="fade-left" data-aos-duration="3000">
-                        Where Modernism Meets <br class="hidden lg:block">Sculptural Precision
+                        Where Modernism Meets <br class="hidden xl:block">Sculptural Precision
                     </h2>
                     <p class="font-Brandon-Regular text-blue leading-relaxed text-17 text-justify lg:text-18"
                         data-aos="fade-left" data-aos-duration="3000">Residence 22 is defined by a bold yet restrained
                         architectural language. Its distinctive white lattice facade gives the building a sculptural
-                        presence; filtering light, creating depth, and enhancing the privacy of each residence. Inside,
+                        presence, filtering light, creating depth, and enhancing the privacy of each residence. Inside,
                         our full-floor penthouse ranges from 4,781 to 6000 sq.ft of generous, considered space.
                         Floor-to-ceiling windows frame uninterrupted views across the Dubai Water Canal and the Downtown
-                        skyline; refined proportions and high ceilings create homes that feel expansive, calm, and
+                        skyline, refined proportions and high ceilings create homes that feel expansive, calm, and
                         quietly exceptional.
                     </p>
                     <div class="flex default-btn mt-8">
@@ -407,11 +429,10 @@
                     data-aos="fade-up" data-aos-duration="3000">
                     A life of
                     seamless ease</h2>
-                <p class="font-Brandon-Medium text-white leading-snug text-18 text-center md:text-20 lg:text-22"
+                <p class="font-Brandon-Medium text-white leading-snug text-18 text-center md:text-20 lg:text-22 w-full mx-auto md:w-full lg:w-90 xl:w-80"
                     data-aos="fade-up" data-aos-duration="3000">At Residence 22, daily life is designed to flow with
-                    ease. Concierge, valet, housekeeping, security, and on-property maintenance <br
-                        class="hidden xl:block">are handled with
-                    discretion; giving residents more time, more privacy, and complete peace of mind.
+                    ease. Concierge, valet, housekeeping, security, and on-property maintenance are handled with
+                    discretion, giving residents more time, more privacy, and complete peace of mind.
 
                 </p>
             </div>
@@ -432,13 +453,13 @@
                     data-aos="fade-up" data-aos-duration="3000">
                     A Private Floor Above the City
                 </h2>
-                <p class="font-Brandon-Regular text-blue leading-normal text-18 text-center lg:text-20"
+                <p class="font-Brandon-Regular text-blue leading-normal text-18 text-center lg:text-20 w-full mx-auto md:w-full lg:w-90 xl:w-80"
                     data-aos="fade-up" data-aos-duration="3000">Each of the 22 residences at Residence 22 occupies an
-                    entire floor; a private world of space, light, and considered detail. <br
+                    entire floor, a private world of space, light, and considered detail. <br
                         class="hidden xl:block"><span class="font-Brandon-Bold">Four en-suite bedrooms,
                         4-metre ceiling heights, timber flooring, custom-built wardrobes, and premium branded
-                        appliances;</span><br class="hidden xl:block">
-                    all framed by panoramic views across the Dubai Water Canal and the Downtown skyline.
+                        appliances,</span> all framed by panoramic views across the Dubai Water Canal and the Downtown
+                    skyline.
 
                 </p>
 
@@ -496,7 +517,7 @@
                 <div class="w-full md:w-full lg:w-65 xl:w-60">
                     <h2 class="font-voltaire-regular text-white text-start text-uppercase leading-tight font-normal pt-5 md:pt-5 lg:pt-10 xl:pt-10 text-36 sm:text-36 md:text-48 lg:text-56 xl:text-60 2xl:text-64"
                         data-aos="fade-up" data-aos-duration="3000">
-                        22 RESIDENCES.<br class="hidden lg:block">
+                        22 RESIDENCES.<br class="hidden xl:block">
                         Private by Design.</h2>
                 </div>
                 <div class="w-full md:w-full lg:w-70 xl:w-70">
@@ -531,9 +552,10 @@
                 <h2 class="font-voltaire-regular text-blue text-center text-uppercase leading-tight mb-5 font-normal text-28 sm:text-32 md:text-36 lg:text-44 xl:text-52 2xl:text-52"
                     data-aos="fade-up" data-aos-duration="3000">
                     The Waterfront's Most Distinguished Address</h2>
-                <p class="font-Brandon-Regular text-blue leading-snug text-18 text-center lg:text-22" data-aos="fade-up"
-                    data-aos-duration="3000">Set on Marasi Drive, alongside the Dubai Water Canal, Residence 22 places
-                    residents moments from the city's most celebrated destinations;<br class="hidden lg:block"> while
+                <p class="font-Brandon-Regular text-blue leading-snug text-18 text-center lg:text-22 w-full mx-auto md:w-full lg:w-90 xl:w-80"
+                    data-aos="fade-up" data-aos-duration="3000">Set on Marasi Drive, alongside the Dubai Water Canal,
+                    Residence 22 places
+                    residents moments from the city's most celebrated destinations, while
                     offering the calm and privacy
                     of a canal-front address.
                 </p>
@@ -633,11 +655,11 @@
                 Seamless Living, Thoughtfully Curated
             </h2>
 
-            <p class="font-Brandon-Regular text-blue leading-snug text-18 text-center lg:text-22" data-aos="fade-up"
-                data-aos-duration="3000">At Residence 22, life is designed around ease, privacy, and balance. Wellness
-                spaces, rooftop amenities, concierge support, valet, housekeeping, <br class="hidden xl:block">and
-                on-property maintenance come
-                together to create a residential experience that feels effortless; without ever feeling excessive.
+            <p class="font-Brandon-Regular text-blue leading-snug text-18 text-center lg:text-22 w-full mx-auto md:w-full lg:w-90 xl:w-90"
+                data-aos="fade-up" data-aos-duration="3000">At Residence 22, life is designed around ease, privacy, and
+                balance. Wellness
+                spaces, rooftop amenities, concierge support, valet, housekeeping, and on-property maintenance come
+                together to create a residential experience that feels effortless, without ever feeling excessive.
             </p>
         </div>
 
@@ -700,7 +722,7 @@
                     data-aos-duration="3000">
                     <h2
                         class="font-voltaire-regular text-green text-left text-uppercase leading-none mb-5 font-normal text-40 sm:text-46 md:text-52 lg:text-84 xl:text-84 2xl:text-84">
-                        Connect<br class="hidden lg:block"> with us
+                        Connect<br class="hidden xl:block"> with us
                     </h2>
                     <img src="assets/images/home/contact-form-banner.webp" class="w-100 border-radius-15" alt="">
                 </div>
