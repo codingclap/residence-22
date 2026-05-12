@@ -400,7 +400,8 @@
                 class="absolute inset-0 w-full h-full object-cover z-0 parallax-img" />
         </div>
 
-        <div class="flex flex-col w-full absolute justify-center items-center px-6 sm:px-8 lg:px-14 py-12 sm:py-12 lg:py-20">
+        <div
+            class="flex flex-col w-full absolute justify-center items-center px-6 sm:px-8 lg:px-14 py-12 sm:py-12 lg:py-20">
             <div class="flex flex-col w-full md:w-full lg:w-90 xl:w-80 justify-center items-center">
                 <h2 class="font-voltaire-regular text-white text-center text-uppercase leading-tight mb-3 font-normal text-34 sm:text-34 md:text-44 lg:text-52 xl:text-56 2xl:text-56"
                     data-aos="fade-up" data-aos-duration="3000">
@@ -408,7 +409,8 @@
                     seamless ease</h2>
                 <p class="font-Brandon-Medium text-white leading-snug text-18 text-center md:text-20 lg:text-22"
                     data-aos="fade-up" data-aos-duration="3000">At Residence 22, daily life is designed to flow with
-                    ease. Concierge, valet, housekeeping, security, and on-property maintenance <br class="hidden xl:block">are handled with
+                    ease. Concierge, valet, housekeeping, security, and on-property maintenance <br
+                        class="hidden xl:block">are handled with
                     discretion; giving residents more time, more privacy, and complete peace of mind.
 
                 </p>
@@ -979,51 +981,47 @@
         const navLogo = document.getElementById("nav-logo");
         const navLink = document.querySelector(".nav-links");
         window.addEventListener("scroll", () => {
-            let lastScroll = 0;
-            const navbar = document.querySelector(".navbar-menu");
-            const navLogo = document.getElementById("nav-logo");
-            const navLink = document.querySelector(".nav-links");
-            window.addEventListener("scroll", () => {
-                const currentScroll = window.scrollY;
+            const currentScroll = window.scrollY;
 
-                // activate fixed after small scroll
-                if (currentScroll > 90) {
-                    navbar.classList.add("navbar-fixed");
-                    navbar.classList.add("items-center");
-                    navbar.classList.remove("py-10");
-                    navbar.classList.add("py-5");
-                    navLink.classList.remove("pt-4");
-                    navLogo.classList.add("h-100");
+            // activate fixed after small scroll
+            if (currentScroll > 90) {
+                navbar.classList.add("navbar-fixed");
+                navbar.classList.add("items-center");
+                navbar.classList.remove("py-10");
+                navbar.classList.add("py-5");
+                navLink.classList.remove("pt-4");
+                navLogo.classList.add("h-100");
 
-                    // hide on scroll down
-                    if (currentScroll > lastScroll) {
-                        navbar.classList.add("navbar-hidden");
-                        navLink.classList.add("pt-4");
-                    } else {
-                        navbar.classList.remove("navbar-hidden");
-                        if (navLogo.classList.contains("about-img")) {
-                            navLogo.src = "https://residence22.ae/wp-content/themes/residence22/assets/images/residence-white-logo.svg";
-                        }
-                        if (navLogo.classList.contains("contact-img")) {
-                            navLogo.src = "https://residence22.ae/wp-content/themes/residence22/assets/images/residence-white-logo.svg";
-                        }
-                    }
-
+                // hide on scroll down
+                if (currentScroll > lastScroll) {
+                    navbar.classList.add("navbar-hidden");
+                    navLink.classList.add("pt-4");
                 } else {
-                    navbar.classList.remove("navbar-fixed");
                     navbar.classList.remove("navbar-hidden");
-                    navLogo.classList.remove("h-100");
-                    navbar.classList.remove("py-5");
-                    navbar.classList.add("py-10");
-                    navbar.classList.remove("items-center");
-                    if (navLogo.classList.contains("about-img") || navLogo.classList.contains("contact-img")) {
-                        navLogo.src = "https://residence22.ae/wp-content/themes/residence22/assets/images/residence-black-logo.svg";
+                    if (navLogo.classList.contains("about-img")) {
+                        navLogo.src = "https://residence22.ae/wp-content/themes/residence22/assets/images/residence-white-logo.svg";
+                    }
+                    if (navLogo.classList.contains("contact-img")) {
+                        navLogo.src = "https://residence22.ae/wp-content/themes/residence22/assets/images/residence-white-logo.svg";
                     }
                 }
 
-                lastScroll = currentScroll;
-            });
+            } else {
+                navbar.classList.remove("navbar-fixed");
+                navbar.classList.remove("navbar-hidden");
+                navLogo.classList.remove("h-100");
+                navbar.classList.remove("py-5");
+                navbar.classList.add("py-10");
+                navbar.classList.remove("items-center");
+                if (navLogo.classList.contains("about-img") || navLogo.classList.contains("contact-img")) {
+                    navLogo.src = "https://residence22.ae/wp-content/themes/residence22/assets/images/residence-black-logo.svg";
+                }
+            }
+
+            lastScroll = currentScroll;
         });
+    </script>
+    <script>
         AOS.init({
             once: true,
 
